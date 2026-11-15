@@ -1,0 +1,45 @@
+{
+  "patch": "16.22",
+  "source": "https://raw.communitydragon.org/16.22/game/data/characters/ezreal/ezreal.bin.json",
+  "source_sha256": "73233b5c6b72e2641696d105c33eece8d5d141294925843180ba67b9e8b49962",
+  "spells": {
+    "Q": {
+      "range": 1150.0,
+      "speed": 2000.0,
+      "delay": 0.25,
+      "cooldown": [
+        5.5,
+        5.25,
+        5.0,
+        4.75,
+        4.5
+      ],
+      "mana": [
+        28.0,
+        31.0,
+        34.0,
+        37.0,
+        40.0
+      ]
+    },
+    "W": {
+      "range": 1150.0,
+      "speed": 1700.0,
+      "delay": 0.25,
+      "cooldown": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mana": [
+        50.0,
+        50.0,
+        50.0,
+        50.0,
+        50.0
+      ]
+    }
+  }
+}

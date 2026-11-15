@@ -1,0 +1,30 @@
+ZYON EZREAL 0.2.0 — VALIDAÇÃO
+
+36 testes locais aprovados em Python 3.12/Linux:
+- interceptação estacionária e móvel, atraso de conjuração e alvo inalcançável;
+- conversão de escala, bloqueio por minion e compensação de movimento de câmera;
+- esquiva atingível com limite, ausência de rota e área permitida;
+- tracking sem reutilizar alvo desaparecido e reinício após intervalo longo;
+- Q/W em ordem, mana, alcance, ícones em cooldown e jogador não confirmado;
+- último golpe por AA dentro do alcance, sem caminhar atrás de minion fora dele;
+- idade da API, morte, campeão errado, tecla solta, F10 e frame antigo;
+- barras sintéticas cheias/parciais, ticks, formato e cor de calibração;
+- projétil cadastrado produz decisão de esquiva limitada; não cadastrado não produz.
+
+Interface executada em uma cena sintética sob servidor de vídeo virtual:
+abre, arma, processa quadros, exibe decisões e fecha encerrando o worker de visão.
+O modo demo nunca envia input real. Ele não é uma partida do LoL.
+
+O workflow do GitHub executa os mesmos testes em Windows, abre/arma/fecha a
+interface demo, compila com PyInstaller e verifica que o executável inicia na demo.
+O resultado efetivo dessa compilação fica visível no GitHub Actions; a existência
+do workflow não prova que a execução remota já tenha concluído.
+
+Não verificado: eficácia em partida real, identificação sobre imagens reais de
+todas as skins/skills, precisão de last hit e esquiva, navegação por terreno,
+SendInput durante LoL/Vanguard e ausência de banimento. Não há taxa de acerto
+medida nem probabilidade de kill calibrada. Requer calibração manual descrita em
+LEIA-ME.txt. Compatibilidade de execução em Windows 10 real não foi medida.
+
+As regras de alcance/velocidade/custo/cooldown usadas são do arquivo da Ezreal
+no patch 16.22; rules.json registra URL e SHA-256 da origem consultada.

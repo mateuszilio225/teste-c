@@ -1,0 +1,132 @@
+ZYON EZREAL 0.2.0 | WINDOWS 10/11 x64 | REGRAS 16.22
+
+CONTROLES
+Espaço segurado: Q/W nos campeões visuais perto do cursor e esquiva dos projéteis
+cadastrados. As funções podem ser ligadas/desligadas individualmente na interface.
+X segurado: AA para last hit do minion junto ao cursor e dentro do alcance estimado.
+F10: desarma. Para rearmar, clique Armar na interface.
+Soltar a tecla correspondente interrompe novos comandos.
+
+INSTALAR
+No pacote compilado: extraia TODO o ZIP, mantenha a pasta _internal junto do
+ZyonEzreal.exe e abra ZyonEzreal.exe. Não rode diretamente de dentro do ZIP.
+Não apague _internal. Configurações ficam em data ao lado do executável.
+
+No código-fonte: instale Python 3.11/3.12 x64 com Tcl/Tk e Python Launcher.
+Extraia todo o pacote e abra INICIAR.bat. Ele cria .venv e instala dependências.
+DEMO.bat executa uma simulação visual. A simulação não envia cliques nem teclas.
+Na demo, clique Armar para ver o processamento; não exige jogo em execução.
+
+CONFIGURAÇÃO DO JOGO
+Monitor principal, janela sem bordas, câmera travada no campeão e escala fixa.
+Espaço pode continuar vinculado à centralização da câmera. Tire X de comandos
+conflitantes, como ataque-movimento. Q/W precisam ser conjuração rápida SEM
+indicador, nos vínculos Q e W. A versão não lança E nem R automaticamente.
+A interface do app deve ficar fora da área útil capturada ou em outro monitor.
+Minimizar a interface não para o processamento. F10 continua disponível.
+
+CALIBRAÇÃO — ABA CALIBRAÇÃO
+As capturas começam após 3 segundos. Volte ao jogo antes de terminar a contagem.
+1. Área útil: selecione o campo visível, sem HUD, minimapa, chat e janelas do app.
+2. Posição/alcance: deixe o círculo de AA visível (A, se assim estiver vinculado).
+   Na captura congelada, clique nos pés do Ezreal, na borda DIREITA do círculo e
+   na borda INFERIOR. Isso estima pixels por unidade em duas direções.
+   Não selecione círculo de Q ou de outra habilidade. API usa o alcance de AA.
+3. Sua barra CHEIA: selecione só o interior colorido, de ponta a ponta, sem borda;
+   depois clique nos seus pés. A cor e o HP da API ajudam a confirmar sua posição.
+4. Campeão inimigo: barra CHEIA, sem borda; depois pés do inimigo.
+5. Minion inimigo: barra CHEIA; depois corpo do minion para o clique de AA.
+6/7. Q e W: recorte somente o interior colorido dos ícones DISPONÍVEIS, sem
+   indicadores de nível. A semelhança visual será verificada antes de conjurar.
+8. Projétil inimigo: recorte pequeno e distinto de uma skill linear em movimento.
+   Informe seu raio conforme a skill. Pode importar um screenshot PNG/JPG.
+   O screenshot precisa usar a mesma escala/zoom do jogo. Há até 8 aparências.
+   Para outras direções, animações e skins, cadastre as aparências correspondentes.
+
+Depois confirme patch/câmera e conjuração rápida, salve e arme.
+É possível desmarcar uma função para usar somente as demais. Combo exige perfis
+de campeões e minions e os dois ícones. Last hit exige barra e HP máximo de minion.
+Esquiva exige ao menos um perfil de projétil. Geometria e sua barra são sempre
+obrigatórias. Mudança de resolução/monitor desarma; mudança de zoom exige recalibrar.
+
+DESVIAR POUCO
+Máximo deslocamento é o limite de cada destino de esquiva em unidades estimadas.
+O planejador começa com passos de 10 e escolhe o menor destino que passa no teste
+geométrico de trajetória, respeitando o limite configurado. Folga adicional aumenta
+a distância de segurança geométrica. Antecipação define o horizonte de projeção.
+Reduzir esses valores limita o movimento, mas pode tornar a esquiva inviável.
+Se não encontrar rota atingível a tempo, informa isso e suspende ataques naquele
+instante. Não inventa que a esquiva teve sucesso.
+
+O QUE É DETECTADO
+Somente os padrões VISUAIS de projéteis cadastrados, com pelo menos 3 observações
+consecutivas e velocidade estimada de 200..4000 unidades/s. O sistema acompanha
+movimento e tenta compensar a câmera pelo deslocamento da imagem de fundo.
+Não há um reconhecedor universal de skills, equipes ou nomes de campeões.
+Uma aparência parecida de uma skill aliada também pode ser confundida. Perfil
+mal recortado pode falhar ou gerar falsos positivos. Skills instantâneas, circulares,
+teleguiadas, invisíveis ou com mudança de trajetória não são cobertas pelo modelo.
+
+O planejador testa reação, caminhada até o destino e permanência nele; prioriza
+esquiva sobre Q/W/AA. Ele não conhece paredes, terreno navegável ou torres.
+Um destino dentro da área visível não garante que seja caminhável ou vantajoso.
+Limite de movimento é por comando, não o total da soma de várias esquivas.
+
+Q/W AUTOMÁTICOS
+Seleciona um campeão visível perto do cursor. Exige pelo menos 3 leituras para
+estimar sua velocidade. Projeta interceptação usando dados do patch 16.22:
+Q: 1150 de alcance exibido, 2000 unidades/s; W: 1150, 1700 unidades/s.
+Há margem conservadora de alcance e teste aproximado de bloqueio do Q por barras
+visuais de outros campeões e minions. Se Q/W estiverem prontos e houver mana para
+ambos, tenta W antes do Q. O W só detona se um ataque/habilidade subsequente acertar.
+
+Não promete acerto: esquiva, aceleração, dash, escudo de feitiço e obstáculos não
+identificados alteram o resultado. Alcance é uma projeção calibrada em tela e pode
+errar com elevação do terreno, zoom ou ponto de pés incorreto. Barras pequenas e
+parcialmente visíveis podem ser confundidas. A seleção visual não identifica nomes.
+Sem alvo confirmado, ícone disponível ou telemetria recente, não conjura.
+
+Cooldowns manuais são verificados pelo ícone. Os casts enviados pelo programa
+também obedecem a um relógio conservador com aceleração de habilidade da API.
+O reembolso de cooldown do Q ao acertar não reduz esse relógio, então pode esperar
+mais que o necessário. Há reserva conservadora de mana para dados ainda em trânsito.
+Não tenta calcular porcentagem de kill ou prever toda a resposta do adversário.
+
+LAST HIT NO X
+Informe HP máximo e armadura do TIPO de minion que irá atacar. O detector não
+distingue melee, mago, canhão e super nem atualiza o HP automaticamente com o tempo.
+Coloque o cursor perto do corpo/barra desejada, já dentro do alcance de AA, e segure X.
+Configuração de impacto soma windup, viagem do projétil e latência. O padrão
+400 ms é ponto inicial; ajuste conforme distância e velocidade de ataque.
+Estima a queda de HP observada e só tenta AA quando prevê alvo vivo e matável.
+Não simula todos os ataques/projéteis no ar. Ataques manuais não atualizam seu relógio.
+Não garante farm perfeito. Espaço e X juntos mantêm prioridade da esquiva e do combo.
+
+DADOS E BLOQUEIOS
+Telemetria: GET no endereço local fixo
+https://127.0.0.1:2999/liveclientdata/allgamedata
+Sem token Riot. Sem proxies do ambiente nem redirecionamentos. O certificado
+próprio do cliente é aceito somente nesse acesso local. Não envia dados de jogo
+para fora. Instalação pelo pip requer internet; o executável não usa pip.
+Erros de visão/input, F10 ou resolução alterada desarmam. Dados antigos, morte,
+campeão diferente de Ezreal, mapa/modo diferente ou perda de foco impedem ações.
+Antes de enviar input, revalida tecla segurada, estado armado, telemetria e idade
+do frame. O processo em primeiro plano deve ser League of Legends.exe.
+Input usa SendInput normal. Não inclui driver, injeção ou evasão do Vanguard.
+Não existe garantia de ausência de banimento. Se input for bloqueado, desarma.
+
+VERIFICAÇÃO
+DEMO é uma cena sintética, não uma partida gravada ou validação em LoL.
+Ver VALIDACAO.txt para testes executados e limites verificados.
+Não houve teste de eficácia em uma partida real de Windows 10/Vanguard.
+O pacote não contém treinamento com VODs do Chovy.
+
+FONTES DE DADOS
+https://developer.riotgames.com/docs/lol#game-client-api_live-client-data-api
+https://raw.communitydragon.org/16.22/game/data/characters/ezreal/ezreal.bin.json
+rules.json inclui URL e SHA-256 do dado consultado. Atualizar patch exige revisar
+dados, fórmulas de percepção e testes. Não há atualização silenciosa de regras.
+
+ERROS
+Veja data/app.log. Para limpar a calibração, feche o app e renomeie data/config.json.
+Mantenha data gravável. Execute de uma pasta extraída sob seu controle.

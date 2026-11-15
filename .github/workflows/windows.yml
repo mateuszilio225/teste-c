@@ -1,0 +1,54 @@
+name: Windows build
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: windows-release
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          architecture: x64
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt pyinstaller==6.16.0
+      - name: Test
+        run: python -m unittest discover -s tests -v
+      - name: Windows demo smoke test
+        run: python tests/windows_smoke.py
+      - name: Build portable executable
+        run: >-
+          python -m PyInstaller --noconfirm --clean --windowed --onedir
+          --name ZyonEzreal --add-data "rules.json;." --add-data "LEIA-ME.txt;." app.py
+      - name: Pack
+        shell: pwsh
+        run: |
+          python tests/exe_smoke.py dist/ZyonEzreal/ZyonEzreal.exe
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Copy-Item LEIA-ME.txt,VALIDACAO.txt,BUILD_NOTES.md dist/ZyonEzreal/
+          Compress-Archive -Path dist/ZyonEzreal/* -DestinationPath dist/zyon-ezreal-win10.zip
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: zyon-ezreal-win10
+          path: dist/zyon-ezreal-win10.zip
+      - name: Publish release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view v0.2.0 *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create v0.2.0 dist/zyon-ezreal-win10.zip --target $env:GITHUB_SHA --title "Zyon Ezreal 0.2.0" --notes-file BUILD_NOTES.md
+          } else {
+            gh release upload v0.2.0 dist/zyon-ezreal-win10.zip --clobber
+          }
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
