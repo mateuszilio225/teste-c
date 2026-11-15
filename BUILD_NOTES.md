@@ -1,4 +1,10 @@
-Ezreal 0.2.1 para Windows x64.
+Ezreal 0.2.2 para Windows x64.
+
+- Corrige rejeição da Ferramenta de Treino identificada como PRACTICETOOL.
+- Identificação por Riot ID completo/separado e fallback limitado por habilidades.
+- Erros distinguem API indisponível, dados antigos, identificação, mapa/modo e morte.
+- Verifica os dados antes de ocultar a janela para captura.
+- Novo botão Copiar diagnóstico da partida, sem nomes de contas.
 
 - Monitor/resolução detectados do sistema; pendências de calibração em português.
 - Novo botão Calibrar automaticamente: procura ícones, barra e círculo de AA.

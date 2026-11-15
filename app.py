@@ -21,7 +21,7 @@ from PIL import Image, ImageTk
 from core import number
 from demo import DemoScene
 from engine import DEFAULTS, Engine, live_valid
-from live import Feed
+from live import Feed, live_report
 from vision import BarProfile
 from wininput import WindowsInput
 from calibration import (STEP_LABELS, SPATIAL_KEYS, pending_steps, pending_message,
@@ -118,7 +118,7 @@ class Application:
             self.events.put_nowait((kind, value))
 
     def _build(self):
-        self.root.title('Zyon | Ezreal 0.2.1 | Espaço: Q/W + esquiva | X: last hit')
+        self.root.title('Zyon | Ezreal 0.2.2 | Espaço: Q/W + esquiva | X: last hit')
         self.root.geometry(f'870x{max(700, min(870, self.root.winfo_screenheight()-90))}')
         self.root.minsize(760, 700)
         tabs = ttk.Notebook(self.root)
@@ -175,6 +175,7 @@ class Application:
         self.status.pack(fill='x', padx=8, pady=5)
         self.telemetry = ttk.Label(controls, text='', wraplength=820)
         self.telemetry.pack(fill='x', padx=8)
+        ttk.Button(controls, text='Copiar diagnóstico da partida', command=self.copy_diagnostic).pack(anchor='w', padx=8, pady=3)
         self.preview = ttk.Label(controls)
         self.preview.pack(fill='both', expand=True, padx=8, pady=5)
 
@@ -278,6 +279,17 @@ class Application:
         if self.demo or self.inputs is None:
             messagebox.showinfo('Calibração', 'Captura real exige Windows; o modo demo já possui calibração simulada.')
             return
+        self.armed.clear()
+        if kind in ('automatic', 'geometry'):
+            data, age, status = self.feed.read()
+            report = live_report(data, age, status, max_age=3)
+            if not report['ok']:
+                # Check before hiding the app, so an invalid capture doesn't appear
+                # to open/close the game or bounce focus without an explanation.
+                self.last_message = report['reason']
+                messagebox.showerror('Dados da partida', report['reason']+'\n\n'+status
+                    +'\nUse “Copiar diagnóstico da partida” para obter o motivo detalhado.')
+                return
         if kind == 'projectile':
             try:
                 number(self.projectile_radius.get(), 5, 200)
@@ -297,9 +309,10 @@ class Application:
             resolution = monitor_resolution(monitor)
             self.current_resolution = resolution
             if kind == 'automatic':
-                data, age, _ = self.feed.read()
-                if not live_valid(data, age):
-                    raise ValueError('Abra uma partida com Ezreal vivo para obter uma captura real e telemetria atual.')
+                data, age, status = self.feed.read()
+                report = live_report(data, age, status, max_age=3)
+                if not report['ok']:
+                    raise ValueError(report['reason']+'\n'+status)
                 values, assets, notes = auto_calibrate(frame, data['activePlayer'], GAME_ICONS)
                 for name, crop in assets.items():
                     ok, png = cv2.imencode('.png', crop)
@@ -392,8 +405,9 @@ class Application:
                     try:
                         center, right, bottom = points
                         data, age, _ = self.feed.read()
-                        if not live_valid(data, age):
-                            raise ValueError('Calibração de alcance exige Ezreal vivo e API atual.')
+                        report = live_report(data, age, max_age=3)
+                        if not report['ok']:
+                            raise ValueError(report['reason'])
                         attack_range = data['activePlayer']['championStats']['attackRange']
                         sx = number((right[0]-center[0])/attack_range, .05, 2)
                         sy = number((bottom[1]-center[1])/attack_range, .03, 2)
@@ -492,7 +506,7 @@ class Application:
                     data, age, feed_status = self.feed.read()
                     if not live_valid(data, age):
                         engine.reset_tracking()
-                        self.post('status', feed_status+' | Sem Ezreal vivo/telemetria atual.')
+                        self.post('status', live_report(data, age, feed_status)['reason'])
                         continue
                     if self.demo:
                         now = time.monotonic()
@@ -561,12 +575,13 @@ class Application:
         self.status.configure(text=('ARMADO | ' if self.armed.is_set() else 'DESARMADO | ')+self.last_message)
         self.arm_button.configure(text='Desarmar' if self.armed.is_set() else 'Armar')
         data, age, feed_status = self.feed.read()
-        if data and age < 1:
+        report = live_report(data, age, feed_status)
+        if report['ok']:
             stats = data['activePlayer']['championStats']
-            self.telemetry.configure(text=f'{feed_status} HP {stats["currentHealth"]:.0f} | '
+            self.telemetry.configure(text=f'{report["reason"]} HP {stats["currentHealth"]:.0f} | '
                 f'AD {stats["attackDamage"]:.0f} | mana {stats["resourceValue"]:.0f} | alcance AA {stats["attackRange"]:.0f}')
         else:
-            self.telemetry.configure(text=feed_status)
+            self.telemetry.configure(text=report['reason']+' '+feed_status)
         with self.lock:
             c = self.config['calibration']
             n = len(c.get('projectiles', []))
@@ -584,6 +599,16 @@ class Application:
             +(', '.join(STEP_LABELS[k] for k in steps) if steps else 'nenhuma')
             +f'. Aparências de projéteis: {n}/8.')
         self.root.after(100, self.tick)
+
+    def copy_diagnostic(self):
+        data, age, status = self.feed.read()
+        report = live_report(data, age, status)
+        report['version'] = '0.2.2'
+        report['demo'] = self.demo
+        text = json.dumps(report, indent=2, ensure_ascii=False, allow_nan=False)
+        self.root.clipboard_clear()
+        self.root.clipboard_append(text)
+        self.last_message = 'Diagnóstico copiado. Ele não inclui nome da conta nem a resposta completa da API.'
 
     def close(self):
         self.armed.clear()

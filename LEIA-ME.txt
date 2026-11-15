@@ -1,4 +1,21 @@
-ZYON EZREAL 0.2.1 | WINDOWS 10/11 x64 | REGRAS 16.22
+ZYON EZREAL 0.2.2 | WINDOWS 10/11 x64 | REGRAS 16.22
+
+PARTIDA ABERTA MAS EZREAL NÃO IDENTIFICADO (CORREÇÃO 0.2.2)
+Ferramenta de Treino (PRACTICETOOL) agora é aceita junto de CLASSIC, no mapa 11.
+A versão anterior rejeitava qualquer gameMode diferente de CLASSIC e mostrava
+uma mensagem genérica pedindo Ezreal vivo. Agora a linha de estado distingue:
+API sem conexão, leitura antiga, jogador não identificado, atributos ainda em
+carregamento, campeão errado, morte e mapa/modo não suportado.
+Riot ID pode vir completo ou separado; o programa considera os dois formatos.
+Se não houver IDs, só usa habilidades ativas Q/W de Ezreal quando houver um único
+Ezreal no elenco. Não escolhe um inimigo apenas por ele ser Ezreal.
+Copiar diagnóstico da partida gera um texto sem nome da conta para investigar
+uma falha persistente. Inclui versão, modo/mapa, campeão identificado e motivo.
+O programa não inicia nem encerra partidas. Ele oculta sua própria janela durante
+a captura e a restaura ao concluir ou falhar. Esse retorno pode tirar o foco do
+LoL. A verificação agora ocorre antes de ocultar a janela quando os dados já estão
+inválidos. A calibração aceita uma leitura de até 3 s; ações no jogo continuam
+exigindo telemetria de até 1 s e frame recente.
 
 CALIBRAÇÃO AUTOMÁTICA (NOVA EM 0.2.1)
 O monitor/resolução são lidos do sistema na primeira execução. A ausência de uma
@@ -127,7 +144,8 @@ Sem token Riot. Sem proxies do ambiente nem redirecionamentos. O certificado
 próprio do cliente é aceito somente nesse acesso local. Não envia dados de jogo
 para fora. Instalação pelo pip requer internet; o executável não usa pip.
 Erros de visão/input, F10 ou resolução alterada desarmam. Dados antigos, morte,
-campeão diferente de Ezreal, mapa/modo diferente ou perda de foco impedem ações.
+campeão diferente de Ezreal, mapa diferente de 11, modo diferente de CLASSIC ou
+PRACTICETOOL, ou perda de foco impedem ações.
 Antes de enviar input, revalida tecla segurada, estado armado, telemetria e idade
 do frame. O processo em primeiro plano deve ser League of Legends.exe.
 Input usa SendInput normal. Não inclui driver, injeção ou evasão do Vanguard.

@@ -1,6 +1,6 @@
-ZYON EZREAL 0.2.1 — VALIDAÇÃO
+ZYON EZREAL 0.2.2 — VALIDAÇÃO
 
-52 testes locais aprovados em Python 3.12/Linux:
+74 testes locais aprovados em Python 3.12/Linux:
 - interceptação estacionária e móvel, atraso de conjuração e alvo inalcançável;
 - conversão de escala, bloqueio por minion e compensação de movimento de câmera;
 - esquiva atingível com limite, ausência de rota e área permitida;
@@ -17,6 +17,12 @@ ZYON EZREAL 0.2.1 — VALIDAÇÃO
 - busca de Q/W em escalas diferentes com ícones oficiais e screenshot sintético;
 - detecção de barra cheia e círculo de AA em cena sintética; imagem vazia, vida
   parcial ou ausência de círculo deixam a etapa correspondente pendente.
+- treino identificado como PRACTICETOOL e partida CLASSIC são aceitos no mapa 11;
+- Riot IDs completos/separados, espaços, caixa, nomes únicos e fallback por duas
+  habilidades são tratados sem escolher arbitrariamente um Ezreal adversário;
+- diagnósticos distinguem falhas de API, carregamento, morte, mapa e modo;
+- rejeição é explicada antes de ocultar a janela; captura válida de treino é agendada;
+- texto diagnóstico não inclui nomes da conta nem resposta completa da API.
 
 Interface executada em uma cena sintética sob servidor de vídeo virtual:
 abre, arma, processa quadros, exibe decisões e fecha encerrando o worker de visão.

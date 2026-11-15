@@ -1,12 +1,21 @@
-# Zyon Ezreal 0.2.1
+# Zyon Ezreal 0.2.2
 
 Protótipo para Windows 10/11 x64: **Espaço segurado** ativa Q/W e esquiva dos
 projéteis visuais cadastrados; **X segurado** ativa last hit por AA. **F10** desarma.
 Deslocamento máximo, folga e antecipação da esquiva são configuráveis.
 
+Na versão 0.2.2, o filtro aceita **Ferramenta de Treino (`PRACTICETOOL`)** e
+normal/personalizada (`CLASSIC`) no mapa 11. A identificação considera Riot ID
+completo ou separado, nome único e, se não houver identificadores, duas habilidades
+ativas de Ezreal com apenas um Ezreal no elenco. Casos ambíguos continuam bloqueados.
+
+A linha de estado informa o motivo real de uma rejeição. **Copiar diagnóstico da
+partida** copia modo, mapa, campeão identificado, idade dos dados e motivo, sem
+nome da conta. A captura verifica a conexão antes de ocultar a janela do app.
+
 ## Download
 
-- [Pacote Windows](https://github.com/mateuszilio225/teste-c/releases/download/v0.2.1/zyon-ezreal-win10.zip)
+- [Pacote Windows](https://github.com/mateuszilio225/teste-c/releases/download/v0.2.2/zyon-ezreal-win10.zip)
 - [Código-fonte ZIP](https://github.com/mateuszilio225/teste-c/archive/refs/heads/main.zip)
 - [Estado da compilação Windows](https://github.com/mateuszilio225/teste-c/actions)
 
@@ -49,4 +58,4 @@ python -m unittest discover -s tests -v
 ```
 
 O workflow compila o executável no Windows, testa o código e publica o ZIP na
-release `v0.2.1`. O executável não é assinado.
+release `v0.2.2`. O executável não é assinado.

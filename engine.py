@@ -28,11 +28,8 @@ def inside(point, rect):
 
 
 def live_valid(data, age):
-    from live import own_player
-    own = own_player(data)
-    return bool(age <= 1 and own and own.get('championName') == 'Ezreal'
-                and not own.get('isDead') and data.get('gameData', {}).get('mapNumber') == 11
-                and data.get('gameData', {}).get('gameMode') == 'CLASSIC')
+    from live import live_report
+    return live_report(data, age)['ok']
 
 
 class Engine:
