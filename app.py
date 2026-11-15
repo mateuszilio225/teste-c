@@ -24,6 +24,8 @@ from engine import DEFAULTS, Engine, live_valid
 from live import Feed
 from vision import BarProfile
 from wininput import WindowsInput
+from calibration import (STEP_LABELS, SPATIAL_KEYS, pending_steps, pending_message,
+                         monitor_resolution, apply_capture, auto_calibrate)
 
 BASE = Path(__file__).resolve().parent
 APP_DIR = Path(sys.executable).resolve().parent if getattr(sys, 'frozen', False) else BASE
@@ -33,6 +35,13 @@ DATA.mkdir(exist_ok=True)
 logging.basicConfig(filename=DATA/'app.log', level=logging.INFO,
                     format='%(asctime)s %(levelname)s %(message)s')
 RULES = json.loads((BASE/'rules.json').read_text(encoding='utf-8'))
+GAME_ICONS = json.loads((BASE/'game_icons.json').read_text(encoding='utf-8'))
+
+
+def write_config(config):
+    temp = DATA/'config.tmp'
+    temp.write_text(json.dumps(config, indent=2, allow_nan=False), encoding='utf-8')
+    temp.replace(DATA/'config.json')
 
 
 def asset_path(name):
@@ -55,24 +64,12 @@ def load_templates(config):
     return templates
 
 
-def validate_calibration(config):
-    c = config['calibration']
-    for key in ('resolution', 'viewport', 'projection', 'center', 'self'):
-        if key not in c:
-            raise ValueError(f'Calibração ausente: {key}')
-    sx, sy = c['projection']
-    number(sx, .05, 2)
-    number(sy, .03, 2)
-    if config['combo'] and not all(k in c for k in ('Q', 'W', 'enemy', 'minion')):
-        raise ValueError('Combo exige barras inimigas/minions e ícones Q e W disponíveis.')
-    if config['farm'] and ('minion' not in c or config['minion_hp'] <= 0):
-        raise ValueError('Last hit exige barra e HP máximo do tipo de minion.')
-    if config['dodge'] and not c.get('projectiles'):
-        raise ValueError('Esquiva exige cadastrar ao menos um projétil visual.')
-    if not config['confirmed'] or not config['quickcast']:
-        raise ValueError('Confirme patch/câmera e conjuração rápida de Q/W.')
-    if not any(config[k] for k in ('combo', 'farm', 'dodge')):
-        raise ValueError('Selecione ao menos uma função.')
+def validate_calibration(config, current_resolution=None):
+    message = pending_message(config)
+    if message:
+        raise ValueError(message)
+    if current_resolution is not None and config['calibration']['resolution'] != current_resolution:
+        raise ValueError('O monitor/resolução mudou. Refaça as capturas na aba Calibração.')
 
 
 class Application:
@@ -86,11 +83,14 @@ class Application:
         self.lock = threading.Lock()
         self.config = dict(DEFAULTS, calibration={}, generation=0)
         self.calibrating = False
+        self.current_resolution = None
         self.vars = {}
         self.last_message = 'Desarmado. Faça as calibrações antes de armar.'
         if not demo:
             try:
                 stored = json.loads((DATA/'config.json').read_text(encoding='utf-8'))
+                if not isinstance(stored, dict) or not isinstance(stored.get('calibration', {}), dict):
+                    raise ValueError('Estrutura de configuração inválida.')
                 self.config.update(stored)
             except FileNotFoundError:
                 pass
@@ -103,6 +103,8 @@ class Application:
         self.worker = threading.Thread(target=self._run, daemon=True)
         self.worker.start()
         self.root.after(100, self.tick)
+        if self.inputs:
+            self.root.after(50, self.detect_monitor)
         self.root.protocol('WM_DELETE_WINDOW', self.close)
 
     def post(self, kind, value):
@@ -116,12 +118,14 @@ class Application:
             self.events.put_nowait((kind, value))
 
     def _build(self):
-        self.root.title('Zyon | Ezreal | Espaço: Q/W + esquiva | X: last hit')
+        self.root.title('Zyon | Ezreal 0.2.1 | Espaço: Q/W + esquiva | X: last hit')
         self.root.geometry(f'870x{max(700, min(870, self.root.winfo_screenheight()-90))}')
         self.root.minsize(760, 700)
         tabs = ttk.Notebook(self.root)
+        self.tabs = tabs
         tabs.pack(fill='both', expand=True, padx=8, pady=8)
         controls, setup, help_tab = (ttk.Frame(tabs) for _ in range(3))
+        self.setup_tab = setup
         tabs.add(controls, text='Controles')
         tabs.add(setup, text='Calibração')
         tabs.add(help_tab, text='Instruções')
@@ -164,6 +168,9 @@ class Application:
         ttk.Button(buttons, text='Salvar configuração', command=self.save).pack(side='left')
         self.arm_button = ttk.Button(buttons, text='Armar', command=self.toggle_arm)
         self.arm_button.pack(side='left', padx=8)
+        ttk.Button(buttons, text='Calibrar automaticamente', command=lambda: self.capture('automatic')).pack(side='left')
+        self.progress_label = ttk.Label(controls, text='', wraplength=820)
+        self.progress_label.pack(fill='x', padx=8, pady=3)
         self.status = ttk.Label(controls, text=self.last_message, wraplength=820)
         self.status.pack(fill='x', padx=8, pady=5)
         self.telemetry = ttk.Label(controls, text='', wraplength=820)
@@ -174,6 +181,11 @@ class Application:
         ttk.Label(setup, text='Calibre com o jogo no monitor principal, em janela sem bordas.\n'
                   'Cada captura começa após 3 segundos, permitindo voltar ao jogo.\n'
                   'Mude zoom, escala ou resolução: refaça todas as calibrações.', wraplength=820).pack(anchor='w', padx=8, pady=8)
+        ttk.Button(setup, text='Calibrar automaticamente (captura em 3 s)',
+                   command=lambda: self.capture('automatic')).pack(anchor='w', padx=8, pady=4)
+        ttk.Label(setup, text='Para a tentativa automática: Ezreal com vida cheia, Q/W disponíveis e círculo de AA visível.\n'
+                  'Corpo/HP do minion e exemplos de projéteis continuam exigindo configuração.',
+                  wraplength=820).pack(anchor='w', padx=8, pady=4)
         for kind, label in [('viewport', '1. Área útil do campo (excluir HUD/minimapa)'),
                             ('geometry', '2. Centro do Ezreal e círculo de alcance do AA'),
                             ('self', '3. Sua barra CHEIA e seus pés'),
@@ -212,9 +224,7 @@ class Application:
             cfg = self.settings()
             cfg['generation'] = self.config.get('generation', 0)+1
             if not self.demo:
-                temp = DATA/'config.tmp'
-                temp.write_text(json.dumps(cfg, indent=2, allow_nan=False), encoding='utf-8')
-                temp.replace(DATA/'config.json')
+                write_config(cfg)
             with self.lock:
                 self.config = cfg
             self.last_message = 'Configuração salva. Refaça a calibração se a imagem mudou.'
@@ -230,14 +240,39 @@ class Application:
         if not self.save():
             return
         try:
-            validate_calibration(self.config)
+            validate_calibration(self.config, self.current_resolution)
             if not self.demo:
                 if self.inputs is None:
                     raise ValueError('Input real exige Windows 10/11.')
                 load_templates(self.config)
             self.armed.set()
         except (ValueError, OSError) as exc:
+            if pending_steps(self.config):
+                self.tabs.select(self.setup_tab)
             messagebox.showerror('Armar', str(exc))
+
+    def commit_calibration(self, kind, value, resolution=None):
+        # Capture persistence must not depend on unrelated, unfinished numeric fields.
+        with self.lock:
+            cfg = copy.deepcopy(self.config)
+        cfg['calibration'] = apply_capture(cfg['calibration'], kind, value, resolution)
+        cfg['generation'] = cfg.get('generation', 0)+1
+        if not self.demo:
+            write_config(cfg)
+        with self.lock:
+            self.config = cfg
+
+    def detect_monitor(self):
+        try:
+            with mss.mss() as cap:
+                resolution = monitor_resolution(cap.monitors[1])
+            self.current_resolution = resolution
+            c = self.config['calibration']
+            if not c.get('resolution') and not any(c.get(k) for k in SPATIAL_KEYS if k != 'projectiles'):
+                self.commit_calibration('automatic', {}, resolution)
+            self.last_message = f'Monitor detectado: {resolution[0]} × {resolution[1]}. Complete as etapas indicadas.'
+        except (OSError, ValueError, KeyError, mss.exception.ScreenShotError) as exc:
+            self.last_message = f'Monitor não detectado: {exc}. Use uma captura na aba Calibração.'
 
     def capture(self, kind):
         if self.demo or self.inputs is None:
@@ -259,9 +294,29 @@ class Application:
             with mss.mss() as cap:
                 monitor = cap.monitors[1]
                 frame = np.asarray(cap.grab(monitor))[:, :, :3].copy()
-            with self.lock:
-                self.config['calibration']['resolution'] = [monitor[k] for k in ('width', 'height', 'left', 'top')]
-            self.selection(frame, kind, monitor['left'], monitor['top'])
+            resolution = monitor_resolution(monitor)
+            self.current_resolution = resolution
+            if kind == 'automatic':
+                data, age, _ = self.feed.read()
+                if not live_valid(data, age):
+                    raise ValueError('Abra uma partida com Ezreal vivo para obter uma captura real e telemetria atual.')
+                values, assets, notes = auto_calibrate(frame, data['activePlayer'], GAME_ICONS)
+                for name, crop in assets.items():
+                    ok, png = cv2.imencode('.png', crop)
+                    if not ok:
+                        raise ValueError('Falha ao gravar um ícone detectado.')
+                    asset_path(name).write_bytes(png.tobytes())
+                self.commit_calibration('automatic', values, resolution)
+                detected = ['monitor e resolução']+[STEP_LABELS.get(k, k) for k in values if k != 'center']
+                detected = list(dict.fromkeys('2. Centro e alcance' if k == 'projection' else k for k in detected))
+                self.root.deiconify()
+                self.calibrating = False
+                self.tabs.select(self.setup_tab)
+                self.last_message = 'Detecção automática concluída; confira as pendências na aba Calibração.'
+                messagebox.showinfo('Calibração automática', 'Identificado nesta captura:\n'+', '.join(detected)
+                    +'\n\n'+'\n'.join(notes)+'\n\n'+(pending_message(self.config) or 'Etapas necessárias preenchidas. Confira a imagem e arme quando estiver pronto.'))
+            else:
+                self.selection(frame, kind, monitor['left'], monitor['top'], resolution)
         except Exception as exc:
             self.root.deiconify()
             self.calibrating = False
@@ -293,7 +348,7 @@ class Application:
             self.config['calibration']['projectiles'] = []
         self.save()
 
-    def selection(self, frame, kind, screen_x, screen_y):
+    def selection(self, frame, kind, screen_x, screen_y, resolution=None):
         height, width = frame.shape[:2]
         window = tk.Toplevel(self.root)
         window.overrideredirect(True)
@@ -321,15 +376,9 @@ class Application:
         def error(exc):
             canvas.itemconfigure(label, text=str(exc)+' | Tente novamente ou Esc.')
         def commit(value):
-            with self.lock:
-                if kind == 'geometry':
-                    self.config['calibration'].update(value)
-                elif kind == 'projectile':
-                    self.config['calibration'].setdefault('projectiles', []).append(value)
-                else:
-                    self.config['calibration'][kind] = value
+            self.commit_calibration(kind, value, resolution)
             finish()
-            self.save()
+            self.last_message = 'Etapa de calibração salva. Confira a próxima pendência.'
         def down(event):
             point = (event.x, event.y)
             if kind == 'geometry':
@@ -349,7 +398,7 @@ class Application:
                         sx = number((right[0]-center[0])/attack_range, .05, 2)
                         sy = number((bottom[1]-center[1])/attack_range, .03, 2)
                         commit(dict(center=list(center), projection=[sx, sy]))
-                    except (ValueError, KeyError, ZeroDivisionError) as exc:
+                    except (ValueError, KeyError, ZeroDivisionError, OSError) as exc:
                         state['points'] = []
                         error(exc)
                 return
@@ -359,7 +408,10 @@ class Application:
                 if abs(offset[0]) > 100 or not 0 < offset[1] < 180:
                     error('Ponto de pés/corpo incompatível com a barra. Clique novamente.')
                     return
-                commit(dict(profile=state['bar'].serializable(), offset=offset))
+                try:
+                    commit(dict(profile=state['bar'].serializable(), offset=offset))
+                except OSError as exc:
+                    error(exc)
                 return
             state['start'] = point
             state['box'] = canvas.create_rectangle(*point, *point, outline='cyan')
@@ -517,9 +569,20 @@ class Application:
             self.telemetry.configure(text=feed_status)
         with self.lock:
             c = self.config['calibration']
-            names = ', '.join(k for k in c if k != 'projectiles')
             n = len(c.get('projectiles', []))
-        self.calibration_label.configure(text=f'Calibrado: {names or "nenhum"}. Aparências de projéteis: {n}/8.')
+            config = copy.deepcopy(self.config)
+        try:
+            config = self.settings()
+        except ValueError:
+            pass
+        steps = pending_steps(config)
+        next_step = STEP_LABELS[steps[0]] if steps else 'Etapas necessárias preenchidas.'
+        self.progress_label.configure(text=('Próxima etapa: '+next_step) if steps else next_step)
+        monitor = c.get('resolution')
+        monitor_text = f'{monitor[0]} × {monitor[1]}' if monitor else 'a detectar'
+        self.calibration_label.configure(text=f'Monitor: {monitor_text}. Pendências: '
+            +(', '.join(STEP_LABELS[k] for k in steps) if steps else 'nenhuma')
+            +f'. Aparências de projéteis: {n}/8.')
         self.root.after(100, self.tick)
 
     def close(self):

@@ -1,6 +1,6 @@
-ZYON EZREAL 0.2.0 — VALIDAÇÃO
+ZYON EZREAL 0.2.1 — VALIDAÇÃO
 
-36 testes locais aprovados em Python 3.12/Linux:
+52 testes locais aprovados em Python 3.12/Linux:
 - interceptação estacionária e móvel, atraso de conjuração e alvo inalcançável;
 - conversão de escala, bloqueio por minion e compensação de movimento de câmera;
 - esquiva atingível com limite, ausência de rota e área permitida;
@@ -10,9 +10,17 @@ ZYON EZREAL 0.2.0 — VALIDAÇÃO
 - idade da API, morte, campeão errado, tecla solta, F10 e frame antigo;
 - barras sintéticas cheias/parciais, ticks, formato e cor de calibração;
 - projétil cadastrado produz decisão de esquiva limitada; não cadastrado não produz.
+- primeira execução lista etapas em português, sem mostrar nomes internos de campos;
+- resolução real é registrada sem inventar posição, escala ou imagens de habilidades;
+- mudança de monitor invalida calibrações antigas; captura concluída não depende
+  de campos numéricos ainda incompletos na interface;
+- busca de Q/W em escalas diferentes com ícones oficiais e screenshot sintético;
+- detecção de barra cheia e círculo de AA em cena sintética; imagem vazia, vida
+  parcial ou ausência de círculo deixam a etapa correspondente pendente.
 
 Interface executada em uma cena sintética sob servidor de vídeo virtual:
 abre, arma, processa quadros, exibe decisões e fecha encerrando o worker de visão.
+A aba de calibração com o botão automático e a lista de pendências foi inspecionada.
 O modo demo nunca envia input real. Ele não é uma partida do LoL.
 
 O workflow do GitHub executa os mesmos testes em Windows, abre/arma/fecha a
@@ -24,7 +32,9 @@ Não verificado: eficácia em partida real, identificação sobre imagens reais 
 todas as skins/skills, precisão de last hit e esquiva, navegação por terreno,
 SendInput durante LoL/Vanguard e ausência de banimento. Não há taxa de acerto
 medida nem probabilidade de kill calibrada. Requer calibração manual descrita em
-LEIA-ME.txt. Compatibilidade de execução em Windows 10 real não foi medida.
+LEIA-ME.txt para as etapas não detectadas. A precisão da calibração automática
+em imagens reais do LoL não foi medida. Compatibilidade de execução em Windows
+10 real não foi medida.
 
 As regras de alcance/velocidade/custo/cooldown usadas são do arquivo da Ezreal
 no patch 16.22; rules.json registra URL e SHA-256 da origem consultada.

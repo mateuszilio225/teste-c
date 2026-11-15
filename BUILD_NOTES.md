@@ -1,4 +1,10 @@
-Ezreal 0.2.0 para Windows x64.
+Ezreal 0.2.1 para Windows x64.
+
+- Monitor/resolução detectados do sistema; pendências de calibração em português.
+- Novo botão Calibrar automaticamente: procura ícones, barra e círculo de AA.
+- Detecções incertas continuam pendentes; minion e perfis de projéteis ainda manuais.
+- Capturas persistem independentemente de campos incompletos da interface.
+- Cancelamento não muda o monitor associado às calibrações anteriores.
 
 - Espaço segurado: Q/W e esquiva dos padrões visuais cadastrados.
 - X segurado: last hit assistido por AA. F10 desarma.

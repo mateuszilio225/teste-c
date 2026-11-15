@@ -1,4 +1,22 @@
-ZYON EZREAL 0.2.0 | WINDOWS 10/11 x64 | REGRAS 16.22
+ZYON EZREAL 0.2.1 | WINDOWS 10/11 x64 | REGRAS 16.22
+
+CALIBRAÇÃO AUTOMÁTICA (NOVA EM 0.2.1)
+O monitor/resolução são lidos do sistema na primeira execução. A ausência de uma
+captura agora mostra as etapas faltantes, em vez de "Calibração ausente: resolution".
+Clique Calibrar automaticamente. Há 3 segundos para voltar ao jogo com Ezreal,
+vida cheia, Q/W disponíveis e o círculo de ALCANCE DO AA visível (A, se vinculado).
+O app tenta localizar ícones oficiais da Ezreal, barra própria cheia e círculo.
+Quando reconhece o círculo, mede centro/escala e o deslocamento da sua barra até
+os pés. Também tenta localizar barra inimiga com deslocamento dos pés aproximado.
+A área útil é uma PROPOSTA recortada acima da HUD localizada: confira a prévia.
+Se houver ambiguidade, mantém a etapa pendente e explica qual captura falta.
+Corpo/HP máximo dos minions e exemplos de projéteis continuam exigindo configuração.
+Não são gerados valores fictícios para fazer o botão Armar aceitar uma tela vazia.
+A precisão automática foi testada em cenas sintéticas; não em screenshots reais.
+Capturas são salvas mesmo se houver outro campo numérico ainda incompleto na UI.
+Cancelar uma captura não troca a resolução associada às calibrações anteriores.
+Ao concluir captura em outro monitor/resolução, etapas antigas são invalidadas.
+As calibrações manuais abaixo continuam disponíveis para corrigir o resultado.
 
 CONTROLES
 Espaço segurado: Q/W nos campeões visuais perto do cursor e esquiva dos projéteis
@@ -124,6 +142,9 @@ O pacote não contém treinamento com VODs do Chovy.
 FONTES DE DADOS
 https://developer.riotgames.com/docs/lol#game-client-api_live-client-data-api
 https://raw.communitydragon.org/16.22/game/data/characters/ezreal/ezreal.bin.json
+Ícones usados pela busca visual automática (embutidos em game_icons.json):
+https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/EzrealQ.png
+https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/EzrealW.png
 rules.json inclui URL e SHA-256 do dado consultado. Atualizar patch exige revisar
 dados, fórmulas de percepção e testes. Não há atualização silenciosa de regras.
 
