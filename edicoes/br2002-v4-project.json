@@ -1,0 +1,994 @@
+{
+  "title": "MELHORES MOMENTOS DO BR2002",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "chapters": [
+    {
+      "key": "01",
+      "title": "???? KKKKKKK",
+      "shots": [
+        {
+          "src": "01",
+          "a": 0,
+          "b": 5.4,
+          "layout": "game1",
+          "emojis": [
+            [
+              "skull",
+              4.95,
+              5.4,
+              1390,
+              815,
+              110
+            ]
+          ],
+          "speed": 1,
+          "frames": 162,
+          "duration": 5.4,
+          "offset": 0,
+          "id": "01-00"
+        },
+        {
+          "src": "01",
+          "a": 5.4,
+          "b": 7.35,
+          "layout": "pair1",
+          "z": 1.035,
+          "speed": 0.9915254237288132,
+          "frames": 59,
+          "duration": 1.9666666666666666,
+          "offset": 5.4,
+          "id": "01-01"
+        },
+        {
+          "src": "01",
+          "a": 7.35,
+          "b": 12.8,
+          "layout": "roomthought1",
+          "emojis": [
+            [
+              "laugh",
+              9.9,
+              12.8,
+              1640,
+              710,
+              110
+            ]
+          ],
+          "speed": 0.9969512195121953,
+          "frames": 164,
+          "duration": 5.466666666666667,
+          "offset": 7.366666666666667,
+          "id": "01-02",
+          "thought": [
+            7.35,
+            10.15
+          ]
+        },
+        {
+          "src": "01",
+          "a": 4.2,
+          "b": 5.4,
+          "layout": "game1",
+          "speed": 0.553846153846154,
+          "tag": "REPLAY",
+          "mute": true,
+          "frames": 65,
+          "duration": 2.1666666666666665,
+          "offset": 12.833333333333334,
+          "id": "01-03"
+        },
+        {
+          "src": "01",
+          "a": 14.0,
+          "b": 20.6,
+          "layout": "room1",
+          "z": 1.035,
+          "emojis": [
+            [
+              "laugh",
+              14.3,
+              17.4,
+              1650,
+              730,
+              110
+            ]
+          ],
+          "speed": 1,
+          "frames": 198,
+          "duration": 6.6,
+          "offset": 15.0,
+          "id": "01-04"
+        }
+      ],
+      "cues": [],
+      "music": "comedy",
+      "duration": 21.6
+    },
+    {
+      "key": "02",
+      "title": "A CALL SAIU DO CONTROLE",
+      "shots": [
+        {
+          "src": "02",
+          "a": 11.7,
+          "b": 15.05,
+          "layout": "pair2",
+          "speed": 1,
+          "frames": 101,
+          "duration": 3.3666666666666667,
+          "offset": 0,
+          "id": "02-00"
+        },
+        {
+          "src": "02",
+          "a": 15.05,
+          "b": 17.55,
+          "layout": "pair2",
+          "z": 1.05,
+          "speed": 1,
+          "frames": 75,
+          "duration": 2.5,
+          "offset": 3.3666666666666667,
+          "id": "02-01"
+        },
+        {
+          "src": "02",
+          "a": 17.55,
+          "b": 19.8,
+          "layout": "room2",
+          "speed": 1,
+          "frames": 68,
+          "duration": 2.2666666666666666,
+          "offset": 5.866666666666667,
+          "id": "02-02"
+        },
+        {
+          "src": "02",
+          "a": 19.8,
+          "b": 22.18,
+          "layout": "pair2",
+          "z": 1.06,
+          "boost": 1.35,
+          "emojis": [
+            [
+              "gorilla",
+              19.8,
+              21.95,
+              1655,
+              705,
+              150
+            ]
+          ],
+          "speed": 1,
+          "frames": 71,
+          "duration": 2.3666666666666667,
+          "offset": 8.133333333333333,
+          "id": "02-03"
+        }
+      ],
+      "cues": [
+        {
+          "a": 11.98,
+          "b": 15.03,
+          "text": "Por que só tem gay aqui na call?",
+          "who": "luiz",
+          "size": 48,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 15.4,
+          "b": 16.95,
+          "text": "Ué, qual o problema, cara?",
+          "who": "kaue",
+          "size": 48,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 19.82,
+          "b": 20.45,
+          "text": "ÓÓÓ!",
+          "who": "geandre",
+          "size": 66,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 20.45,
+          "b": 21.85,
+          "text": "CLIPA! CLIPA!",
+          "who": "geandre",
+          "size": 68,
+          "color": "78DBFF",
+          "font": "DejaVu Sans"
+        }
+      ],
+      "music": "comedy",
+      "duration": 10.5
+    },
+    {
+      "key": "07",
+      "title": "PRIMEIRO...",
+      "shots": [
+        {
+          "src": "07",
+          "a": 4.1,
+          "b": 13.35,
+          "layout": "room7",
+          "speed": 1,
+          "frames": 278,
+          "duration": 9.266666666666667,
+          "offset": 0,
+          "id": "07-00"
+        },
+        {
+          "src": "07",
+          "a": 13.35,
+          "b": 18.65,
+          "layout": "pair7",
+          "speed": 1,
+          "frames": 159,
+          "duration": 5.3,
+          "offset": 9.266666666666667,
+          "id": "07-01"
+        },
+        {
+          "src": "07",
+          "a": 18.65,
+          "b": 21.05,
+          "layout": "pair7",
+          "z": 1.07,
+          "speed": 1,
+          "frames": 72,
+          "duration": 2.4,
+          "offset": 14.566666666666666,
+          "id": "07-02"
+        },
+        {
+          "src": "07",
+          "a": 21.05,
+          "b": 22.3,
+          "layout": "right7",
+          "z": 1.08,
+          "speed": 1,
+          "frames": 38,
+          "duration": 1.2666666666666666,
+          "offset": 16.966666666666665,
+          "id": "07-03"
+        },
+        {
+          "src": "07",
+          "a": 22.3,
+          "b": 26.2,
+          "layout": "room7",
+          "boost": 1.18,
+          "emojis": [
+            [
+              "skull",
+              24.0,
+              26.1,
+              1630,
+              700,
+              115
+            ]
+          ],
+          "speed": 1,
+          "frames": 117,
+          "duration": 3.9,
+          "offset": 18.23333333333333,
+          "id": "07-04"
+        },
+        {
+          "src": "07",
+          "a": 26.2,
+          "b": 29.98,
+          "layout": "left7",
+          "z": 1.05,
+          "emojis": [
+            [
+              "skull",
+              27.4,
+              29.9,
+              1620,
+              680,
+              120
+            ]
+          ],
+          "speed": 1,
+          "frames": 113,
+          "duration": 3.7666666666666666,
+          "offset": 22.13333333333333,
+          "id": "07-05"
+        }
+      ],
+      "cues": [
+        {
+          "a": 4.2,
+          "b": 7.65,
+          "text": "Vocês viram o vídeo da namorada do TenZ",
+          "who": "lucas",
+          "size": 48,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 7.65,
+          "b": 10.95,
+          "text": "falando que o Primmie, que tem 18 anos,",
+          "who": "lucas",
+          "size": 48,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 11.45,
+          "b": 13.25,
+          "text": "ia amassar o aspas?",
+          "who": "lucas",
+          "size": 48,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 18.74,
+          "b": 19.16,
+          "text": "PRIMEIRO...",
+          "who": "luiz",
+          "size": 72,
+          "color": "8EDFF5",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 19.16,
+          "b": 19.57,
+          "text": "PRIMEIRO...",
+          "who": "luiz",
+          "size": 76,
+          "color": "8EDFF5",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 19.57,
+          "b": 20.1,
+          "text": "PRIMEIRO...",
+          "who": "luiz",
+          "size": 80,
+          "color": "8EDFF5",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 20.1,
+          "b": 20.9,
+          "text": "Pera aí...",
+          "who": "luiz",
+          "size": 55,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 21.08,
+          "b": 21.55,
+          "text": "MULHER.",
+          "who": "luiz",
+          "size": 82,
+          "color": "7777FF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 24.0,
+          "b": 26.05,
+          "text": "LIL TÁ EM LIVE!",
+          "who": "geandre",
+          "size": 62,
+          "color": "78DBFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 27.3,
+          "b": 29.75,
+          "text": "CANCELADO!",
+          "who": "lil",
+          "size": 78,
+          "color": "7777FF",
+          "font": "DejaVu Sans"
+        }
+      ],
+      "music": "comedy",
+      "duration": 25.899999999999995
+    },
+    {
+      "key": "05",
+      "title": "QUEM TÁ FUNGANDO?",
+      "shots": [
+        {
+          "src": "05",
+          "a": 0,
+          "b": 3.2,
+          "layout": "fullgame3",
+          "speed": 1,
+          "frames": 96,
+          "duration": 3.2,
+          "offset": 0,
+          "id": "05-00",
+          "emojis": []
+        },
+        {
+          "src": "05",
+          "a": 3.2,
+          "b": 11.8,
+          "layout": "pair5",
+          "emojis": [
+            [
+              "thinking",
+              4.0,
+              7.4,
+              1645,
+              700,
+              125
+            ]
+          ],
+          "speed": 1,
+          "frames": 258,
+          "duration": 8.6,
+          "offset": 3.2,
+          "id": "05-01"
+        },
+        {
+          "src": "05",
+          "a": 11.8,
+          "b": 18.5,
+          "layout": "pair5",
+          "z": 1.045,
+          "emojis": [],
+          "speed": 1,
+          "frames": 201,
+          "duration": 6.7,
+          "offset": 11.8,
+          "id": "05-02"
+        },
+        {
+          "src": "05",
+          "a": 18.5,
+          "b": 26.95,
+          "layout": "frontsolo5",
+          "emojis": [
+            [
+              "angry",
+              22.05,
+              26.7,
+              1640,
+              710,
+              120
+            ],
+            [
+              "laugh",
+              20,
+              21.85,
+              1645,
+              700,
+              110
+            ]
+          ],
+          "speed": 1,
+          "frames": 253,
+          "duration": 8.433333333333334,
+          "offset": 18.5,
+          "id": "05-03"
+        }
+      ],
+      "cues": [
+        {
+          "a": 0.05,
+          "b": 2.7,
+          "text": "هذا الكلام سريع جدًا...",
+          "who": "lucas",
+          "size": 61,
+          "color": "FFFFFF",
+          "font": "Noto Naskh Arabic"
+        },
+        {
+          "a": 3.3,
+          "b": 5.0,
+          "text": "؟؟؟",
+          "who": null,
+          "size": 86,
+          "color": "8EDFF5",
+          "font": "Noto Naskh Arabic"
+        },
+        {
+          "a": 12.0,
+          "b": 13.7,
+          "text": "???",
+          "who": null,
+          "size": 84,
+          "color": "8EDFF5",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 20.0,
+          "b": 21.85,
+          "text": "KKKKKKK",
+          "who": "geandre",
+          "size": 50,
+          "color": "BCF0C8",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 22.05,
+          "b": 24.25,
+          "text": "Por que tem alguém fungando",
+          "who": "luiz",
+          "size": 49,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 24.25,
+          "b": 26.55,
+          "text": "na minha orelha?!",
+          "who": "luiz",
+          "size": 56,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        }
+      ],
+      "music": "comedy",
+      "duration": 26.933333333333334
+    },
+    {
+      "key": "04",
+      "title": "DANCEHALL DO NEO",
+      "shots": [
+        {
+          "src": "04",
+          "a": 0,
+          "b": 5.5,
+          "layout": "pair2026",
+          "neo": true,
+          "emojis": [
+            [
+              "question",
+              3.0,
+              5.45,
+              1610,
+              710,
+              125
+            ]
+          ],
+          "speed": 1,
+          "frames": 165,
+          "duration": 5.5,
+          "offset": 0,
+          "id": "04-00"
+        },
+        {
+          "src": "04",
+          "a": 5.5,
+          "b": 8.5,
+          "layout": "dance2026",
+          "z": 1.03,
+          "mute": true,
+          "speed": 1,
+          "frames": 90,
+          "duration": 3.0,
+          "offset": 5.5,
+          "id": "04-01"
+        },
+        {
+          "src": "04",
+          "a": 5.5,
+          "b": 8.5,
+          "layout": "dance2026",
+          "z": 1.08,
+          "mute": true,
+          "dance_repeat": true,
+          "speed": 1,
+          "frames": 90,
+          "duration": 3.0,
+          "offset": 8.5,
+          "id": "04-02"
+        }
+      ],
+      "cues": [
+        {
+          "a": 0,
+          "b": 0.95,
+          "text": "Dancehall...",
+          "who": "lil",
+          "size": 53,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 1.78,
+          "b": 2.9,
+          "text": "Dancehall, caralho!",
+          "who": "lucas",
+          "size": 54,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 3.0,
+          "b": 3.85,
+          "text": "Dancehall do Neo?",
+          "who": "lucas",
+          "size": 57,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 4.5,
+          "b": 5.5,
+          "text": "Dancehall do Neo?!",
+          "who": "lucas",
+          "size": 57,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        }
+      ],
+      "music": "dancehall",
+      "duration": 11.5
+    },
+    {
+      "key": "03",
+      "title": "O LUCAS ATACA DE NOVO",
+      "shots": [
+        {
+          "src": "03",
+          "a": 0,
+          "b": 7.2,
+          "layout": "fullgame3",
+          "speed": 1,
+          "frames": 216,
+          "duration": 7.2,
+          "offset": 0,
+          "id": "03-00",
+          "emojis": []
+        },
+        {
+          "src": "03",
+          "a": 7.2,
+          "b": 10.4,
+          "layout": "fullgame3",
+          "emojis": [],
+          "speed": 1,
+          "frames": 96,
+          "duration": 3.2,
+          "offset": 7.2,
+          "id": "03-01"
+        },
+        {
+          "src": "03",
+          "a": 10.4,
+          "b": 19.8,
+          "layout": "fullgame3",
+          "emojis": [],
+          "speed": 1,
+          "frames": 282,
+          "duration": 9.4,
+          "offset": 10.4,
+          "id": "03-02"
+        },
+        {
+          "src": "03",
+          "a": 19.8,
+          "b": 26.9,
+          "layout": "fullgame3",
+          "emojis": [],
+          "speed": 1,
+          "frames": 213,
+          "duration": 7.1,
+          "offset": 19.8,
+          "id": "03-03"
+        },
+        {
+          "src": "03",
+          "a": 26.9,
+          "b": 29.98,
+          "layout": "fullgame3",
+          "emojis": [
+            [
+              "sad",
+              27.35,
+              29.95,
+              1570,
+              890,
+              100
+            ]
+          ],
+          "speed": 1,
+          "frames": 92,
+          "duration": 3.066666666666667,
+          "offset": 26.9,
+          "id": "03-04"
+        }
+      ],
+      "cues": [
+        {
+          "a": 0.15,
+          "b": 5.8,
+          "text": "E lá vai o Lucas fungar no mic dnv...",
+          "who": null,
+          "size": 50,
+          "color": "8EDFF5",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 27.35,
+          "b": 29.95,
+          "text": "Ai, mano...",
+          "who": "luiz",
+          "size": 59,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        }
+      ],
+      "music": "none",
+      "duration": 29.966666666666665
+    },
+    {
+      "key": "06",
+      "title": "GEANDRE SE REVELANDO...",
+      "shots": [
+        {
+          "src": "06",
+          "a": 2.7,
+          "b": 8.0,
+          "layout": "pair2026",
+          "speed": 1,
+          "frames": 159,
+          "duration": 5.3,
+          "offset": 0,
+          "id": "06-00"
+        },
+        {
+          "src": "06",
+          "a": 8.0,
+          "b": 10.65,
+          "layout": "pair2026",
+          "z": 1.04,
+          "speed": 1,
+          "frames": 80,
+          "duration": 2.6666666666666665,
+          "offset": 5.3,
+          "id": "06-01"
+        },
+        {
+          "src": "06",
+          "a": 10.65,
+          "b": 16.3,
+          "layout": "pair2026",
+          "z": 1.03,
+          "speed": 1,
+          "frames": 170,
+          "duration": 5.666666666666667,
+          "offset": 7.966666666666667,
+          "id": "06-02"
+        },
+        {
+          "src": "06",
+          "a": 16.3,
+          "b": 20.8,
+          "layout": "pair2026",
+          "emojis": [
+            [
+              "question",
+              17,
+              18.8,
+              1640,
+              710,
+              115
+            ]
+          ],
+          "speed": 1,
+          "frames": 135,
+          "duration": 4.5,
+          "offset": 13.633333333333333,
+          "id": "06-03"
+        },
+        {
+          "src": "06",
+          "a": 20.8,
+          "b": 27.5,
+          "layout": "pair2026",
+          "emojis": [
+            [
+              "laugh",
+              23,
+              27.4,
+              1650,
+              720,
+              115
+            ]
+          ],
+          "speed": 1,
+          "frames": 201,
+          "duration": 6.7,
+          "offset": 18.133333333333333,
+          "id": "06-04"
+        }
+      ],
+      "cues": [
+        {
+          "a": 3.08,
+          "b": 5.95,
+          "text": "Me sinto muito sujo, velho, sei lá.",
+          "who": "geandre",
+          "size": 50,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 8.1,
+          "b": 9.65,
+          "text": "Tu pode continuar tomando banho",
+          "who": "luiz",
+          "size": 48,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 9.65,
+          "b": 10.65,
+          "text": "quando tua barba cresce.",
+          "who": "luiz",
+          "size": 49,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 10.65,
+          "b": 12.1,
+          "text": "Sim, mas...",
+          "who": "geandre",
+          "size": 51,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 12.52,
+          "b": 15.75,
+          "text": "Encosta no rosto...",
+          "who": "geandre",
+          "size": 47,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 17,
+          "b": 18.55,
+          "text": "Ai, moça...",
+          "who": "menta",
+          "size": 58,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 20.94,
+          "b": 23.0,
+          "text": "TIRE CLIPE DISTO!",
+          "who": "lucas",
+          "size": 65,
+          "color": "78DBFF",
+          "font": "DejaVu Sans"
+        }
+      ],
+      "music": "comedy",
+      "duration": 24.833333333333332
+    },
+    {
+      "key": "08",
+      "title": "DANÇA",
+      "music": "dance-groove",
+      "shots": [
+        {
+          "id": "08-00",
+          "src": "08",
+          "a": 0,
+          "b": 8.0,
+          "speed": 1,
+          "frames": 240,
+          "duration": 8.0,
+          "offset": 0,
+          "layout": "dance8",
+          "emojis": []
+        },
+        {
+          "id": "08-01",
+          "src": "08",
+          "a": 8.0,
+          "b": 14.8,
+          "speed": 1,
+          "frames": 204,
+          "duration": 6.8,
+          "offset": 8.0,
+          "layout": "dance8",
+          "emojis": []
+        },
+        {
+          "id": "08-02",
+          "src": "08",
+          "a": 14.8,
+          "b": 19.4,
+          "speed": 1,
+          "frames": 138,
+          "duration": 4.6,
+          "offset": 14.8,
+          "layout": "dance8",
+          "emojis": []
+        },
+        {
+          "id": "08-03",
+          "src": "08",
+          "a": 5.5,
+          "b": 8.5,
+          "speed": 1,
+          "frames": 90,
+          "duration": 3.0,
+          "offset": 19.4,
+          "layout": "dance8",
+          "emojis": [],
+          "mute": true,
+          "dance_repeat": true,
+          "outro": true
+        }
+      ],
+      "cues": [
+        {
+          "a": 0.05,
+          "b": 1.15,
+          "text": "Caralho!",
+          "who": "lucas",
+          "size": 56,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 8.14,
+          "b": 9.92,
+          "text": "TIRE CLIPE DISTO",
+          "who": "lucas",
+          "size": 62,
+          "color": "78DBFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 9.92,
+          "b": 11.35,
+          "text": "por favor!",
+          "who": "lucas",
+          "size": 55,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 15.78,
+          "b": 17.7,
+          "text": "Mano, na moral...",
+          "who": "lucas",
+          "size": 55,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        },
+        {
+          "a": 17.7,
+          "b": 19.25,
+          "text": "que porra é essa?!",
+          "who": "lucas",
+          "size": 61,
+          "color": "FFFFFF",
+          "font": "DejaVu Sans"
+        }
+      ],
+      "caption_confirmation": "The user confirmed the wording for 8–12s and 16–19s.",
+      "duration": 22.4
+    }
+  ],
+  "intro_frames": 69,
+  "transition_frames": 7,
+  "outro": null
+}
