@@ -1,0 +1,14 @@
+{
+  "filename": "melhores-momentos-br2002-v5.mp4",
+  "bytes": 96759160,
+  "sha256": "a3f7a04a1870bdca22ffe55d8e679a7e60fab3f98c0a1ed0cb6b09f83d9121f1",
+  "seconds": 177.6,
+  "video_frames": 5327,
+  "changed_video_frames": 69,
+  "entire_audio_packets_unchanged": true,
+  "video_packets_after_intro_unchanged": true,
+  "packet_timestamps_unchanged": true,
+  "full_decode": "passed",
+  "intro_photo": "User-supplied br2002.png collage from the provided Google Drive link. Full collage fitted without removing any faces.",
+  "visual_review": "User collage, full faces, title and framing inspected in the rendered intro."
+}
