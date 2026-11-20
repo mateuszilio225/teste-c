@@ -1,0 +1,23 @@
+{
+  "file": "melhores-momentos-br2002-v3.mp4",
+  "sha256": "a6513fb03ac9e4f8831e50f6887ba20af5c118d6e24b0819482e4c6c6b177c1d",
+  "bytes": 69042936,
+  "duration": 159.0,
+  "video_frames": 4768,
+  "video_bitstream_unchanged": true,
+  "video_bitstream_sha256": "SHA256=8ec7ef4feb46743e7ab10da8f3a45f7f7bb45a1b7fb34a371b078a273bd6a087",
+  "full_decode": "passed",
+  "audio_repair": {
+    "section_start": 99.9,
+    "section_end": 129.86666666666667,
+    "source": "03",
+    "original_source": "/workspace/attachments/d36ac995-1c7b-43ce-a13a-e8b3a3d1ae7b/20240728_HungrySavageCocoaWow-R8m7Rj0ceS8Q4Miy_source.mp4",
+    "action": "Remove added instrumental bed for entire Lucas-sniffing/Luiz segment; retain one original source audio track. No other clip audio is mixed in this segment.",
+    "master_scale": 0.9998668219760948,
+    "old_mix_reconstruction_rmse": 1.7699028830975294e-05,
+    "clean_source_rmse": 2.602313361421693e-05,
+    "outside_patch_max_difference": 3.0517578125e-05,
+    "samples": 7628800,
+    "frames": 4768
+  }
+}
