@@ -1,0 +1,188 @@
+{
+  "frames": 127494,
+  "duration": 2124.9,
+  "chronological": true,
+  "source_coverage_seconds": 2150,
+  "no_source_gaps": true,
+  "no_source_repeats": true,
+  "universal_anime_avatar": true,
+  "gameplay_visible_throughout": true,
+  "segments": [
+    {
+      "id": "00-source-0000",
+      "frames": 3600
+    },
+    {
+      "id": "01-source-0060",
+      "frames": 3600
+    },
+    {
+      "id": "02-source-0120",
+      "frames": 3600
+    },
+    {
+      "id": "03-source-0180",
+      "frames": 3600
+    },
+    {
+      "id": "04-source-0240",
+      "frames": 3600
+    },
+    {
+      "id": "05-source-0300",
+      "frames": 3600
+    },
+    {
+      "id": "06-source-0360",
+      "frames": 2580
+    },
+    {
+      "id": "07-runes",
+      "frames": 324
+    },
+    {
+      "id": "08-source-0403",
+      "frames": 1020
+    },
+    {
+      "id": "09-source-0420",
+      "frames": 3600
+    },
+    {
+      "id": "10-source-0480",
+      "frames": 1500
+    },
+    {
+      "id": "11-source-0505",
+      "frames": 390
+    },
+    {
+      "id": "12-source-0518",
+      "frames": 1320
+    },
+    {
+      "id": "13-source-0540",
+      "frames": 1680
+    },
+    {
+      "id": "14-source-0568",
+      "frames": 780
+    },
+    {
+      "id": "15-source-0594",
+      "frames": 360
+    },
+    {
+      "id": "16-source-0600",
+      "frames": 3600
+    },
+    {
+      "id": "17-source-0660",
+      "frames": 3600
+    },
+    {
+      "id": "18-source-0720",
+      "frames": 3600
+    },
+    {
+      "id": "19-source-0780",
+      "frames": 3600
+    },
+    {
+      "id": "20-source-0840",
+      "frames": 3600
+    },
+    {
+      "id": "21-source-0900",
+      "frames": 3600
+    },
+    {
+      "id": "22-source-0960",
+      "frames": 3600
+    },
+    {
+      "id": "23-source-1020",
+      "frames": 3600
+    },
+    {
+      "id": "24-source-1080",
+      "frames": 3600
+    },
+    {
+      "id": "25-source-1140",
+      "frames": 3600
+    },
+    {
+      "id": "26-source-1200",
+      "frames": 3600
+    },
+    {
+      "id": "27-source-1260",
+      "frames": 3600
+    },
+    {
+      "id": "28-source-1320",
+      "frames": 3600
+    },
+    {
+      "id": "29-source-1380",
+      "frames": 3600
+    },
+    {
+      "id": "30-source-1440",
+      "frames": 3600
+    },
+    {
+      "id": "31-source-1500",
+      "frames": 3600
+    },
+    {
+      "id": "32-source-1560",
+      "frames": 1440
+    },
+    {
+      "id": "33-source-1584",
+      "frames": 660
+    },
+    {
+      "id": "34-source-1606",
+      "frames": 840
+    },
+    {
+      "id": "35-source-1620",
+      "frames": 3600
+    },
+    {
+      "id": "36-source-1680",
+      "frames": 3600
+    },
+    {
+      "id": "37-source-1740",
+      "frames": 3600
+    },
+    {
+      "id": "38-source-1800",
+      "frames": 3600
+    },
+    {
+      "id": "39-source-1860",
+      "frames": 3600
+    },
+    {
+      "id": "40-source-1920",
+      "frames": 3600
+    },
+    {
+      "id": "41-source-1980",
+      "frames": 3600
+    },
+    {
+      "id": "42-source-2040",
+      "frames": 3600
+    },
+    {
+      "id": "43-source-2100",
+      "frames": 3000
+    }
+  ]
+}

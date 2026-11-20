@@ -1,0 +1,1252 @@
+{
+  "title": "Viego — gameplay completa do draft ao fim",
+  "version": 2,
+  "status": "completed and verified",
+  "source": "source-original.mp4",
+  "fps": 60,
+  "width": 1280,
+  "height": 720,
+  "source_duration": 2150.005,
+  "segments": [
+    {
+      "id": "00-source-0000",
+      "label": "source_0",
+      "kind": "source",
+      "a": 0,
+      "b": 60,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 0,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "01-source-0060",
+      "label": "source_60",
+      "kind": "source",
+      "a": 60,
+      "b": 120,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 60.0,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "02-source-0120",
+      "label": "source_120",
+      "kind": "source",
+      "a": 120,
+      "b": 180,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 120.0,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "03-source-0180",
+      "label": "source_180",
+      "kind": "source",
+      "a": 180,
+      "b": 240,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 180.0,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": [
+        [
+          203.4,
+          206.0
+        ]
+      ]
+    },
+    {
+      "id": "04-source-0240",
+      "label": "source_240",
+      "kind": "source",
+      "a": 240,
+      "b": 300,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 240.0,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "05-source-0300",
+      "label": "source_300",
+      "kind": "source",
+      "a": 300,
+      "b": 360,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 300.0,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "champion_reveal",
+          "champion": "Viego",
+          "a": 315,
+          "b": 319
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "06-source-0360",
+      "label": "source_360",
+      "kind": "source",
+      "a": 360,
+      "b": 403,
+      "speed": 1,
+      "layout": "full",
+      "frames": 2580,
+      "duration": 43.0,
+      "start": 360.0,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "07-runes",
+      "label": "runes",
+      "kind": "card",
+      "a": 0,
+      "b": 5.4,
+      "speed": 1,
+      "layout": "card",
+      "frames": 324,
+      "duration": 5.4,
+      "start": 403.0,
+      "media": "assets/rune-card/runes-animated.mp4",
+      "audio": "assets/rune-card/stinger.wav",
+      "mute_source": false,
+      "effects": [],
+      "reason": "Runes before gameplay; source resumes at the same point"
+    },
+    {
+      "id": "08-source-0403",
+      "label": "source_403",
+      "kind": "source",
+      "a": 403,
+      "b": 420,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1020,
+      "duration": 17.0,
+      "start": 408.4,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "09-source-0420",
+      "label": "source_420",
+      "kind": "source",
+      "a": 420,
+      "b": 480,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 425.4,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "10-source-0480",
+      "label": "source_480",
+      "kind": "source",
+      "a": 480,
+      "b": 505,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1500,
+      "duration": 25.0,
+      "start": 485.4,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "11-source-0505",
+      "label": "source_505",
+      "kind": "source",
+      "a": 505,
+      "b": 518,
+      "speed": 2,
+      "layout": "full",
+      "frames": 390,
+      "duration": 6.5,
+      "start": 510.4,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "12-source-0518",
+      "label": "source_518",
+      "kind": "source",
+      "a": 518,
+      "b": 540,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1320,
+      "duration": 22.0,
+      "start": 516.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "13-source-0540",
+      "label": "source_540",
+      "kind": "source",
+      "a": 540,
+      "b": 568,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1680,
+      "duration": 28.0,
+      "start": 538.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "14-source-0568",
+      "label": "source_568",
+      "kind": "source",
+      "a": 568,
+      "b": 594,
+      "speed": 2,
+      "layout": "full",
+      "frames": 780,
+      "duration": 13.0,
+      "start": 566.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "15-source-0594",
+      "label": "source_594",
+      "kind": "source",
+      "a": 594,
+      "b": 600,
+      "speed": 1,
+      "layout": "full",
+      "frames": 360,
+      "duration": 6.0,
+      "start": 579.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "16-source-0600",
+      "label": "source_600",
+      "kind": "source",
+      "a": 600,
+      "b": 660,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 585.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "17-source-0660",
+      "label": "source_660",
+      "kind": "source",
+      "a": 660,
+      "b": 720,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 645.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "double_kill",
+          "a": 715.1,
+          "b": 717.2
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "18-source-0720",
+      "label": "source_720",
+      "kind": "source",
+      "a": 720,
+      "b": 780,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 705.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "combo_note",
+          "champion": "Jhin",
+          "text": "Q → 4º TIRO",
+          "a": 752,
+          "b": 756
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "19-source-0780",
+      "label": "source_780",
+      "kind": "source",
+      "a": 780,
+      "b": 840,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 765.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "20-source-0840",
+      "label": "source_840",
+      "kind": "source",
+      "a": 840,
+      "b": 900,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 825.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "21-source-0900",
+      "label": "source_900",
+      "kind": "source",
+      "a": 900,
+      "b": 960,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 885.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "emoji",
+          "name": "basketball",
+          "a": 940.78,
+          "b": 945.05
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "22-source-0960",
+      "label": "source_960",
+      "kind": "source",
+      "a": 960,
+      "b": 1020,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 945.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "23-source-1020",
+      "label": "source_1020",
+      "kind": "source",
+      "a": 1020,
+      "b": 1080,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1005.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "reset",
+          "a": 1033,
+          "b": 1035
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "24-source-1080",
+      "label": "source_1080",
+      "kind": "source",
+      "a": 1080,
+      "b": 1140,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1065.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "25-source-1140",
+      "label": "source_1140",
+      "kind": "source",
+      "a": 1140,
+      "b": 1200,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1125.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "26-source-1200",
+      "label": "source_1200",
+      "kind": "source",
+      "a": 1200,
+      "b": 1260,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1185.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "27-source-1260",
+      "label": "source_1260",
+      "kind": "source",
+      "a": 1260,
+      "b": 1320,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1245.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "emoji",
+          "name": "question",
+          "a": 1299,
+          "b": 1301.5
+        }
+      ],
+      "zoom_windows": [
+        [
+          1299,
+          1301.5
+        ]
+      ]
+    },
+    {
+      "id": "28-source-1320",
+      "label": "source_1320",
+      "kind": "source",
+      "a": 1320,
+      "b": 1380,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1305.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "champion_pop",
+          "champion": "Bard",
+          "a": 1320,
+          "b": 1323
+        },
+        {
+          "type": "sleep",
+          "a": 1352,
+          "b": 1356
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "29-source-1380",
+      "label": "source_1380",
+      "kind": "source",
+      "a": 1380,
+      "b": 1440,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1365.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "30-source-1440",
+      "label": "source_1440",
+      "kind": "source",
+      "a": 1440,
+      "b": 1500,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1425.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "31-source-1500",
+      "label": "source_1500",
+      "kind": "source",
+      "a": 1500,
+      "b": 1560,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1485.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "32-source-1560",
+      "label": "source_1560",
+      "kind": "source",
+      "a": 1560,
+      "b": 1584,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1440,
+      "duration": 24.0,
+      "start": 1545.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "emoji",
+          "name": "popcorn",
+          "a": 1560,
+          "b": 1563.8
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "33-source-1584",
+      "label": "source_1584",
+      "kind": "source",
+      "a": 1584,
+      "b": 1606,
+      "speed": 2,
+      "layout": "full",
+      "frames": 660,
+      "duration": 11.0,
+      "start": 1569.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": true,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "34-source-1606",
+      "label": "source_1606",
+      "kind": "source",
+      "a": 1606,
+      "b": 1620,
+      "speed": 1,
+      "layout": "full",
+      "frames": 840,
+      "duration": 14.0,
+      "start": 1580.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "35-source-1620",
+      "label": "source_1620",
+      "kind": "source",
+      "a": 1620,
+      "b": 1680,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1594.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "36-source-1680",
+      "label": "source_1680",
+      "kind": "source",
+      "a": 1680,
+      "b": 1740,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1654.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "37-source-1740",
+      "label": "source_1740",
+      "kind": "source",
+      "a": 1740,
+      "b": 1800,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1714.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "38-source-1800",
+      "label": "source_1800",
+      "kind": "source",
+      "a": 1800,
+      "b": 1860,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1774.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "39-source-1860",
+      "label": "source_1860",
+      "kind": "source",
+      "a": 1860,
+      "b": 1920,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1834.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "40-source-1920",
+      "label": "source_1920",
+      "kind": "source",
+      "a": 1920,
+      "b": 1980,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1894.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "reset",
+          "a": 1935,
+          "b": 1937
+        }
+      ],
+      "zoom_windows": [
+        [
+          1960.82,
+          1964.36
+        ]
+      ]
+    },
+    {
+      "id": "41-source-1980",
+      "label": "source_1980",
+      "kind": "source",
+      "a": 1980,
+      "b": 2040,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 1954.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "item_focus",
+          "item": "Hidra Titânica",
+          "a": 2018,
+          "b": 2022
+        }
+      ],
+      "zoom_windows": [
+        [
+          2018.42,
+          2022.4
+        ]
+      ]
+    },
+    {
+      "id": "42-source-2040",
+      "label": "source_2040",
+      "kind": "source",
+      "a": 2040,
+      "b": 2100,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3600,
+      "duration": 60.0,
+      "start": 2014.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "43-source-2100",
+      "label": "source_2100",
+      "kind": "source",
+      "a": 2100,
+      "b": 2150,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3000,
+      "duration": 50.0,
+      "start": 2074.9,
+      "reason": "Continuous chronological gameplay",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "double_kill",
+          "a": 2120.5,
+          "b": 2123.0
+        },
+        {
+          "type": "exit_popup",
+          "a": 2134,
+          "b": 2137
+        }
+      ],
+      "zoom_windows": []
+    }
+  ],
+  "cues": [
+    {
+      "a": 106.6,
+      "b": 107.7,
+      "text": "MATEUS!",
+      "who": "anime",
+      "size": 40,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 110.04,
+      "b": 112.9,
+      "text": "Escolhe pro Pereira, Lucas!",
+      "who": "anime",
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 128.88,
+      "b": 130.72,
+      "text": "Thresh, Blitz, Lulu, Leona...",
+      "who": "anime",
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 137.42,
+      "b": 139.6,
+      "text": "Não tô muito pra escolher boneco, não.",
+      "who": "anime",
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 286.22,
+      "b": 288.9,
+      "text": "Depois pergunta por que não querem jogar com a gente...",
+      "who": "anime",
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 546,
+      "b": 548,
+      "text": "Isso aí se chama cheat...",
+      "who": "anime",
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 551,
+      "b": 553,
+      "text": "HACKER DO BEM",
+      "who": "anime",
+      "size": 38,
+      "color": "8EEED9"
+    },
+    {
+      "a": 602,
+      "b": 604,
+      "text": "Dá um W!",
+      "who": "anime",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 604,
+      "b": 606,
+      "text": "Dá um W, Geandre!",
+      "who": "anime",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 825,
+      "b": 829,
+      "text": "QUE NICK É ESSE?",
+      "who": "anime",
+      "size": 37,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 923.44,
+      "b": 924.95,
+      "text": "Eu não tava namorando, velho.",
+      "who": "anime",
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 927.36,
+      "b": 928.7,
+      "text": "TAVA JOGANDO BOLA!",
+      "who": "anime",
+      "size": 37,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 940.78,
+      "b": 942.75,
+      "text": "Bola ou basquete?",
+      "who": "anime",
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 943.74,
+      "b": 945.05,
+      "text": "Tava jogando os dois.",
+      "who": "anime",
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 946.12,
+      "b": 948.7,
+      "text": "Basquete se joga com bola também.",
+      "who": "anime",
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1056.5,
+      "b": 1058.8,
+      "text": "TÔ SEM MANA, TIME!",
+      "who": "anime",
+      "size": 38,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1062.02,
+      "b": 1064.6,
+      "text": "Não sabia que o Dr. Mundo era tão forte!",
+      "who": "anime",
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1072.92,
+      "b": 1074.8,
+      "text": "Trolei, trolei...",
+      "who": "anime",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1115,
+      "b": 1119,
+      "text": "É fácil acertar esse W...",
+      "who": "anime",
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1194.64,
+      "b": 1198,
+      "text": "Todo mundo aqui, velho. Esquece.",
+      "who": "anime",
+      "size": 32,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1256,
+      "b": 1258.8,
+      "text": "SHEN?!",
+      "who": "anime",
+      "size": 42,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1320,
+      "b": 1323.5,
+      "text": "Tá em todo lugar!",
+      "who": "anime",
+      "size": 36,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1354.0,
+      "b": 1355.7,
+      "text": "Nosso jungle tá dormindo...",
+      "who": "anime",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1355.7,
+      "b": 1358.4,
+      "text": "20 segundos, cara!",
+      "who": "anime",
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1358.46,
+      "b": 1360.2,
+      "text": "20 segundos, pô. Exatamente!",
+      "who": "anime",
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1362.64,
+      "b": 1365.15,
+      "text": "Peguei o Arauto e o Drake. Vai falar o quê?",
+      "who": "anime",
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1365.88,
+      "b": 1367.14,
+      "text": "Eu quero ver então.",
+      "who": "anime",
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1370.38,
+      "b": 1373.9,
+      "text": "Agora Arauto mid. Olha lá!",
+      "who": "anime",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1394.0,
+      "b": 1397.9,
+      "text": "TIRE CLIPE DESTA MASTERCLASS!",
+      "who": "anime",
+      "size": 35,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1452,
+      "b": 1455,
+      "text": "MEU DEUS, CARA!",
+      "who": "anime",
+      "size": 38,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1475,
+      "b": 1478,
+      "text": "O bait é nosso!",
+      "who": "anime",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1486,
+      "b": 1489,
+      "text": "A GENTE JOGA MUITO!",
+      "who": "anime",
+      "size": 39,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1560.0,
+      "b": 1563.8,
+      "text": "Dois mil reais em pipoca do cinema?",
+      "who": "anime",
+      "size": 32,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1568.14,
+      "b": 1571.66,
+      "text": "É muito boa a pipoca do cinema.",
+      "who": "anime",
+      "size": 32,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1574.7,
+      "b": 1578.1,
+      "text": "Tem coisa melhor...",
+      "who": "anime",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1638,
+      "b": 1640,
+      "text": "CLIPA ISSO!",
+      "who": "anime",
+      "size": 39,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1689,
+      "b": 1691,
+      "text": "AMASSA, LIL!",
+      "who": "anime",
+      "size": 39,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1703,
+      "b": 1705,
+      "text": "Bora, bora, bora!",
+      "who": "anime",
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1810,
+      "b": 1812,
+      "text": "Na teoria...",
+      "who": "anime",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1902,
+      "b": 1904,
+      "text": "MATEI! MATEI!",
+      "who": "anime",
+      "size": 40,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1929.5,
+      "b": 1931.5,
+      "text": "VAMO VIRAR!",
+      "who": "anime",
+      "size": 37,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1938.6,
+      "b": 1939.45,
+      "text": "Nossa Senhora!",
+      "who": "anime",
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1943.08,
+      "b": 1943.85,
+      "text": "Tem W?",
+      "who": "anime",
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1945.88,
+      "b": 1946.65,
+      "text": "Errei, time...",
+      "who": "anime",
+      "size": 32,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1948.5,
+      "b": 1950.15,
+      "text": "Meu Q não saiu!",
+      "who": "anime",
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1960.82,
+      "b": 1964.36,
+      "text": "TÔ MATANDO OS CARAS AQUI!",
+      "who": "anime",
+      "size": 36,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1964.36,
+      "b": 1965.35,
+      "text": "Puxa isso, por favor!",
+      "who": "anime",
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2018.42,
+      "b": 2020.55,
+      "text": "A build tem Hidra Titânica...",
+      "who": "anime",
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2020.55,
+      "b": 2022.4,
+      "text": "Vale a pena?",
+      "who": "anime",
+      "size": 36,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2022.78,
+      "b": 2024.22,
+      "text": "É bom pra caralho, dá muito dano!",
+      "who": "anime",
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2024.28,
+      "b": 2025.4,
+      "text": "É bom. Muito bom.",
+      "who": "anime",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2040.44,
+      "b": 2041.5,
+      "text": "Eu faço Suserano.",
+      "who": "anime",
+      "size": 32,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2105,
+      "b": 2108,
+      "text": "MEU DEUS!",
+      "who": "anime",
+      "size": 40,
+      "color": "FFFFFF"
+    }
+  ],
+  "avatar_note": "One decorative anime avatar for every caption. No speaker identities, portraits or names.",
+  "chronology": "All source time covered exactly once in increasing order. No future hook, repeats or disconnected highlight selection.",
+  "source_end_note": "Original recording ends after exit/reconnect; victory/defeat not captured.",
+  "duration": 2124.9,
+  "source_coverage_seconds": 2150
+}
