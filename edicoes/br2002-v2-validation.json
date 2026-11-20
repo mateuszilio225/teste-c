@@ -1,0 +1,22 @@
+{
+  "filename": "melhores-momentos-br2002-v2.mp4",
+  "sha256": "b5c56528f5a61ee9226c877e5fc170a4b16013ada0fdb5311caaad41055c1ab5",
+  "bytes": 69082235,
+  "frames": 4768,
+  "duration": 158.93333333333334,
+  "full_decode": "passed",
+  "frame_clock": "passed",
+  "audio_metrics": {
+    "input_i": "-15.89",
+    "input_tp": "-0.64",
+    "input_lra": "8.30",
+    "input_thresh": "-26.69",
+    "output_i": "-16.30",
+    "output_tp": "-1.50",
+    "output_lra": "7.20",
+    "output_thresh": "-26.95",
+    "normalization_type": "dynamic",
+    "target_offset": "0.30"
+  },
+  "visual_review": "Intro, air punches and thought bubble, frog transition, Geandre laughter, Lucas/Patati, sixth-clip full gameplay/death and ending dance checked."
+}
