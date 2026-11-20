@@ -1,0 +1,37 @@
+segment,source_start,source_end,speed,output_start,output_duration,reason
+00-hook,1957,1964.5,1,0,7.5,Amostra breve do reset e da fala durante a luta
+01-draft_call,104,113,1,7.5,9.0,Chamam Mateus antes do pick
+02-draft_choices,120,143,1,16.5,23.0,Conversa sobre as escolhas da equipe
+03-draft_reaction,203,216,1,39.5,13.0,Reação ao tempo de escolha
+04-draft_banter,281,293,1,52.5,12.0,Brincadeira sobre os convites para jogar
+05-viego_pick,305,325,1,64.5,20.0,Escolha do Viego; apresentação animada do campeão
+06-pregame_chat,372,403,1,84.5,31.0,Conversa de pré-jogo
+07-runes,0,5.4,1,115.5,5.4,Quadro original de runas confirmado pelo print do usuário
+08-opening_route,442,463,1,120.9,21.0,Rota inicial e conversa sobre o começo da jungle
+09-first_clear,505,518,4,141.9,3.25,Trecho breve de farm acelerado
+10-pings_banter,535,553,1,145.15,18.0,Brincadeira sobre os pings e o hacker do bem
+11-clear_bridge,568,594,5,163.15,5.2,Farm sem momento importante; passagem acelerada
+12-first_gank,596,621,1,168.35,25.0,Primeira tentativa de gank e chamadas de W
+13-first_double,684,723,1,193.35,39.0,"Preparação, luta e primeira dupla eliminação"
+14-jhin_talk,744,771,1,232.35,27.0,Conversa sobre Q e quarto tiro do Jhin
+15-nickname,824,839,1,259.35,15.0,Reações ao nick
+16-lucas_banter,895,907,1,274.35,12.0,Brincadeira com Lucas
+17-basketball,923,951,1,286.35,28.0,Resposta sobre jogar bola e basquete
+18-midgame_resets,1018,1080,1,314.35,62.0,Lutas e resets no meio da partida
+19-w_conversation,1105,1121,1,376.35,16.0,Comentários sobre acertar o W
+20-danger,1188,1213,1,392.35,25.0,Convergência dos adversários e tentativa de saída
+21-shen_rotation,1241,1259,1,417.35,18.0,Discussão da rotação do Shen
+22-first_death,1294,1305,1,435.35,11.0,Morte e reação imediata
+23-bard_everywhere,1310,1331,1,446.35,21.0,Reclamação sobre o Bardo estar em todo lugar
+24-herald_argument,1352,1400,1,467.35,48.0,Discussão de objetivo e jogada do Arauto
+25-river_fight,1447,1512,1,515.35,65.0,Luta prolongada e desfecho no rio
+26-cinema_banter,1560,1582,1,580.35,22.0,Brincadeira sobre pipoca do cinema
+27-next_double,1607,1658,1,602.35,51.0,Luta com duas eliminações e reações
+28-followup_kill,1685,1718,1,653.35,33.0,Continuação da pressão e mais uma eliminação
+29-second_death,1771,1812,1,686.35,41.0,"Decisão no mapa, luta e morte"
+30-recovery,1878,1920,1,727.35,42.0,Retomada da pressão e eliminação
+31-reset_chain,1926,1982,1,769.35,56.0,Sequência de lutas e resets do Viego
+32-build_question,2015,2028,1,825.35,13.0,Pergunta sobre Hidra Titânica; destaque animado do item
+33-build_answer,2040,2052,1,838.35,12.0,Conclusão da conversa sobre a build
+34-final_double,2085,2130,1,850.35,45.0,Última luta e dupla eliminação; placar chega a 15/3/5
+35-exit_reaction,2130,2148,1,895.35,18.0,Saída da partida e reações reais; não inventar um resultado final

@@ -1,0 +1,10 @@
+[0:v]zoompan=z='1.003+on*0.00010':x='(iw-iw/zoom)/2':y='(ih-ih/zoom)/2':d=1:s=1280x720:fps=30,format=rgba[b0];
+[1:v]format=rgba,fade=t=in:st=0.08:d=0.22:alpha=1[l1];
+[b0][l1]overlay=x='-24*exp(-9*(t-0.08))':y=0:enable='gte(t,0.08)':shortest=1[b1];
+[2:v]format=rgba,fade=t=in:st=0.28:d=0.22:alpha=1[l2];
+[b1][l2]overlay=x='-24*exp(-9*(t-0.28))':y=0:enable='gte(t,0.28)':shortest=1[b2];
+[3:v]format=rgba,fade=t=in:st=0.54:d=0.22:alpha=1[l3];
+[b2][l3]overlay=x='-24*exp(-9*(t-0.54))':y=0:enable='gte(t,0.54)':shortest=1[b3];
+[4:v]format=rgba,fade=t=in:st=0.82:d=0.22:alpha=1[l4];
+[b3][l4]overlay=x='-24*exp(-9*(t-0.82))':y=0:enable='gte(t,0.82)':shortest=1[b4];
+[b4]fade=t=out:st=5.17:d=0.23,format=yuv420p,setparams=range=limited:color_primaries=bt709:color_trc=bt709:colorspace=bt709[v]

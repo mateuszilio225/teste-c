@@ -1,0 +1,1171 @@
+{
+  "title": "Viego — gameplay e zoeira",
+  "version": 1,
+  "status": "rendering original 720p60",
+  "source": "source-original.mp4",
+  "proxy": "review-proxy.mp4",
+  "fps": 60,
+  "width": 1280,
+  "height": 720,
+  "duration": 913.35,
+  "source_duration": 2150.005,
+  "segments": [
+    {
+      "id": "00-hook",
+      "label": "hook",
+      "kind": "source",
+      "a": 1957,
+      "b": 1964.5,
+      "speed": 1,
+      "layout": "full",
+      "frames": 450,
+      "duration": 7.5,
+      "start": 0,
+      "reason": "Amostra breve do reset e da fala durante a luta",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": [
+        [
+          1960.82,
+          1964.36
+        ]
+      ]
+    },
+    {
+      "id": "01-draft_call",
+      "label": "draft_call",
+      "kind": "source",
+      "a": 104,
+      "b": 113,
+      "speed": 1,
+      "layout": "trio",
+      "frames": 540,
+      "duration": 9.0,
+      "start": 7.5,
+      "reason": "Chamam Mateus antes do pick",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "02-draft_choices",
+      "label": "draft_choices",
+      "kind": "source",
+      "a": 120,
+      "b": 143,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1380,
+      "duration": 23.0,
+      "start": 16.5,
+      "reason": "Conversa sobre as escolhas da equipe",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "03-draft_reaction",
+      "label": "draft_reaction",
+      "kind": "source",
+      "a": 203,
+      "b": 216,
+      "speed": 1,
+      "layout": "trio",
+      "frames": 780,
+      "duration": 13.0,
+      "start": 39.5,
+      "reason": "Reação ao tempo de escolha",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": [
+        [
+          203.4,
+          206.0
+        ]
+      ]
+    },
+    {
+      "id": "04-draft_banter",
+      "label": "draft_banter",
+      "kind": "source",
+      "a": 281,
+      "b": 293,
+      "speed": 1,
+      "layout": "trio",
+      "frames": 720,
+      "duration": 12.0,
+      "start": 52.5,
+      "reason": "Brincadeira sobre os convites para jogar",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "05-viego_pick",
+      "label": "viego_pick",
+      "kind": "source",
+      "a": 305,
+      "b": 325,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1200,
+      "duration": 20.0,
+      "start": 64.5,
+      "reason": "Escolha do Viego; apresentação animada do campeão",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "champion_reveal",
+          "champion": "Viego",
+          "a": 315,
+          "b": 319
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "06-pregame_chat",
+      "label": "pregame_chat",
+      "kind": "source",
+      "a": 372,
+      "b": 403,
+      "speed": 1,
+      "layout": "trio",
+      "frames": 1860,
+      "duration": 31.0,
+      "start": 84.5,
+      "reason": "Conversa de pré-jogo",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "07-runes",
+      "label": "runes",
+      "kind": "card",
+      "a": 0,
+      "b": 5.4,
+      "speed": 1,
+      "layout": "card",
+      "frames": 324,
+      "duration": 5.4,
+      "start": 115.5,
+      "reason": "Quadro original de runas confirmado pelo print do usuário",
+      "mute_source": false,
+      "effects": [],
+      "media": "assets/rune-card/runes-animated.mp4",
+      "audio": "assets/rune-card/stinger.wav",
+      "zoom_windows": []
+    },
+    {
+      "id": "08-opening_route",
+      "label": "opening_route",
+      "kind": "source",
+      "a": 442,
+      "b": 463,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1260,
+      "duration": 21.0,
+      "start": 120.9,
+      "reason": "Rota inicial e conversa sobre o começo da jungle",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "09-first_clear",
+      "label": "first_clear",
+      "kind": "source",
+      "a": 505,
+      "b": 518,
+      "speed": 4,
+      "layout": "full",
+      "frames": 195,
+      "duration": 3.25,
+      "start": 141.9,
+      "reason": "Trecho breve de farm acelerado",
+      "mute_source": true,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "10-pings_banter",
+      "label": "pings_banter",
+      "kind": "source",
+      "a": 535,
+      "b": 553,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1080,
+      "duration": 18.0,
+      "start": 145.15,
+      "reason": "Brincadeira sobre os pings e o hacker do bem",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "11-clear_bridge",
+      "label": "clear_bridge",
+      "kind": "source",
+      "a": 568,
+      "b": 594,
+      "speed": 5,
+      "layout": "full",
+      "frames": 312,
+      "duration": 5.2,
+      "start": 163.15,
+      "reason": "Farm sem momento importante; passagem acelerada",
+      "mute_source": true,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "12-first_gank",
+      "label": "first_gank",
+      "kind": "source",
+      "a": 596,
+      "b": 621,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1500,
+      "duration": 25.0,
+      "start": 168.35,
+      "reason": "Primeira tentativa de gank e chamadas de W",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "13-first_double",
+      "label": "first_double",
+      "kind": "source",
+      "a": 684,
+      "b": 723,
+      "speed": 1,
+      "layout": "full",
+      "frames": 2340,
+      "duration": 39.0,
+      "start": 193.35,
+      "reason": "Preparação, luta e primeira dupla eliminação",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "double_kill",
+          "a": 715.1,
+          "b": 717.2
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "14-jhin_talk",
+      "label": "jhin_talk",
+      "kind": "source",
+      "a": 744,
+      "b": 771,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1620,
+      "duration": 27.0,
+      "start": 232.35,
+      "reason": "Conversa sobre Q e quarto tiro do Jhin",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "combo_note",
+          "champion": "Jhin",
+          "text": "Q → 4º TIRO",
+          "a": 752,
+          "b": 756
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "15-nickname",
+      "label": "nickname",
+      "kind": "source",
+      "a": 824,
+      "b": 839,
+      "speed": 1,
+      "layout": "trio",
+      "frames": 900,
+      "duration": 15.0,
+      "start": 259.35,
+      "reason": "Reações ao nick",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "16-lucas_banter",
+      "label": "lucas_banter",
+      "kind": "source",
+      "a": 895,
+      "b": 907,
+      "speed": 1,
+      "layout": "trio",
+      "frames": 720,
+      "duration": 12.0,
+      "start": 274.35,
+      "reason": "Brincadeira com Lucas",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "17-basketball",
+      "label": "basketball",
+      "kind": "source",
+      "a": 923,
+      "b": 951,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1680,
+      "duration": 28.0,
+      "start": 286.35,
+      "reason": "Resposta sobre jogar bola e basquete",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "emoji",
+          "name": "basketball",
+          "a": 940.78,
+          "b": 945.05
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "18-midgame_resets",
+      "label": "midgame_resets",
+      "kind": "source",
+      "a": 1018,
+      "b": 1080,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3720,
+      "duration": 62.0,
+      "start": 314.35,
+      "reason": "Lutas e resets no meio da partida",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "reset",
+          "a": 1033,
+          "b": 1035
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "19-w_conversation",
+      "label": "w_conversation",
+      "kind": "source",
+      "a": 1105,
+      "b": 1121,
+      "speed": 1,
+      "layout": "full",
+      "frames": 960,
+      "duration": 16.0,
+      "start": 376.35,
+      "reason": "Comentários sobre acertar o W",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "20-danger",
+      "label": "danger",
+      "kind": "source",
+      "a": 1188,
+      "b": 1213,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1500,
+      "duration": 25.0,
+      "start": 392.35,
+      "reason": "Convergência dos adversários e tentativa de saída",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "21-shen_rotation",
+      "label": "shen_rotation",
+      "kind": "source",
+      "a": 1241,
+      "b": 1259,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1080,
+      "duration": 18.0,
+      "start": 417.35,
+      "reason": "Discussão da rotação do Shen",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "22-first_death",
+      "label": "first_death",
+      "kind": "source",
+      "a": 1294,
+      "b": 1305,
+      "speed": 1,
+      "layout": "full",
+      "frames": 660,
+      "duration": 11.0,
+      "start": 435.35,
+      "reason": "Morte e reação imediata",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "emoji",
+          "name": "question",
+          "a": 1299,
+          "b": 1301.5
+        }
+      ],
+      "zoom_windows": [
+        [
+          1299,
+          1301.5
+        ]
+      ]
+    },
+    {
+      "id": "23-bard_everywhere",
+      "label": "bard_everywhere",
+      "kind": "source",
+      "a": 1310,
+      "b": 1331,
+      "speed": 1,
+      "layout": "trio",
+      "frames": 1260,
+      "duration": 21.0,
+      "start": 446.35,
+      "reason": "Reclamação sobre o Bardo estar em todo lugar",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "champion_pop",
+          "champion": "Bard",
+          "a": 1320,
+          "b": 1323
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "24-herald_argument",
+      "label": "herald_argument",
+      "kind": "source",
+      "a": 1352,
+      "b": 1400,
+      "speed": 1,
+      "layout": "full",
+      "frames": 2880,
+      "duration": 48.0,
+      "start": 467.35,
+      "reason": "Discussão de objetivo e jogada do Arauto",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "sleep",
+          "a": 1352,
+          "b": 1356
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "25-river_fight",
+      "label": "river_fight",
+      "kind": "source",
+      "a": 1447,
+      "b": 1512,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3900,
+      "duration": 65.0,
+      "start": 515.35,
+      "reason": "Luta prolongada e desfecho no rio",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "26-cinema_banter",
+      "label": "cinema_banter",
+      "kind": "source",
+      "a": 1560,
+      "b": 1582,
+      "speed": 1,
+      "layout": "trio",
+      "frames": 1320,
+      "duration": 22.0,
+      "start": 580.35,
+      "reason": "Brincadeira sobre pipoca do cinema",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "emoji",
+          "name": "popcorn",
+          "a": 1560,
+          "b": 1563.8
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "27-next_double",
+      "label": "next_double",
+      "kind": "source",
+      "a": 1607,
+      "b": 1658,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3060,
+      "duration": 51.0,
+      "start": 602.35,
+      "reason": "Luta com duas eliminações e reações",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "28-followup_kill",
+      "label": "followup_kill",
+      "kind": "source",
+      "a": 1685,
+      "b": 1718,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1980,
+      "duration": 33.0,
+      "start": 653.35,
+      "reason": "Continuação da pressão e mais uma eliminação",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "29-second_death",
+      "label": "second_death",
+      "kind": "source",
+      "a": 1771,
+      "b": 1812,
+      "speed": 1,
+      "layout": "full",
+      "frames": 2460,
+      "duration": 41.0,
+      "start": 686.35,
+      "reason": "Decisão no mapa, luta e morte",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "30-recovery",
+      "label": "recovery",
+      "kind": "source",
+      "a": 1878,
+      "b": 1920,
+      "speed": 1,
+      "layout": "full",
+      "frames": 2520,
+      "duration": 42.0,
+      "start": 727.35,
+      "reason": "Retomada da pressão e eliminação",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "31-reset_chain",
+      "label": "reset_chain",
+      "kind": "source",
+      "a": 1926,
+      "b": 1982,
+      "speed": 1,
+      "layout": "full",
+      "frames": 3360,
+      "duration": 56.0,
+      "start": 769.35,
+      "reason": "Sequência de lutas e resets do Viego",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "reset",
+          "a": 1935,
+          "b": 1937
+        }
+      ],
+      "zoom_windows": [
+        [
+          1960.82,
+          1964.36
+        ]
+      ]
+    },
+    {
+      "id": "32-build_question",
+      "label": "build_question",
+      "kind": "source",
+      "a": 2015,
+      "b": 2028,
+      "speed": 1,
+      "layout": "full",
+      "frames": 780,
+      "duration": 13.0,
+      "start": 825.35,
+      "reason": "Pergunta sobre Hidra Titânica; destaque animado do item",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "item_focus",
+          "item": "Hidra Titânica",
+          "a": 2018,
+          "b": 2022
+        }
+      ],
+      "zoom_windows": [
+        [
+          2018.42,
+          2022.4
+        ]
+      ]
+    },
+    {
+      "id": "33-build_answer",
+      "label": "build_answer",
+      "kind": "source",
+      "a": 2040,
+      "b": 2052,
+      "speed": 1,
+      "layout": "full",
+      "frames": 720,
+      "duration": 12.0,
+      "start": 838.35,
+      "reason": "Conclusão da conversa sobre a build",
+      "mute_source": false,
+      "effects": [],
+      "zoom_windows": []
+    },
+    {
+      "id": "34-final_double",
+      "label": "final_double",
+      "kind": "source",
+      "a": 2085,
+      "b": 2130,
+      "speed": 1,
+      "layout": "full",
+      "frames": 2700,
+      "duration": 45.0,
+      "start": 850.35,
+      "reason": "Última luta e dupla eliminação; placar chega a 15/3/5",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "double_kill",
+          "a": 2120.5,
+          "b": 2123.0
+        }
+      ],
+      "zoom_windows": []
+    },
+    {
+      "id": "35-exit_reaction",
+      "label": "exit_reaction",
+      "kind": "source",
+      "a": 2130,
+      "b": 2148,
+      "speed": 1,
+      "layout": "full",
+      "frames": 1080,
+      "duration": 18.0,
+      "start": 895.35,
+      "reason": "Saída da partida e reações reais; não inventar um resultado final",
+      "mute_source": false,
+      "effects": [
+        {
+          "type": "exit_popup",
+          "a": 2134,
+          "b": 2137
+        }
+      ],
+      "zoom_windows": []
+    }
+  ],
+  "cues": [
+    {
+      "a": 106.6,
+      "b": 107.7,
+      "text": "MATEUS!",
+      "who": "geandre",
+      "size": 40,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 110.04,
+      "b": 112.9,
+      "text": "Escolhe pro Pereira, Lucas!",
+      "who": "geandre",
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 128.88,
+      "b": 130.72,
+      "text": "Thresh, Blitz, Lulu, Leona...",
+      "who": null,
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 137.42,
+      "b": 139.6,
+      "text": "Não tô muito pra escolher boneco, não.",
+      "who": null,
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 286.22,
+      "b": 288.9,
+      "text": "Depois pergunta por que não querem jogar com a gente...",
+      "who": null,
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 546,
+      "b": 548,
+      "text": "Isso aí se chama cheat...",
+      "who": null,
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 551,
+      "b": 553,
+      "text": "HACKER DO BEM",
+      "who": null,
+      "size": 38,
+      "color": "8EEED9"
+    },
+    {
+      "a": 602,
+      "b": 604,
+      "text": "Dá um W!",
+      "who": "lil",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 604,
+      "b": 606,
+      "text": "Dá um W, Geandre!",
+      "who": "lil",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 825,
+      "b": 829,
+      "text": "QUE NICK É ESSE?",
+      "who": null,
+      "size": 37,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 923.44,
+      "b": 924.95,
+      "text": "Eu não tava namorando, velho.",
+      "who": "lucas",
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 927.36,
+      "b": 928.7,
+      "text": "TAVA JOGANDO BOLA!",
+      "who": "lucas",
+      "size": 37,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 940.78,
+      "b": 942.75,
+      "text": "Bola ou basquete?",
+      "who": null,
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 943.74,
+      "b": 945.05,
+      "text": "Tava jogando os dois.",
+      "who": "lucas",
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 946.12,
+      "b": 948.7,
+      "text": "Basquete se joga com bola também.",
+      "who": null,
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1056.5,
+      "b": 1058.8,
+      "text": "TÔ SEM MANA, TIME!",
+      "who": "geandre",
+      "size": 38,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1062.02,
+      "b": 1064.6,
+      "text": "Não sabia que o Dr. Mundo era tão forte!",
+      "who": null,
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1072.92,
+      "b": 1074.8,
+      "text": "Trolei, trolei...",
+      "who": null,
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1115,
+      "b": 1119,
+      "text": "É fácil acertar esse W...",
+      "who": null,
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1194.64,
+      "b": 1198,
+      "text": "Todo mundo aqui, velho. Esquece.",
+      "who": "lil",
+      "size": 32,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1256,
+      "b": 1258.8,
+      "text": "SHEN?!",
+      "who": null,
+      "size": 42,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1320,
+      "b": 1323.5,
+      "text": "Tá em todo lugar!",
+      "who": null,
+      "size": 36,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1354.0,
+      "b": 1355.7,
+      "text": "Nosso jungle tá dormindo...",
+      "who": null,
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1355.7,
+      "b": 1358.4,
+      "text": "20 segundos, cara!",
+      "who": null,
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1358.46,
+      "b": 1360.2,
+      "text": "20 segundos, pô. Exatamente!",
+      "who": null,
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1362.64,
+      "b": 1365.15,
+      "text": "Peguei o Arauto e o Drake. Vai falar o quê?",
+      "who": null,
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1365.88,
+      "b": 1367.14,
+      "text": "Eu quero ver então.",
+      "who": null,
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1370.38,
+      "b": 1373.9,
+      "text": "Agora Arauto mid. Olha lá!",
+      "who": null,
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1394.0,
+      "b": 1397.9,
+      "text": "TIRE CLIPE DESTA MASTERCLASS!",
+      "who": "lucas",
+      "size": 35,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1452,
+      "b": 1455,
+      "text": "MEU DEUS, CARA!",
+      "who": null,
+      "size": 38,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1475,
+      "b": 1478,
+      "text": "O bait é nosso!",
+      "who": "lil",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1486,
+      "b": 1489,
+      "text": "A GENTE JOGA MUITO!",
+      "who": null,
+      "size": 39,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1560.0,
+      "b": 1563.8,
+      "text": "Dois mil reais em pipoca do cinema?",
+      "who": null,
+      "size": 32,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1568.14,
+      "b": 1571.66,
+      "text": "É muito boa a pipoca do cinema.",
+      "who": null,
+      "size": 32,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1574.7,
+      "b": 1578.1,
+      "text": "Tem coisa melhor...",
+      "who": "pereira",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1638,
+      "b": 1640,
+      "text": "CLIPA ISSO!",
+      "who": "lucas",
+      "size": 39,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1689,
+      "b": 1691,
+      "text": "AMASSA, LIL!",
+      "who": null,
+      "size": 39,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1703,
+      "b": 1705,
+      "text": "Bora, bora, bora!",
+      "who": null,
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1810,
+      "b": 1812,
+      "text": "Na teoria...",
+      "who": "lil",
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1902,
+      "b": 1904,
+      "text": "MATEI! MATEI!",
+      "who": "lil",
+      "size": 40,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1929.5,
+      "b": 1931.5,
+      "text": "VAMO VIRAR!",
+      "who": null,
+      "size": 37,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1938.6,
+      "b": 1939.45,
+      "text": "Nossa Senhora!",
+      "who": null,
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1943.08,
+      "b": 1943.85,
+      "text": "Tem W?",
+      "who": null,
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1945.88,
+      "b": 1946.65,
+      "text": "Errei, time...",
+      "who": null,
+      "size": 32,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1948.5,
+      "b": 1950.15,
+      "text": "Meu Q não saiu!",
+      "who": null,
+      "size": 35,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 1960.82,
+      "b": 1964.36,
+      "text": "TÔ MATANDO OS CARAS AQUI!",
+      "who": "lil",
+      "size": 36,
+      "color": "8EEED9"
+    },
+    {
+      "a": 1964.36,
+      "b": 1965.35,
+      "text": "Puxa isso, por favor!",
+      "who": null,
+      "size": 33,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2018.42,
+      "b": 2020.55,
+      "text": "A build tem Hidra Titânica...",
+      "who": "lil",
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2020.55,
+      "b": 2022.4,
+      "text": "Vale a pena?",
+      "who": "lil",
+      "size": 36,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2022.78,
+      "b": 2024.22,
+      "text": "É bom pra caralho, dá muito dano!",
+      "who": null,
+      "size": 31,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2024.28,
+      "b": 2025.4,
+      "text": "É bom. Muito bom.",
+      "who": null,
+      "size": 34,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2040.44,
+      "b": 2041.5,
+      "text": "Eu faço Suserano.",
+      "who": null,
+      "size": 32,
+      "color": "FFFFFF"
+    },
+    {
+      "a": 2105,
+      "b": 2108,
+      "text": "MEU DEUS!",
+      "who": null,
+      "size": 40,
+      "color": "FFFFFF"
+    }
+  ],
+  "speaker_cameras": {
+    "geandre": [
+      0,
+      0,
+      284,
+      180
+    ],
+    "menta": [
+      0,
+      548,
+      314,
+      172
+    ],
+    "lucas": [
+      996,
+      508,
+      284,
+      212
+    ]
+  },
+  "avatar_map": {
+    "geandre": "anime com chifre",
+    "menta": "anime verde original",
+    "lucas": "Patati/Patatá",
+    "lil": "Discord azul",
+    "pereira": "Snoopy"
+  },
+  "runes": {
+    "primary": [
+      9923,
+      8143,
+      8137,
+      8135
+    ],
+    "secondary": [
+      9111,
+      9104
+    ]
+  },
+  "source_quality_note": "Verified native original 1280x72060 MPEG-TS; full sequential seek comparison matches.",
+  "reference_note": "User supplied an item-highlight screenshot. Mylon video was found but playback was inaccessible in this environment.",
+  "source_end_note": "Recording shows a double kill, exit confirmation and reconnect screen; no match victory/defeat result captured."
+}

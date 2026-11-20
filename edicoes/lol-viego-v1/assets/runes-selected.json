@@ -1,0 +1,56 @@
+[
+  {
+    "id": 9923,
+    "key": "HailOfBlades",
+    "icon": "perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png",
+    "name": "Chuva de Lâminas",
+    "shortDesc": "Recebe uma grande quantidade de Velocidade de Ataque e <trueDamage>Dano Verdadeiro</trueDamage> adicional pelos primeiros 3 ataques contra Campeões inimigos.",
+    "longDesc": "Recebe 90% (60% para Campeões de ataque à distância) de Velocidade de Ataque e <trueDamage>Dano Verdadeiro adicional</trueDamage> ao atacar um Campeão inimigo por até 3 ataques.<br><br>O efeito acabará caso passe mais de 3s entre os ataques.<br><br>Tempo de Recarga: 10s.<br>Dano ao contato: 2 - 20 (+0.12 de DdA adicional, +0.1 de PdH) de dano.<br><br><rules>Reinicializações de ataques aumentam o limite de ataques em 1.<br>Permite exceder temporariamente o limite de Velocidade de Ataque.</rules>",
+    "tree": "Dominação"
+  },
+  {
+    "id": 8143,
+    "key": "SuddenImpact",
+    "icon": "perk-images/Styles/Domination/SuddenImpact/SuddenImpact.png",
+    "name": "Impacto Repentino",
+    "shortDesc": "Depois de usar um avanço, salto, teleporte ou ao sair da furtividade, seus ataques básicos e habilidades de dano causam Dano Verdadeiro adicional a Campeões inimigos.",
+    "longDesc": "Depois de usar um avanço, salto, teleporte ou ao sair da furtividade, seus ataques básicos e habilidades de dano causam <trueDamage>20 - 80 de Dano Verdadeiro</trueDamage> adicional com base no nível a Campeões inimigos por 4s.<br><br>Tempo de Recarga: 10s",
+    "tree": "Dominação"
+  },
+  {
+    "id": 8137,
+    "key": "SixthSense",
+    "icon": "perk-images/Styles/Domination/SixthSense/SixthSense.png",
+    "name": "Sexto Sentido",
+    "shortDesc": "Com um longo Tempo de Recarga, detecta automaticamente uma sentinela oculta próxima, rastreando-a para a equipe. <br><br>Nível 11: também revela a sentinela por 10s.",
+    "longDesc": "Detecta automaticamente uma sentinela oculta próxima, rastreando-a para a equipe. <br><br>Nível 11: também revela a sentinela por 10s.<br><br>O efeito tem um Tempo de Recarga de 250s.",
+    "tree": "Dominação"
+  },
+  {
+    "id": 8135,
+    "key": "TreasureHunter",
+    "icon": "perk-images/Styles/Domination/TreasureHunter/TreasureHunter.png",
+    "name": "Caçador de Tesouros",
+    "shortDesc": "<lol-uikit-tooltipped-keyword key='LinkTooltip_Description_Takedown'>Eliminações</lol-uikit-tooltipped-keyword> <b>únicas</b> concedem ouro adicional na primeira vez que são coletadas. ",
+    "longDesc": "Receba <gold>50 de ouro</gold> adicional na próxima vez que coletar um acúmulo de <i>Caçador de Recompensas</i>. Aumente o ouro recebido em <gold>20 de ouro</gold> para cada acúmulo de <i>Caçador de Recompensas</i>, até <gold>130 de ouro</gold>.<br><br>Acúmulos de <i>Caçador de Recompensas</i> serão recebidos na primeira vez que você eliminar cada Campeão inimigo.",
+    "tree": "Dominação"
+  },
+  {
+    "id": 9111,
+    "key": "Triumph",
+    "icon": "perk-images/Styles/Precision/Triumph.png",
+    "name": "Triunfo",
+    "shortDesc": "<lol-uikit-tooltipped-keyword key='LinkTooltip_Description_Takedown'>Eliminações</lol-uikit-tooltipped-keyword> restauram 5% da sua Vida perdida e concedem 20 de ouro adicional. ",
+    "longDesc": "Eliminações restauram 5% da sua Vida perdida, 2.5% da sua Vida Máxima e concedem 20 de ouro adicional. <br><br><hr><br><i>''O jogo mais perigoso é o que traz mais glória.'' <br>—Analista Noxiano</i>",
+    "tree": "Precisão"
+  },
+  {
+    "id": 9104,
+    "key": "LegendAlacrity",
+    "icon": "perk-images/Styles/Precision/LegendAlacrity/LegendAlacrity.png",
+    "name": "Lenda: Espontaneidade",
+    "shortDesc": "<lol-uikit-tooltipped-keyword key='LinkTooltip_Description_Takedown'>Eliminações</lol-uikit-tooltipped-keyword> de inimigos concedem <b>Velocidade de Ataque</b> permanente. ",
+    "longDesc": "Recebe 3% de Velocidade de Ataque mais um adicional de 1.5% para cada acúmulo de <i>Lenda</i> (<statGood>máximo de 10 acúmulos</statGood>).<br><br>Avance nos acúmulos de <i>Lenda</i> a cada abate de Campeão, abate de monstro épico, abate de monstro grande e abate de tropas.",
+    "tree": "Precisão"
+  }
+]

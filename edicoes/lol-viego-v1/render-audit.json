@@ -1,0 +1,150 @@
+{
+  "frames": 54801,
+  "duration": 913.35,
+  "segments": [
+    {
+      "id": "00-hook",
+      "frames": 450
+    },
+    {
+      "id": "01-draft_call",
+      "frames": 540
+    },
+    {
+      "id": "02-draft_choices",
+      "frames": 1380
+    },
+    {
+      "id": "03-draft_reaction",
+      "frames": 780
+    },
+    {
+      "id": "04-draft_banter",
+      "frames": 720
+    },
+    {
+      "id": "05-viego_pick",
+      "frames": 1200
+    },
+    {
+      "id": "06-pregame_chat",
+      "frames": 1860
+    },
+    {
+      "id": "07-runes",
+      "frames": 324
+    },
+    {
+      "id": "08-opening_route",
+      "frames": 1260
+    },
+    {
+      "id": "09-first_clear",
+      "frames": 195
+    },
+    {
+      "id": "10-pings_banter",
+      "frames": 1080
+    },
+    {
+      "id": "11-clear_bridge",
+      "frames": 312
+    },
+    {
+      "id": "12-first_gank",
+      "frames": 1500
+    },
+    {
+      "id": "13-first_double",
+      "frames": 2340
+    },
+    {
+      "id": "14-jhin_talk",
+      "frames": 1620
+    },
+    {
+      "id": "15-nickname",
+      "frames": 900
+    },
+    {
+      "id": "16-lucas_banter",
+      "frames": 720
+    },
+    {
+      "id": "17-basketball",
+      "frames": 1680
+    },
+    {
+      "id": "18-midgame_resets",
+      "frames": 3720
+    },
+    {
+      "id": "19-w_conversation",
+      "frames": 960
+    },
+    {
+      "id": "20-danger",
+      "frames": 1500
+    },
+    {
+      "id": "21-shen_rotation",
+      "frames": 1080
+    },
+    {
+      "id": "22-first_death",
+      "frames": 660
+    },
+    {
+      "id": "23-bard_everywhere",
+      "frames": 1260
+    },
+    {
+      "id": "24-herald_argument",
+      "frames": 2880
+    },
+    {
+      "id": "25-river_fight",
+      "frames": 3900
+    },
+    {
+      "id": "26-cinema_banter",
+      "frames": 1320
+    },
+    {
+      "id": "27-next_double",
+      "frames": 3060
+    },
+    {
+      "id": "28-followup_kill",
+      "frames": 1980
+    },
+    {
+      "id": "29-second_death",
+      "frames": 2460
+    },
+    {
+      "id": "30-recovery",
+      "frames": 2520
+    },
+    {
+      "id": "31-reset_chain",
+      "frames": 3360
+    },
+    {
+      "id": "32-build_question",
+      "frames": 780
+    },
+    {
+      "id": "33-build_answer",
+      "frames": 720
+    },
+    {
+      "id": "34-final_double",
+      "frames": 2700
+    },
+    {
+      "id": "35-exit_reaction",
+      "frames": 1080
+    }
+  ]
+}

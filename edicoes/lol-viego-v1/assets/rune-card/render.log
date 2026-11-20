@@ -1,0 +1,84 @@
+-filter_complex_script is deprecated, use -/filter_complex /workspace/work/lol-partida/assets/rune-card/render.ffscript instead
+Input #0, image2, from '/workspace/work/lol-partida/assets/rune-card/background.jpg':
+  Duration: 00:00:00.03, start: 0.000000, bitrate: 49144 kb/s
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 30 tbn
+Input #1, png_pipe, from '/workspace/work/lol-partida/assets/rune-card/header.png':
+  Duration: N/A, bitrate: N/A
+  Stream #1:0: Video: png, rgba(pc, gbr/unknown/unknown), 1280x720, 30 fps, 30 tbr, 30 tbn
+Input #2, png_pipe, from '/workspace/work/lol-partida/assets/rune-card/keystone.png':
+  Duration: N/A, bitrate: N/A
+  Stream #2:0: Video: png, rgba(pc, gbr/unknown/unknown), 1280x720, 30 fps, 30 tbr, 30 tbn
+Input #3, png_pipe, from '/workspace/work/lol-partida/assets/rune-card/minor.png':
+  Duration: N/A, bitrate: N/A
+  Stream #3:0: Video: png, rgba(pc, gbr/unknown/unknown), 1280x720, 30 fps, 30 tbr, 30 tbn
+Input #4, png_pipe, from '/workspace/work/lol-partida/assets/rune-card/precision.png':
+  Duration: N/A, bitrate: N/A
+  Stream #4:0: Video: png, rgba(pc, gbr/unknown/unknown), 1280x720, 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 (mjpeg) -> zoompan:default
+  Stream #1:0 (png) -> format:default
+  Stream #2:0 (png) -> format:default
+  Stream #3:0 (png) -> format:default
+  Stream #4:0 (png) -> format:default
+  setparams:default -> Stream #0:0 (libx264)
+Press [q] to stop, [?] for help
+[swscaler @ 0x7fdf5c06c100] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x7fdf5c38fe80] deprecated pixel format used, make sure you did set range correctly
+[libx264 @ 0x55675ab6f700] using SAR=1/1
+[libx264 @ 0x55675ab6f700] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x55675ab6f700] profile High, level 3.1, 4:2:0, 8-bit
+[libx264 @ 0x55675ab6f700] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=2 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=19.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/workspace/work/lol-partida/assets/rune-card/runes-animated.mp4':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 15360 tbn
+      Metadata:
+        encoder         : Lavc61.19.101 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[swscaler @ 0x7fdf5dfca680] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x7fdf5dfd79c0] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 5 times
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A    [swscaler @ 0x7fdf5dfd79c0] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 8 times
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A    [swscaler @ 0x7fdf5dfd79c0] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 16 times
+frame=    6 fps=3.0 q=25.0 size=       0KiB time=00:00:00.13 bitrate=   2.9kbits/s speed=0.0665x    [swscaler @ 0x7fdf5dfd79c0] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 17 times
+frame=   13 fps=5.2 q=25.0 size=       0KiB time=00:00:00.36 bitrate=   1.0kbits/s speed=0.146x    [swscaler @ 0x7fdf5dfd79c0] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 8 times
+frame=   23 fps=7.6 q=25.0 size=       0KiB time=00:00:00.70 bitrate=   0.5kbits/s speed=0.233x    [swscaler @ 0x7fdf5dfd7780] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 6 times
+frame=   37 fps= 11 q=25.0 size=       0KiB time=00:00:01.16 bitrate=   0.3kbits/s speed=0.332x    [swscaler @ 0x7fdf5dfd7780] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 14 times
+frame=   54 fps= 13 q=25.0 size=     256KiB time=00:00:01.73 bitrate=1210.1kbits/s speed=0.432x    [swscaler @ 0x7fdf5dfd7780] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 11 times
+frame=   69 fps= 15 q=25.0 size=     256KiB time=00:00:02.23 bitrate= 939.2kbits/s speed=0.495x    [swscaler @ 0x7fdf5dfd7780] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 13 times
+frame=   84 fps= 17 q=25.0 size=     256KiB time=00:00:02.73 bitrate= 767.4kbits/s speed=0.545x    [swscaler @ 0x7fdf5dfd7780] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 10 times
+frame=   98 fps= 18 q=25.0 size=     256KiB time=00:00:03.20 bitrate= 655.5kbits/s speed=0.58x    [swscaler @ 0x7fdf5dfd7780] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 13 times
+frame=  108 fps= 18 q=25.0 size=     256KiB time=00:00:03.53 bitrate= 593.6kbits/s speed=0.587x    [swscaler @ 0x7fdf5dfd7780] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 18 times
+frame=  119 fps= 18 q=25.0 size=     256KiB time=00:00:03.90 bitrate= 537.8kbits/s speed=0.598x    [swscaler @ 0x7fdf5dfd7780] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 9 times
+frame=  133 fps= 19 q=25.0 size=     256KiB time=00:00:04.36 bitrate= 480.4kbits/s speed=0.622x    [swscaler @ 0x7fdf5dfd7780] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 11 times
+frame=  157 fps= 21 q=25.0 size=     256KiB time=N/A bitrate=N/A speed=N/A    [out#0/mp4 @ 0x55675ab62180] video:405KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.677876%
+frame=  162 fps= 21 q=-1.0 Lsize=     407KiB time=00:00:05.33 bitrate= 625.6kbits/s speed=0.704x    
+[libx264 @ 0x55675ab6f700] frame I:1     Avg QP:15.79  size: 86622
+[libx264 @ 0x55675ab6f700] frame P:48    Avg QP:17.45  size:  5940
+[libx264 @ 0x55675ab6f700] frame B:113   Avg QP:19.14  size:   370
+[libx264 @ 0x55675ab6f700] consecutive B-frames:  3.1%  9.9%  5.6% 81.5%
+[libx264 @ 0x55675ab6f700] mb I  I16..4: 17.9% 30.4% 51.6%
+[libx264 @ 0x55675ab6f700] mb P  I16..4:  2.4%  0.8%  0.6%  P16..4: 20.5%  4.4%  2.0%  0.0%  0.0%    skip:69.1%
+[libx264 @ 0x55675ab6f700] mb B  I16..4:  0.3%  0.1%  0.0%  B16..8:  2.9%  0.2%  0.0%  direct: 2.0%  skip:94.5%  L0:24.9% L1:67.5% BI: 7.6%
+[libx264 @ 0x55675ab6f700] 8x8 transform intra:23.3% inter:43.3%
+[libx264 @ 0x55675ab6f700] coded y,uvDC,uvAC intra: 42.5% 49.9% 27.9% inter: 1.8% 4.8% 0.7%
+[libx264 @ 0x55675ab6f700] i16 v,h,dc,p: 56% 29% 11%  4%
+[libx264 @ 0x55675ab6f700] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 17% 29%  3% 10% 11%  7%  3%  3%
+[libx264 @ 0x55675ab6f700] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 17% 15%  5% 12% 11%  8%  6%  4%
+[libx264 @ 0x55675ab6f700] i8c dc,h,v,p: 50% 26% 20%  3%
+[libx264 @ 0x55675ab6f700] Weighted P-Frames: Y:4.2% UV:4.2%
+[libx264 @ 0x55675ab6f700] kb/s:612.66
