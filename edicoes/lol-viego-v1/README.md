@@ -1,6 +1,6 @@
 # Viego — gameplay e zoeira, versão 1
 
-Edição de **15min13s**, em **1280×720 a 60 fps**, a partir do original completo enviado pelo SwissTransfer. O MP4 pronto fica nos anexos da [versão para download](https://github.com/mateuszilio225/teste-c/releases/tag/lol-viego-v1).
+Edição de **15min13s**, em **1280×720 a 60 fps**, a partir do original completo enviado pelo SwissTransfer. [Baixar o vídeo MP4 — 249 MB](https://media.githubusercontent.com/media/mateuszilio225/teste-c/edit-lol-viego-v1/edicoes/lol-viego-v1/lol-viego-gameplay-zueira-v1.mp4). A [página da versão](https://github.com/mateuszilio225/teste-c/releases/tag/lol-viego-v1) reúne o vídeo e as informações da edição.
 
 A edição abre com uma amostra da luta, volta ao draft e segue a partida com a preparação das runas, conversas, jogadas e reações. Inclui farm acelerado, enquadramentos das câmeras, legendas de destaque com avatares, zooms, emojis e destaques de campeão/item. A apresentação das runas tem composição própria com arte oficial do Viego; as escolhas seguem o print enviado.
 
