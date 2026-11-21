@@ -1,0 +1,14 @@
+{
+  "file": "intro-br2002-brasil-v2.mp4",
+  "bytes": 11784868,
+  "sha256": "c23df4f25222fe93115daa2defbfb02d5b9bc21e037fb5d9f811a03750a3318a",
+  "duration": 13.25,
+  "width": 1280,
+  "height": 720,
+  "fps": 60,
+  "frames": 795,
+  "original_audio_copied_bit_exact": true,
+  "audio_packet_hash": "SHA256=9c564ba61291b1b7dfefc95f93d9c57cfbd670463fef0c9a483ee1f750c6dbc7",
+  "full_decode_passed": true,
+  "changes": "Flag mattes rebuilt to cover the former Croatian cloth during camera movement; full opaque Brazil artwork, local edge cleanup and separately tracked foreground rifle mattes. Existing BR2002 lettering, scene timing and original AAC packets retained."
+}
