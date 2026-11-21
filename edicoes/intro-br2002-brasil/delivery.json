@@ -1,0 +1,14 @@
+{
+  "file": "intro-br2002-brasil-v1.mp4",
+  "bytes": 10305854,
+  "sha256": "b6d5d75d57c7702de0fcac7a967b89df1f3b990319182ac3c3f78c938780176b",
+  "duration": 13.25,
+  "width": 1280,
+  "height": 720,
+  "fps": 60,
+  "frames": 795,
+  "original_audio_copied_bit_exact": true,
+  "audio_packet_hash": "SHA256=9c564ba61291b1b7dfefc95f93d9c57cfbd670463fef0c9a483ee1f750c6dbc7",
+  "full_decode_passed": true,
+  "method": "Original source scene retained; display, country flags and foreground lettering composited/reconstructed from flattened reference. Lettering animation is a reconstruction, not a modification of the original editable 3D scene."
+}
