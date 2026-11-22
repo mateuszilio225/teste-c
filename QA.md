@@ -13,6 +13,6 @@
 
 O teste de integração usou Happy DOM para a interface e `@roamhq/wrtc` para conexões WebRTC reais, com vídeo e áudio sintéticos. O relatório `integration-results.json` identifica o hash exato de `app.js` testado. Não substitui um teste com amigos em redes e aparelhos diferentes.
 
-Uma tentativa anterior de entrada da segunda aba no Chrome não se completou; depois o teste nativo permitiu identificar e corrigir um conflito do contador de pacotes com o registro interno de eventos do PeerJS. O fechamento de uma conexão de mídia também recebeu proteção contra referência já liberada.
+A entrada da segunda aba no Chrome remoto não se completou, inclusive após a correção; a causa nesse navegador não foi confirmada. Os resultados de duas sessões acima são do teste nativo, não do Chrome. O teste nativo permitiu identificar e corrigir um conflito do contador de pacotes com o registro interno de eventos do PeerJS. O fechamento de uma conexão de mídia também recebeu proteção contra referência já liberada.
 
 A arquitetura usa STUN, sem relay TURN ou SFU. Redes restritas podem impedir a conexão. A taxa de captura depende do computador, navegador e upload de cada participante.
