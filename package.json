@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node --check public/app.js && node --check public/audio.mjs && node --check worker/api.mjs && node --test test/*.test.mjs",
+    "check": "node --check public/app.js && node --check public/tactics-ui.mjs && node --check worker/mechanical.mjs && node --check public/audio.mjs && node --check worker/api.mjs && node --test test/*.test.mjs",
     "dev": "node scripts/dev.mjs"
   },
   "engines": {

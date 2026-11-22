@@ -24,6 +24,24 @@ Código: https://github.com/mateuszilio225/teste-c/tree/rift-draft
 - Base com 50 drafts verificados e fonte por cartão. Quatro packs de oito drafts completamente disjuntos garantem quatro opções compatíveis em cada jogo da MD3. Só campeões escolhidos ficam bloqueados; alternativas não escolhidas podem voltar.
 - Consequências de mental após derrotas, recuperação após vitória e reset em cada nova MD3.
 
+## Dois modos de partida
+
+Escolha **Automático** ou **Mecânico** no formulário de criação ou no lobby. Salas antigas continuam no Automático.
+
+O Automático preserva a simulação com probabilidades. O Mecânico é um jogo tático pausado, com regras próprias, sem sorteio do vencedor:
+
+- Cinco unidades, destinos no mapa por clique/toque ou botões acessíveis, posturas de farm, iniciar, poke, proteger e recuar. Chamadas rápidas movem o time para objetivos ou dividem as rotas.
+- 60 segundos de planejamento; ambas as ordens privadas executam simultaneamente em seis passos. Replays de 6,5 segundos mostram posições e vida progressivamente, sem entregar o futuro.
+- Viagem base de 25,8 unidades por rodada. Alcance, superioridade numérica, fogo cruzado (+15%) e proteção próxima (−25%) influenciam o combate. Ataques e movimentos são determinísticos.
+- Visão limitada, últimas posições conhecidas e uma sentinela por rodada. Bots consultam a mesma visão e não leem planos inimigos.
+- Quatro de ouro por campeão no início. Farm, abates e objetivos financiam seis tipos de item; três espaços permanentes, compras validadas no servidor. Armadura e resistência mágica têm respostas distintas.
+- Larvas/dragão exigem dois aliados, Barão (R7+) e Ancião (R13+) três. Inimigo vivo no covil bloqueia captura. Rotas acumulam pressão para torres. Objetivos e torres geram pontos e abrem dano ao Nexus.
+- Vence ao destruir o Nexus; caso contrário, por pontos na R16. Desempate por Nexus e vida; igualdade exata abre mais uma rodada, sem sorteio ou vantagem de lado.
+- Micro influencia dano em até ±3%; macro, visão em até ±1; efeito de derrotas/mental limitado a 2% no dano. Ninguém falha uma ordem por sorte.
+- Relato e histórico explicam capturas, contestação, ausência de aliados, abates, proteção e fogo cruzado. MD3 e Fearless valem nos dois modos.
+
+É uma abstração tática de LoL: os campeões do draft usam perfis por função e bônus do estilo da composição, sem reproduzir todos os kits e números do patch. Equilíbrio competitivo ainda depende de partidas e ajustes com jogadores reais.
+
 ## Apresentação
 
 Tema escuro, 44 fotos de jogadores, seleção de campeões animada, alerta específico quando cobrirem seu lance, música ambiente original sintetizada e alerta de contagem regressiva sincronizados com o relógio. Música e alertas têm controles separados e só iniciam após interação do visitante; preferências ficam no navegador.
