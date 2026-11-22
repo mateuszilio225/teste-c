@@ -6,9 +6,14 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "check": "node --check public/app.js && node --check public/tactics-ui.mjs && node --check worker/mechanical.mjs && node --check public/audio.mjs && node --check worker/api.mjs && node --test test/*.test.mjs",
-    "dev": "node scripts/dev.mjs"
+    "dev": "node scripts/dev.mjs",
+    "deploy": "npm run db:migrate && wrangler deploy",
+    "db:migrate": "wrangler d1 migrations apply DB --remote"
   },
   "engines": {
     "node": ">=22"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
   }
 }
