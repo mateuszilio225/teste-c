@@ -1,0 +1,11 @@
+{
+  "name": "br2002-call",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Voz, v\u00eddeo e compartilhamento de tela para a tropa, com WebRTC e c\u00e2mera sobreposta.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check app.js && node scripts/validate.mjs"
+  }
+}
