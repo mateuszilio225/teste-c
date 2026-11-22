@@ -8,8 +8,8 @@
 - [x] Ocultação do RNG, escolha adversária e resultado futuro no estado público.
 - [x] Efeito de mental após derrota e ocorrência de vitórias do azarão.
 - [x] API em SQLite real: criação, entrada, sessão, sincronização de lances, reconexão, permissões e concorrência otimista.
-- [ ] Conferência visual e fluxo completo em navegador.
-- [ ] Banco D1 publicado e duas sessões online no ambiente hospedado.
+- [x] Chrome na versão pública: home, sala online, lance e compra, transição para draft, escolha, simulação, resultado e queda de rendimento após derrota.
+- [x] Banco D1 hospedado: duas sessões HTTP independentes, lances sincronizados, fechamento de line-ups, três jogos, 30 campeões sem repetição, campeã e reconexão (`reports/published-smoke.json`).
 - [ ] Aparelhos físicos e carga.
 
-A prévia gerenciada não abriu o relay da porta 4173. Não foi iniciado servidor alternativo nem instalado navegador. A validação de implantação e seus limites serão registrados após a publicação.
+A prévia gerenciada não abriu o relay da porta 4173. Não foi iniciado servidor alternativo nem instalado navegador. A publicação pública abriu sem conta em nova aba; a aba antiga reteve a tela de login em cache. A conferência visual foi feita na publicação. O teste com duas sessões usou clientes HTTP e D1 hospedado; não duas pessoas em aparelhos físicos.

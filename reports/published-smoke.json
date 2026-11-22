@@ -1,0 +1,11 @@
+{
+  "site": "https://rift-draft-br2002.wrydingo.chatgpt.site",
+  "checks": [
+    "Two separate anonymous sessions join persisted room",
+    "Bids synchronize between sessions, then ten exclusive cards close both line-ups",
+    "Hosted D1 championship: three games, secret choices, live results, thirty unique champions and champion",
+    "Existing session reconnects after championship"
+  ],
+  "physical_devices": false,
+  "passed": true
+}

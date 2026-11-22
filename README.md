@@ -26,7 +26,7 @@ Fontes:
 - https://maisesports.com.br/cblol-2026-veja-o-que-mudou-nas-escalacoes-dos-times-para-o-2-split
 - https://liquipedia.net/leagueoflegends/CBLOL/2026/Split_2/Player_Stats (corroboração de Shini e posições)
 
-Os atributos são estimativas de jogo, não notas oficiais. Mental é uma aproximação de consistência via mortes/KDA e não uma avaliação psicológica. As médias da fonte são arredondadas. A metodologia completa aparece no jogo. Não há força específica por campeão, patch ou proficiência: o efeito da composição vem do seu estilo; os campeões são sua representação visual.
+Os atributos são estimativas de jogo, não notas oficiais. Mental é uma aproximação de consistência via mortes/KDA e não uma avaliação psicológica. As médias da fonte são arredondadas. A metodologia completa aparece no jogo. Cada campeão que combina com o arquétipo escolhido soma 0,6 ponto de coesão (até +3). Os grupos são curadoria para a simulação, não notas oficiais; não há força de patch ou proficiência individual. O estilo também muda os pesos dos atributos e interage com o estilo adversário.
 
 ## Desenvolvimento
 
