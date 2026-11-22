@@ -785,37 +785,6 @@
     "photo": "/players/keine.webp"
   },
   {
-    "id": "luuukz",
-    "name": "Luuukz",
-    "team": "FUR",
-    "role": "JG",
-    "regular": {
-      "name": "Luuukz",
-      "team": "FUR",
-      "role": "JG",
-      "games": 2,
-      "wr": 0,
-      "kda": 0.5,
-      "deaths": 5.5,
-      "kp": 50,
-      "dpm": 401,
-      "vspm": 1.56,
-      "gd15": -957,
-      "csd15": -18
-    },
-    "playoffs": null,
-    "confidence": 0.13333333333333333,
-    "recentWeight": 0,
-    "micro": 77,
-    "macro": 78,
-    "mental": 77,
-    "overall": 77,
-    "price": 10,
-    "teamForm": 83,
-    "ratingVersion": 2,
-    "photo": "/players/luuukz.webp"
-  },
-  {
     "id": "manel",
     "name": "Manel",
     "team": "RED",

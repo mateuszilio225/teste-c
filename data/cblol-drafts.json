@@ -1,0 +1,650 @@
+[
+  {
+    "id": "cblol-2026-final-fur-g1",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-final",
+    "team": "FUR",
+    "opponent": "LOS",
+    "game": 1,
+    "stage": "Final · 10/10",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-finals-1",
+    "champions": {
+      "TOP": "KSante",
+      "JG": "Pantheon",
+      "MID": "TwistedFate",
+      "ADC": "Ezreal",
+      "SUP": "Karma"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "cblol-2026-final-los-g1",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-final",
+    "team": "LOS",
+    "opponent": "FUR",
+    "game": 1,
+    "stage": "Final · 10/10",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-finals-1",
+    "champions": {
+      "TOP": "Ambessa",
+      "JG": "Chogath",
+      "MID": "Ryze",
+      "ADC": "Ashe",
+      "SUP": "Seraphine"
+    },
+    "style": "control"
+  },
+  {
+    "id": "cblol-2026-final-los-g2",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-final",
+    "team": "LOS",
+    "opponent": "FUR",
+    "game": 2,
+    "stage": "Final · 10/10",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-finals-1",
+    "champions": {
+      "TOP": "Jayce",
+      "JG": "Maokai",
+      "MID": "Viktor",
+      "ADC": "Yunara",
+      "SUP": "Lulu"
+    },
+    "style": "control"
+  },
+  {
+    "id": "cblol-2026-final-fur-g2",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-final",
+    "team": "FUR",
+    "opponent": "LOS",
+    "game": 2,
+    "stage": "Final · 10/10",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-finals-1",
+    "champions": {
+      "TOP": "Sion",
+      "JG": "Trundle",
+      "MID": "Syndra",
+      "ADC": "Kalista",
+      "SUP": "Renata"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "cblol-2026-final-fur-g3",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-final",
+    "team": "FUR",
+    "opponent": "LOS",
+    "game": 3,
+    "stage": "Final · 10/10",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-finals-1",
+    "champions": {
+      "TOP": "Jax",
+      "JG": "Naafiri",
+      "MID": "Annie",
+      "ADC": "Zeri",
+      "SUP": "Yuumi"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "cblol-2026-final-los-g3",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-final",
+    "team": "LOS",
+    "opponent": "FUR",
+    "game": 3,
+    "stage": "Final · 10/10",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-finals-1",
+    "champions": {
+      "TOP": "Varus",
+      "JG": "MonkeyKing",
+      "MID": "Galio",
+      "ADC": "Yasuo",
+      "SUP": "Alistar"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "cblol-2026-final-los-g4",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-final",
+    "team": "LOS",
+    "opponent": "FUR",
+    "game": 4,
+    "stage": "Final · 10/10",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-finals-1",
+    "champions": {
+      "TOP": "Rumble",
+      "JG": "JarvanIV",
+      "MID": "Lissandra",
+      "ADC": "Sivir",
+      "SUP": "Bard"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "cblol-2026-final-fur-g4",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-final",
+    "team": "FUR",
+    "opponent": "LOS",
+    "game": 4,
+    "stage": "Final · 10/10",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-finals-1",
+    "champions": {
+      "TOP": "Ornn",
+      "JG": "Vi",
+      "MID": "Akali",
+      "ADC": "Xayah",
+      "SUP": "Rakan"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "cblol-2026-final-fur-g5",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-final",
+    "team": "FUR",
+    "opponent": "LOS",
+    "game": 5,
+    "stage": "Final · 10/10",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-finals-1",
+    "champions": {
+      "TOP": "Aatrox",
+      "JG": "XinZhao",
+      "MID": "Sylas",
+      "ADC": "Kaisa",
+      "SUP": "Rell"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "cblol-2026-final-los-g5",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-final",
+    "team": "LOS",
+    "opponent": "FUR",
+    "game": 5,
+    "stage": "Final · 10/10",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-finals-1",
+    "champions": {
+      "TOP": "Renekton",
+      "JG": "Qiyana",
+      "MID": "Orianna",
+      "ADC": "Jinx",
+      "SUP": "Shen"
+    },
+    "style": "control"
+  },
+  {
+    "id": "cblol-2026-semi-los-fur-fur-g1",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-los-fur",
+    "team": "FUR",
+    "opponent": "LOS",
+    "game": 1,
+    "stage": "Playoffs · 12/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-1",
+    "champions": {
+      "TOP": "Olaf",
+      "JG": "Sejuani",
+      "MID": "Annie",
+      "ADC": "Ezreal",
+      "SUP": "Seraphine"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "cblol-2026-semi-los-fur-los-g1",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-los-fur",
+    "team": "LOS",
+    "opponent": "FUR",
+    "game": 1,
+    "stage": "Playoffs · 12/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-1",
+    "champions": {
+      "TOP": "Trundle",
+      "JG": "JarvanIV",
+      "MID": "Ryze",
+      "ADC": "Sivir",
+      "SUP": "Karma"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "cblol-2026-semi-los-fur-los-g2",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-los-fur",
+    "team": "LOS",
+    "opponent": "FUR",
+    "game": 2,
+    "stage": "Playoffs · 12/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-1",
+    "champions": {
+      "TOP": "Jayce",
+      "JG": "Vi",
+      "MID": "Orianna",
+      "ADC": "Taliyah",
+      "SUP": "Nautilus"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "cblol-2026-semi-los-fur-fur-g2",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-los-fur",
+    "team": "FUR",
+    "opponent": "LOS",
+    "game": 2,
+    "stage": "Playoffs · 12/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-1",
+    "champions": {
+      "TOP": "KSante",
+      "JG": "Maokai",
+      "MID": "Syndra",
+      "ADC": "Kalista",
+      "SUP": "Renata"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "cblol-2026-semi-los-fur-los-g3",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-los-fur",
+    "team": "LOS",
+    "opponent": "FUR",
+    "game": 3,
+    "stage": "Playoffs · 12/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-1",
+    "champions": {
+      "TOP": "Jax",
+      "JG": "Pantheon",
+      "MID": "Aurora",
+      "ADC": "Lucian",
+      "SUP": "Milio"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "cblol-2026-semi-los-fur-fur-g3",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-los-fur",
+    "team": "FUR",
+    "opponent": "LOS",
+    "game": 3,
+    "stage": "Playoffs · 12/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-1",
+    "champions": {
+      "TOP": "Camille",
+      "JG": "XinZhao",
+      "MID": "TwistedFate",
+      "ADC": "Yunara",
+      "SUP": "Lulu"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "cblol-2026-semi-los-fur-fur-g4",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-los-fur",
+    "team": "FUR",
+    "opponent": "LOS",
+    "game": 4,
+    "stage": "Playoffs · 12/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-1",
+    "champions": {
+      "TOP": "Ambessa",
+      "JG": "Poppy",
+      "MID": "Viktor",
+      "ADC": "Xayah",
+      "SUP": "Rakan"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "cblol-2026-semi-los-fur-los-g4",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-los-fur",
+    "team": "LOS",
+    "opponent": "FUR",
+    "game": 4,
+    "stage": "Playoffs · 12/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-1",
+    "champions": {
+      "TOP": "Rumble",
+      "JG": "MonkeyKing",
+      "MID": "Hwei",
+      "ADC": "Kaisa",
+      "SUP": "Alistar"
+    },
+    "style": "control"
+  },
+  {
+    "id": "cblol-2026-semi-loud-png-png-g1",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-loud-png",
+    "team": "PNG",
+    "opponent": "LLL",
+    "game": 1,
+    "stage": "Playoffs · 13/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-2",
+    "champions": {
+      "TOP": "Ambessa",
+      "JG": "JarvanIV",
+      "MID": "Syndra",
+      "ADC": "Lucian",
+      "SUP": "Milio"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "cblol-2026-semi-loud-png-lll-g1",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-loud-png",
+    "team": "LLL",
+    "opponent": "PNG",
+    "game": 1,
+    "stage": "Playoffs · 13/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-2",
+    "champions": {
+      "TOP": "KSante",
+      "JG": "Vi",
+      "MID": "Ryze",
+      "ADC": "Ezreal",
+      "SUP": "Karma"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "cblol-2026-semi-loud-png-png-g2",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-loud-png",
+    "team": "PNG",
+    "opponent": "LLL",
+    "game": 2,
+    "stage": "Playoffs · 13/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-2",
+    "champions": {
+      "TOP": "Jax",
+      "JG": "Olaf",
+      "MID": "Locke",
+      "ADC": "Yunara",
+      "SUP": "Lulu"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "cblol-2026-semi-loud-png-lll-g2",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-loud-png",
+    "team": "LLL",
+    "opponent": "PNG",
+    "game": 2,
+    "stage": "Playoffs · 13/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-2",
+    "champions": {
+      "TOP": "Kled",
+      "JG": "Nocturne",
+      "MID": "Ahri",
+      "ADC": "Ashe",
+      "SUP": "Seraphine"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "cblol-2026-semi-loud-png-lll-g3",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-loud-png",
+    "team": "LLL",
+    "opponent": "PNG",
+    "game": 3,
+    "stage": "Playoffs · 13/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-2",
+    "champions": {
+      "TOP": "Rumble",
+      "JG": "Qiyana",
+      "MID": "Leblanc",
+      "ADC": "Sivir",
+      "SUP": "Alistar"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "cblol-2026-semi-loud-png-png-g3",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-loud-png",
+    "team": "PNG",
+    "opponent": "LLL",
+    "game": 3,
+    "stage": "Playoffs · 13/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-2",
+    "champions": {
+      "TOP": "Sion",
+      "JG": "MonkeyKing",
+      "MID": "Orianna",
+      "ADC": "Xayah",
+      "SUP": "Rakan"
+    },
+    "style": "control"
+  },
+  {
+    "id": "cblol-2026-semi-loud-png-lll-g4",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-loud-png",
+    "team": "LLL",
+    "opponent": "PNG",
+    "game": 4,
+    "stage": "Playoffs · 13/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-2",
+    "champions": {
+      "TOP": "Camille",
+      "JG": "Maokai",
+      "MID": "Viktor",
+      "ADC": "Jhin",
+      "SUP": "Leona"
+    },
+    "style": "control"
+  },
+  {
+    "id": "cblol-2026-semi-loud-png-png-g4",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-semi-loud-png",
+    "team": "PNG",
+    "opponent": "LLL",
+    "game": 4,
+    "stage": "Playoffs · 13/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-2-2",
+    "champions": {
+      "TOP": "Jayce",
+      "JG": "Naafiri",
+      "MID": "Taliyah",
+      "ADC": "MissFortune",
+      "SUP": "Nautilus"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "cblol-2026-lower-fur-red-red-g1",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-lower-fur-red",
+    "team": "RED",
+    "opponent": "FUR",
+    "game": 1,
+    "stage": "Playoffs · 26/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-3-1",
+    "champions": {
+      "TOP": "Rumble",
+      "JG": "Vi",
+      "MID": "Syndra",
+      "ADC": "Lucian",
+      "SUP": "Milio"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "cblol-2026-lower-fur-red-fur-g1",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-lower-fur-red",
+    "team": "FUR",
+    "opponent": "RED",
+    "game": 1,
+    "stage": "Playoffs · 26/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-3-1",
+    "champions": {
+      "TOP": "Ornn",
+      "JG": "Nasus",
+      "MID": "Ryze",
+      "ADC": "Ezreal",
+      "SUP": "Karma"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "cblol-2026-lower-fur-red-fur-g2",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-lower-fur-red",
+    "team": "FUR",
+    "opponent": "RED",
+    "game": 2,
+    "stage": "Playoffs · 26/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-3-1",
+    "champions": {
+      "TOP": "Olaf",
+      "JG": "MonkeyKing",
+      "MID": "Taliyah",
+      "ADC": "Kalista",
+      "SUP": "Renata"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "cblol-2026-lower-fur-red-red-g2",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-lower-fur-red",
+    "team": "RED",
+    "opponent": "FUR",
+    "game": 2,
+    "stage": "Playoffs · 26/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-3-1",
+    "champions": {
+      "TOP": "KSante",
+      "JG": "Qiyana",
+      "MID": "Cassiopeia",
+      "ADC": "Yunara",
+      "SUP": "Lulu"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "cblol-2026-lower-fur-red-red-g3",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-lower-fur-red",
+    "team": "RED",
+    "opponent": "FUR",
+    "game": 3,
+    "stage": "Playoffs · 26/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-3-1",
+    "champions": {
+      "TOP": "Jax",
+      "JG": "Naafiri",
+      "MID": "Orianna",
+      "ADC": "Corki",
+      "SUP": "Rakan"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "cblol-2026-lower-fur-red-fur-g3",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-lower-fur-red",
+    "team": "FUR",
+    "opponent": "RED",
+    "game": 3,
+    "stage": "Playoffs · 26/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-3-1",
+    "champions": {
+      "TOP": "Camille",
+      "JG": "Trundle",
+      "MID": "Galio",
+      "ADC": "Jhin",
+      "SUP": "Shen"
+    },
+    "style": "control"
+  },
+  {
+    "id": "cblol-2026-lower-fur-red-red-g4",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-lower-fur-red",
+    "team": "RED",
+    "opponent": "FUR",
+    "game": 4,
+    "stage": "Playoffs · 26/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-3-1",
+    "champions": {
+      "TOP": "Gnar",
+      "JG": "Pantheon",
+      "MID": "Lissandra",
+      "ADC": "MissFortune",
+      "SUP": "Pyke"
+    },
+    "style": "control"
+  },
+  {
+    "id": "cblol-2026-lower-fur-red-fur-g4",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-lower-fur-red",
+    "team": "FUR",
+    "opponent": "RED",
+    "game": 4,
+    "stage": "Playoffs · 26/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-3-1",
+    "champions": {
+      "TOP": "Ambessa",
+      "JG": "Sejuani",
+      "MID": "Akali",
+      "ADC": "Zeri",
+      "SUP": "Yuumi"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "cblol-2026-lower-fur-red-fur-g5",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-lower-fur-red",
+    "team": "FUR",
+    "opponent": "RED",
+    "game": 5,
+    "stage": "Playoffs · 26/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-3-1",
+    "champions": {
+      "TOP": "Gwen",
+      "JG": "XinZhao",
+      "MID": "Annie",
+      "ADC": "Aphelios",
+      "SUP": "Thresh"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "cblol-2026-lower-fur-red-red-g5",
+    "event": "CBLOL 2026 Split 2",
+    "series": "cblol-2026-lower-fur-red",
+    "team": "RED",
+    "opponent": "FUR",
+    "game": 5,
+    "stage": "Playoffs · 26/09",
+    "source": "https://riftwise.gg/pt-br/match/cblol-2026-split-2-playoffs-round-3-1",
+    "champions": {
+      "TOP": "Aurora",
+      "JG": "Nocturne",
+      "MID": "Viktor",
+      "ADC": "Kaisa",
+      "SUP": "Neeko"
+    },
+    "style": "pick"
+  }
+]

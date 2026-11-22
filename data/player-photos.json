@@ -386,15 +386,5 @@
     "photoSeason": "2025 Split 2 (LOUD)",
     "width": 420,
     "height": 420
-  },
-  "luuukz": {
-    "path": "/players/luuukz.webp",
-    "image": "https://assets.sheepesports.com/esports/lol/players/FLA_Luuukz_2025_Split_2.png",
-    "source": "https://www.sheepesports.com/en/lol/players/Luuukz",
-    "credit": "LoL Esports / Riot Games, via Sheep Esports / Leaguepedia",
-    "identityLabel": "Luuukz",
-    "photoSeason": "2025 Split 2 (Flamengo)",
-    "width": 420,
-    "height": 420
   }
 }

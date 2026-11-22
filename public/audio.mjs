@@ -1,10 +1,34 @@
-let context=null,room=null,clock=()=>Date.now(),beatAt=0,beat=0,lastCountdown='',alerts=true,music=true;
-try{alerts=JSON.parse(localStorage.getItem('rift-alerts')??'true');music=JSON.parse(localStorage.getItem('rift-music')??'true');}catch{}
-export const audioState=()=>({alerts,music});
-function tone(freq,at,duration,gain=.025,type='sine'){if(!context||context.state!=='running')return;const o=context.createOscillator(),g=context.createGain();o.type=type;o.frequency.setValueAtTime(freq,at);g.gain.setValueAtTime(.0001,at);g.gain.exponentialRampToValueAtTime(Math.max(.001,gain),at+.015);g.gain.exponentialRampToValueAtTime(.0001,at+duration);o.connect(g);g.connect(context.destination);o.start(at);o.stop(at+duration+.02);}
-export async function unlockAudio(){if(!alerts&&!music)return;try{context??=new(window.AudioContext||window.webkitAudioContext)();if(context.state==='suspended')await context.resume();}catch{}}
-export function setAudio(kind,value){if(kind==='alerts')alerts=value;if(kind==='music')music=value;try{localStorage.setItem('rift-'+kind,JSON.stringify(value));}catch{}unlockAudio();}
-export function updateAudio(s,now){room=s;clock=now;}
-export function effect(name){if(!alerts||!context)return;const t=context.currentTime;if(name==='outbid'){tone(740,t,.16,.07,'triangle');tone(440,t+.16,.23,.065,'triangle');}else if(name==='choose'){[261.63,329.63,392,523.25].forEach((n,i)=>tone(n,t+i*.065,.3,.035,'triangle'));}else if(name==='sold'){[392,523.25,659.25].forEach((n,i)=>tone(n,t+i*.085,.25,.035));}else if(name==='objective'){tone(146.83,t,.5,.04,'triangle');tone(293.66,t+.05,.35,.03);}else if(name==='countdown')tone(880,t,.095,.04);}
-setInterval(()=>{if(!context||context.state!=='running'||!room||document.hidden)return;const remaining=room.phase==='auction'?(room.auction.ends-clock())/1000:99;const urgency=remaining<=4&&remaining>0;const seconds=Math.ceil(remaining),key=room.code+'-'+room.auction?.index+'-'+seconds;if(urgency&&lastCountdown!==key){lastCountdown=key;effect('countdown');}
-if(!music||!['lobby','auction','tournament'].includes(room.phase))return;const t=context.currentTime;if(beatAt<t-.5)beatAt=t;const speed=urgency?.23:remaining<=7?.34:.48;while(beatAt<t+.14){const chords=[[146.83,220,293.66,349.23],[130.81,196,261.63,329.63],[164.81,220,293.66,392],[130.81,196,261.63,349.23]],chord=chords[Math.floor(beat/16)%4];tone(chord[beat%4]*(beat%8===7?2:1),beatAt,speed*.7,urgency?.018:.012,'sine');if(beat%4===0)tone(chord[0]/2,beatAt,speed*1.6,.013,'triangle');beat++;beatAt+=speed;}},100);
+// Efeitos sintetizados com WebAudio; não há trilha de fundo nem arquivos externos.
+let context=null,room=null,clock=()=>Date.now(),alerts=true,lastCountdown='';
+try{alerts=JSON.parse(localStorage.getItem('rift-alerts')??'true');}catch{}
+export const audioState=()=>({alerts});
+function tone(freq,when,duration,volume=.036,type='sine'){
+ if(!context||context.state!=='running')return;
+ const oscillator=context.createOscillator(),gain=context.createGain();
+ oscillator.type=type;oscillator.frequency.setValueAtTime(freq,when);
+ gain.gain.setValueAtTime(.0001,when);
+ gain.gain.exponentialRampToValueAtTime(Math.max(.001,volume),when+.012);
+ gain.gain.exponentialRampToValueAtTime(.0001,when+duration);
+ oscillator.connect(gain);gain.connect(context.destination);
+ oscillator.start(when);oscillator.stop(when+duration+.02);
+}
+export async function unlockAudio(){if(!alerts)return;try{context??=new (window.AudioContext||window.webkitAudioContext)();if(context.state==='suspended')await context.resume();}catch{}}
+export function setAudio(kind,value){if(kind!=='alerts')return;alerts=Boolean(value);try{localStorage.setItem('rift-alerts',JSON.stringify(alerts));}catch{}if(alerts)unlockAudio();}
+export function updateAudio(state,getNow){room=state;clock=getNow;}
+export function effect(name){if(!alerts||!context||context.state!=='running')return;const t=context.currentTime;
+ switch(name){
+ case 'bid':tone(510,t,.12,.055,'triangle');tone(760,t+.095,.15,.044,'sine');break;
+ case 'rivalBid':tone(440,t,.1,.025,'triangle');tone(580,t+.11,.14,.04,'triangle');break;
+ case 'outbid':tone(740,t,.15,.08,'sawtooth');tone(440,t+.14,.24,.07,'triangle');break;
+ case 'choose':[261.63,329.63,392,523.25].forEach((f,i)=>tone(f,t+i*.065,.28,.035,'triangle'));break;
+ case 'sold':[392,523.25,659.25].forEach((f,i)=>tone(f,t+i*.085,.27,.038,'sine'));break;
+ case 'champion':[392,523.25,659.25,783.99,1046.5].forEach((f,i)=>tone(f,t+i*.12,.36,.055,'triangle'));break;
+ case 'loss':tone(392,t,.20,.028,'triangle');tone(293.66,t+.16,.34,.03,'sine');break;
+ case 'objective':tone(146.83,t,.47,.045,'triangle');tone(293.66,t+.05,.35,.032);break;
+ case 'countdown':tone(880,t,.075,.025,'sine');break;
+ }
+}
+setInterval(()=>{if(!context||context.state!=='running'||!room||document.hidden||room.phase!=='auction')return;
+ const a=room.auction;if(!a)return;const rem=(a.ends-clock())/1000;
+ if(rem<=2.8&&rem>0){const seconds=Math.ceil(rem),key=`${room.code}:${a.index}:${a.ends}:${seconds}`;if(seconds<=2&&key!==lastCountdown){lastCountdown=key;effect('countdown');}}
+},110);
