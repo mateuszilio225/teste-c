@@ -8,7 +8,7 @@
     {
       "binding": "DB",
       "database_name": "rift-draft-online",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "ead0ba9f-0dcd-43cb-a268-19142aca96ec",
       "migrations_dir": "drizzle"
     }
   ]
