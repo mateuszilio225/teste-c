@@ -58,7 +58,7 @@ export function tacticalBotOrders(g,side){
  }
  const scout=g.units.find(u=>u.side===side&&u.role==='SUP'&&mechAlive(u));if(scout)p.ward={x:scout.x,y:scout.y};return p;
 }
-function mechFrame(g){return{units:[mechViewUnits(g,0),mechViewUnits(g,1),mechViewUnits(g,null)],nexus:[...g.nexus],score:[...g.score],kills:[...g.kills],towers:[...g.towers],sites:structuredClone(g.sites)};}
+function mechFrame(g,hits=[]){return{units:[mechViewUnits(g,0),mechViewUnits(g,1),mechViewUnits(g,null)],effects:[0,1,null].map(side=>hits.filter(h=>{const a=g.units.find(u=>u.id===h.from),b=g.units.find(u=>u.id===h.to);return side===null||(mechVisible(g,side,a)&&mechVisible(g,side,b));}).slice(0,12).map(h=>{const a=g.units.find(u=>u.id===h.from),b=g.units.find(u=>u.id===h.to);return{from:a.id,to:b.id,x:a.x,y:a.y,tx:b.x,ty:b.y,side:a.side,damage:h.damage,flank:h.flank,protected:!!h.guards};})),nexus:[...g.nexus],score:[...g.score],kills:[...g.kills],towers:[...g.towers],sites:structuredClone(g.sites)};}
 export function resolveTacticalTurn(g,now){
  const orders=g.teams.map((id,side)=>g.orders[id]||defaultTacticalOrders(g,side)),lines=[],fought=new Set(),damages=new Map(),deathLines=[];
  const add=(kind,text,side=null)=>lines.push({kind,text,side});
@@ -90,7 +90,7 @@ export function resolveTacticalTurn(g,now){
   for(const hit of hits){const t=g.units.find(u=>u.id===hit.to);t.hp=mechRound(Math.max(0,t.hp-hit.damage));damages.set(hit.from,(damages.get(hit.from)||0)+hit.damage);}
   for(const u of g.units){if(u.hp===0&&!u.respawn){u.respawn=2;const contributors=hits.filter(h=>h.to===u.id),killer=contributors.sort((a,b)=>b.damage-a.damage||a.from.localeCompare(b.from))[0],a=g.units.find(a=>a.id===killer?.from);if(a){a.kills++;a.gold++;g.kills[a.side]++;g.score[a.side]+=2;const flanked=contributors.some(h=>h.flank),protectedUnit=contributors.some(h=>h.guards);deathLines.push({kind:'fight',side:a.side,text:`${a.champ} elimina ${u.champ}: ${contributors.length} atacante(s) no alcance${flanked?', fogo cruzado +15%':''}${protectedUnit?', proteção aliada −25% de dano recebido':''}. Abate +2 pontos.`});}}}
   for(const u of g.units)if(mechAlive(u)&&mechDistance(u,mechHome(u))<12)u.hp=Math.min(100,mechRound(u.hp+12));
-  mechRemember(g);g.frames.push(mechFrame(g));
+  mechRemember(g);g.frames.push(mechFrame(g,hits));
  }
  lines.push(...deathLines.slice(0,10));
  for(const site of g.sites){if(site.cooldown>g.turn)continue;
@@ -126,7 +126,7 @@ export function tacticalView(g,viewer,now=Date.now()){
  r.units=side<0?[]:mechViewUnits(g,side);r.lastSeen=side<0?[]:Object.values(g.lastSeen[side]).filter(u=>!r.units.some(a=>a.id===u.id));r.wards=g.wards.filter(w=>w.side===side);r.myOrders=side<0?null:structuredClone(g.orders[viewer]||null);
  // During replay reveal only frames already reached; no future health or positions.
  if(g.phase==='replay'){
-  const index=Math.min(g.frames.length-1,Math.max(0,Math.floor((now-g.replayStarted)/900))),frames=g.frames.slice(0,index+1).map(f=>({...f,units:f.units[side<0?2:side]}));
+  const index=Math.min(g.frames.length-1,Math.max(0,Math.floor((now-g.replayStarted)/900))),frames=g.frames.slice(0,index+1).map(f=>({...f,units:f.units[side<0?2:side],effects:(f.effects||[[],[],[]])[side<0?2:side]}));
   r.frames=frames;r.units=frames.at(-1)?.units||[];r.score=frames.at(-1)?.score||r.score;r.kills=frames.at(-1)?.kills||r.kills;r.nexus=frames.at(-1)?.nexus||r.nexus;r.report=index>=g.frames.length-1?r.report:[];r.history=index>=g.frames.length-1?r.history:r.history.slice(0,-1);r.sites=frames.at(-1)?.sites||[];r.towers=frames.at(-1)?.towers||[0,0];r.lastSeen=[];r.winner=index>=g.frames.length-1?r.winner:null;
  }
  return r;

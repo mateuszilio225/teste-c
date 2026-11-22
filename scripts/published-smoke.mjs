@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';
 const base=process.argv[2];if(!base?.startsWith('https://'))throw new Error('Supply the deployed HTTPS URL.');
-const report={site:base,revision:2,checks:[],physical_devices:false};
+const report={site:base,revision:3,checks:[],physical_devices:false};
 async function req(path,body,token){const response=await fetch(base+path,{method:body===undefined?'GET':'POST',headers:{...(body===undefined?{}:{'Content-Type':'application/json'}),...(token?{Authorization:'Bearer '+token}:{})},...(body===undefined?{}:{body:JSON.stringify(body)})});const data=await response.json();return{status:response.status,...data};}
 const mark=name=>{report.checks.push(name);console.log('PASS',name);};
 try{

@@ -1,6 +1,6 @@
 {
   "site": "https://rift-draft-br2002.wrydingo.chatgpt.site",
-  "revision": 2,
+  "revision": 3,
   "checks": [
     "Two separate anonymous sessions join persisted room",
     "Unsold lot does not charge or allocate any player; exact market and hidden-overall settings persist",

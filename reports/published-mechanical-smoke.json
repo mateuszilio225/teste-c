@@ -1,0 +1,14 @@
+{
+  "site": "https://rift-draft-br2002.wrydingo.chatgpt.site",
+  "revision": 3,
+  "checks": [
+    "Two separate anonymous sessions join persisted room",
+    "Unsold lot does not charge or allocate any player; exact market and hidden-overall settings persist",
+    "Bids synchronize between sessions, then ten exclusive cards close both line-ups",
+    "Hosted mechanical BO3 resolves hidden orders simultaneously, reveals replay progressively, scores actual objectives, ends at two wins and preserves Fearless",
+    "Existing session reconnects after championship"
+  ],
+  "physical_devices": false,
+  "tactical_turns": 20,
+  "passed": true
+}
