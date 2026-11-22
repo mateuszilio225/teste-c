@@ -1,0 +1,202 @@
+[
+  {
+    "team": "FX",
+    "weight": 0,
+    "regular": {
+      "team": "FX",
+      "phase": "regular",
+      "games": 16,
+      "wr": 25,
+      "dragons": 47.5,
+      "barons": 34.4,
+      "gd15": -770
+    },
+    "playoffs": null,
+    "wr": 25,
+    "dragons": 47.5,
+    "barons": 34.4,
+    "gd15": -770,
+    "score": 70.3
+  },
+  {
+    "team": "FUR",
+    "weight": 0.7142857142857143,
+    "regular": {
+      "team": "FUR",
+      "phase": "regular",
+      "games": 15,
+      "wr": 66.7,
+      "dragons": 49.6,
+      "barons": 76.9,
+      "gd15": -122
+    },
+    "playoffs": {
+      "team": "FUR",
+      "phase": "playoffs",
+      "games": 20,
+      "wr": 60,
+      "dragons": 58.5,
+      "barons": 62.5,
+      "gd15": 263
+    },
+    "wr": 61.91428571428572,
+    "dragons": 55.957142857142856,
+    "barons": 66.61428571428571,
+    "gd15": 153,
+    "score": 83.2
+  },
+  {
+    "team": "LEV",
+    "weight": 0,
+    "regular": {
+      "team": "LEV",
+      "phase": "regular",
+      "games": 14,
+      "wr": 14.3,
+      "dragons": 29.9,
+      "barons": 14.3,
+      "gd15": -1492
+    },
+    "playoffs": null,
+    "wr": 14.3,
+    "dragons": 29.9,
+    "barons": 14.3,
+    "gd15": -1492,
+    "score": 65.5
+  },
+  {
+    "team": "LOS",
+    "weight": 0.6363636363636364,
+    "regular": {
+      "team": "LOS",
+      "phase": "regular",
+      "games": 15,
+      "wr": 80,
+      "dragons": 61.6,
+      "barons": 78.6,
+      "gd15": 2406
+    },
+    "playoffs": {
+      "team": "LOS",
+      "phase": "playoffs",
+      "games": 14,
+      "wr": 64.3,
+      "dragons": 49.3,
+      "barons": 65.5,
+      "gd15": 846
+    },
+    "wr": 70.0090909090909,
+    "dragons": 53.77272727272727,
+    "barons": 70.26363636363637,
+    "gd15": 1413.2727272727273,
+    "score": 85
+  },
+  {
+    "team": "LLL",
+    "weight": 0.6,
+    "regular": {
+      "team": "LLL",
+      "phase": "regular",
+      "games": 15,
+      "wr": 80,
+      "dragons": 56.8,
+      "barons": 71.4,
+      "gd15": 847
+    },
+    "playoffs": {
+      "team": "LLL",
+      "phase": "playoffs",
+      "games": 12,
+      "wr": 41.7,
+      "dragons": 38.2,
+      "barons": 27.8,
+      "gd15": -950
+    },
+    "wr": 57.019999999999996,
+    "dragons": 45.64,
+    "barons": 45.24,
+    "gd15": -231.2,
+    "score": 76.3
+  },
+  {
+    "team": "PNG",
+    "weight": 0.6,
+    "regular": {
+      "team": "PNG",
+      "phase": "regular",
+      "games": 16,
+      "wr": 37.5,
+      "dragons": 48.6,
+      "barons": 37.5,
+      "gd15": -487
+    },
+    "playoffs": {
+      "team": "PNG",
+      "phase": "playoffs",
+      "games": 12,
+      "wr": 41.7,
+      "dragons": 61.3,
+      "barons": 59.1,
+      "gd15": 416
+    },
+    "wr": 40.019999999999996,
+    "dragons": 56.22,
+    "barons": 50.46,
+    "gd15": 54.79999999999998,
+    "score": 79
+  },
+  {
+    "team": "RED",
+    "weight": 0.6521739130434783,
+    "regular": {
+      "team": "RED",
+      "phase": "regular",
+      "games": 16,
+      "wr": 37.5,
+      "dragons": 50.6,
+      "barons": 37.5,
+      "gd15": 102
+    },
+    "playoffs": {
+      "team": "RED",
+      "phase": "playoffs",
+      "games": 15,
+      "wr": 53.3,
+      "dragons": 43.5,
+      "barons": 42.3,
+      "gd15": 238
+    },
+    "wr": 47.80434782608695,
+    "dragons": 45.969565217391306,
+    "barons": 40.630434782608695,
+    "gd15": 190.69565217391306,
+    "score": 76
+  },
+  {
+    "team": "KST",
+    "weight": 0.4666666666666667,
+    "regular": {
+      "team": "KST",
+      "phase": "regular",
+      "games": 17,
+      "wr": 58.8,
+      "dragons": 53.9,
+      "barons": 56.7,
+      "gd15": -447
+    },
+    "playoffs": {
+      "team": "KST",
+      "phase": "playoffs",
+      "games": 7,
+      "wr": 14.3,
+      "dragons": 42.1,
+      "barons": 16.7,
+      "gd15": -2036
+    },
+    "wr": 38.03333333333333,
+    "dragons": 48.39333333333333,
+    "barons": 38.03333333333333,
+    "gd15": -1188.5333333333333,
+    "score": 72.7
+  }
+]

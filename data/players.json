@@ -32,11 +32,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6363636363636364,
-    "micro": 84,
-    "macro": 79,
-    "mental": 93,
-    "overall": 84,
-    "price": 16
+    "micro": 83,
+    "macro": 80,
+    "mental": 86,
+    "overall": 82,
+    "price": 13,
+    "teamForm": 85,
+    "ratingVersion": 2,
+    "photo": "/players/ackerman.webp"
   },
   {
     "id": "ayu",
@@ -71,11 +74,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.7142857142857143,
-    "micro": 77,
-    "macro": 84,
-    "mental": 85,
+    "micro": 79,
+    "macro": 82,
+    "mental": 83,
     "overall": 81,
-    "price": 15
+    "price": 12,
+    "teamForm": 83,
+    "ratingVersion": 2,
+    "photo": "/players/ayu.webp"
   },
   {
     "id": "bao",
@@ -99,11 +105,14 @@
     "playoffs": null,
     "confidence": 1,
     "recentWeight": 0,
-    "micro": 64,
-    "macro": 64,
-    "mental": 73,
-    "overall": 66,
-    "price": 9
+    "micro": 71,
+    "macro": 72,
+    "mental": 75,
+    "overall": 72,
+    "price": 8,
+    "teamForm": 70,
+    "ratingVersion": 2,
+    "photo": "/players/bao.webp"
   },
   {
     "id": "boal",
@@ -138,11 +147,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 85,
-    "macro": 68,
-    "mental": 75,
-    "overall": 76,
-    "price": 13
+    "micro": 82,
+    "macro": 75,
+    "mental": 78,
+    "overall": 78,
+    "price": 11,
+    "teamForm": 79,
+    "ratingVersion": 2,
+    "photo": "/players/boal.webp"
   },
   {
     "id": "booki",
@@ -166,11 +178,14 @@
     "playoffs": null,
     "confidence": 0.9333333333333333,
     "recentWeight": 0,
-    "micro": 57,
-    "macro": 62,
-    "mental": 60,
-    "overall": 60,
-    "price": 6
+    "micro": 67,
+    "macro": 69,
+    "mental": 69,
+    "overall": 68,
+    "price": 6,
+    "teamForm": 66,
+    "ratingVersion": 2,
+    "photo": "/players/booki.webp"
   },
   {
     "id": "cariok",
@@ -205,11 +220,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 82,
-    "macro": 82,
-    "mental": 68,
+    "micro": 80,
+    "macro": 81,
+    "mental": 75,
     "overall": 79,
-    "price": 14
+    "price": 11,
+    "teamForm": 79,
+    "ratingVersion": 2,
+    "photo": "/players/cariok.webp"
   },
   {
     "id": "ceos",
@@ -244,11 +262,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 78,
-    "macro": 73,
-    "mental": 69,
-    "overall": 74,
-    "price": 12
+    "micro": 79,
+    "macro": 78,
+    "mental": 75,
+    "overall": 78,
+    "price": 11,
+    "teamForm": 79,
+    "ratingVersion": 2,
+    "photo": "/players/ceos.webp"
   },
   {
     "id": "curse",
@@ -284,10 +305,13 @@
     "confidence": 1,
     "recentWeight": 0.6363636363636364,
     "micro": 81,
-    "macro": 77,
-    "mental": 81,
-    "overall": 79,
-    "price": 14
+    "macro": 79,
+    "mental": 82,
+    "overall": 80,
+    "price": 12,
+    "teamForm": 85,
+    "ratingVersion": 2,
+    "photo": "/players/curse.webp"
   },
   {
     "id": "devost",
@@ -311,11 +335,14 @@
     "playoffs": null,
     "confidence": 0.9333333333333333,
     "recentWeight": 0,
-    "micro": 63,
-    "macro": 74,
-    "mental": 72,
-    "overall": 69,
-    "price": 10
+    "micro": 70,
+    "macro": 75,
+    "mental": 73,
+    "overall": 73,
+    "price": 9,
+    "teamForm": 66,
+    "ratingVersion": 2,
+    "photo": "/players/devost.webp"
   },
   {
     "id": "disamis",
@@ -350,11 +377,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.4666666666666667,
-    "micro": 74,
-    "macro": 74,
-    "mental": 86,
-    "overall": 76,
-    "price": 13
+    "micro": 76,
+    "macro": 76,
+    "mental": 80,
+    "overall": 77,
+    "price": 10,
+    "teamForm": 73,
+    "ratingVersion": 2,
+    "photo": "/players/disamis.webp"
   },
   {
     "id": "duduhh",
@@ -389,11 +419,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6363636363636364,
-    "micro": 84,
-    "macro": 82,
-    "mental": 73,
+    "micro": 83,
+    "macro": 81,
+    "mental": 78,
     "overall": 81,
-    "price": 15
+    "price": 12,
+    "teamForm": 85,
+    "ratingVersion": 2,
+    "photo": "/players/duduhh.webp"
   },
   {
     "id": "enga",
@@ -417,11 +450,14 @@
     "playoffs": null,
     "confidence": 0.9333333333333333,
     "recentWeight": 0,
-    "micro": 72,
-    "macro": 72,
-    "mental": 65,
-    "overall": 71,
-    "price": 11
+    "micro": 74,
+    "macro": 74,
+    "mental": 70,
+    "overall": 73,
+    "price": 9,
+    "teamForm": 66,
+    "ratingVersion": 2,
+    "photo": "/players/enga.webp"
   },
   {
     "id": "feisty",
@@ -456,11 +492,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6363636363636364,
-    "micro": 91,
-    "macro": 82,
-    "mental": 93,
-    "overall": 88,
-    "price": 18
+    "micro": 86,
+    "macro": 81,
+    "mental": 86,
+    "overall": 84,
+    "price": 14,
+    "teamForm": 85,
+    "ratingVersion": 2,
+    "photo": "/players/feisty.webp"
   },
   {
     "id": "fuuu",
@@ -495,11 +534,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6521739130434783,
-    "micro": 71,
+    "micro": 75,
     "macro": 78,
-    "mental": 75,
-    "overall": 75,
-    "price": 12
+    "mental": 77,
+    "overall": 77,
+    "price": 10,
+    "teamForm": 76,
+    "ratingVersion": 2,
+    "photo": "/players/fuuu.webp"
   },
   {
     "id": "guigo",
@@ -534,11 +576,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.7142857142857143,
-    "micro": 77,
-    "macro": 79,
-    "mental": 74,
-    "overall": 77,
-    "price": 13
+    "micro": 79,
+    "macro": 80,
+    "mental": 78,
+    "overall": 79,
+    "price": 11,
+    "teamForm": 83,
+    "ratingVersion": 2,
+    "photo": "/players/guigo.webp"
   },
   {
     "id": "hena",
@@ -573,11 +618,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 77,
-    "macro": 69,
-    "mental": 58,
-    "overall": 70,
-    "price": 10
+    "micro": 79,
+    "macro": 76,
+    "mental": 71,
+    "overall": 76,
+    "price": 10,
+    "teamForm": 79,
+    "ratingVersion": 2,
+    "photo": "/players/hena.webp"
   },
   {
     "id": "jeskla",
@@ -612,11 +660,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.4666666666666667,
-    "micro": 59,
-    "macro": 64,
-    "mental": 71,
-    "overall": 63,
-    "price": 7
+    "micro": 70,
+    "macro": 72,
+    "mental": 75,
+    "overall": 72,
+    "price": 8,
+    "teamForm": 73,
+    "ratingVersion": 2,
+    "photo": "/players/jeskla.webp"
   },
   {
     "id": "jojo",
@@ -651,11 +702,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.7142857142857143,
-    "micro": 86,
-    "macro": 77,
-    "mental": 88,
-    "overall": 83,
-    "price": 16
+    "micro": 83,
+    "macro": 79,
+    "mental": 84,
+    "overall": 82,
+    "price": 13,
+    "teamForm": 83,
+    "ratingVersion": 2,
+    "photo": "/players/jojo.webp"
   },
   {
     "id": "kaze",
@@ -690,11 +744,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 83,
-    "macro": 66,
-    "mental": 80,
-    "overall": 76,
-    "price": 13
+    "micro": 81,
+    "macro": 72,
+    "mental": 79,
+    "overall": 77,
+    "price": 10,
+    "teamForm": 76,
+    "ratingVersion": 2,
+    "photo": "/players/kaze.webp"
   },
   {
     "id": "keine",
@@ -718,11 +775,14 @@
     "playoffs": null,
     "confidence": 0.8666666666666667,
     "recentWeight": 0,
-    "micro": 64,
-    "macro": 67,
-    "mental": 76,
-    "overall": 68,
-    "price": 9
+    "micro": 73,
+    "macro": 75,
+    "mental": 78,
+    "overall": 75,
+    "price": 10,
+    "teamForm": 79,
+    "ratingVersion": 2,
+    "photo": "/players/keine.webp"
   },
   {
     "id": "luuukz",
@@ -746,11 +806,14 @@
     "playoffs": null,
     "confidence": 0.13333333333333333,
     "recentWeight": 0,
-    "micro": 71,
-    "macro": 70,
-    "mental": 70,
-    "overall": 70,
-    "price": 10
+    "micro": 77,
+    "macro": 78,
+    "mental": 77,
+    "overall": 77,
+    "price": 10,
+    "teamForm": 83,
+    "ratingVersion": 2,
+    "photo": "/players/luuukz.webp"
   },
   {
     "id": "manel",
@@ -785,11 +848,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6521739130434783,
-    "micro": 69,
-    "macro": 70,
-    "mental": 73,
-    "overall": 70,
-    "price": 10
+    "micro": 75,
+    "macro": 74,
+    "mental": 76,
+    "overall": 75,
+    "price": 10,
+    "teamForm": 76,
+    "ratingVersion": 2,
+    "photo": "/players/manel.webp"
   },
   {
     "id": "mireu",
@@ -824,11 +890,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.4666666666666667,
-    "micro": 83,
-    "macro": 69,
-    "mental": 55,
-    "overall": 72,
-    "price": 11
+    "micro": 80,
+    "macro": 74,
+    "mental": 68,
+    "overall": 75,
+    "price": 10,
+    "teamForm": 73,
+    "ratingVersion": 2,
+    "photo": "/players/mireu.webp"
   },
   {
     "id": "momochi",
@@ -852,11 +921,14 @@
     "playoffs": null,
     "confidence": 1,
     "recentWeight": 0,
-    "micro": 63,
-    "macro": 74,
-    "mental": 58,
-    "overall": 66,
-    "price": 9
+    "micro": 71,
+    "macro": 76,
+    "mental": 69,
+    "overall": 73,
+    "price": 9,
+    "teamForm": 70,
+    "ratingVersion": 2,
+    "photo": "/players/momochi.webp"
   },
   {
     "id": "morttheus",
@@ -891,11 +963,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6521739130434783,
-    "micro": 91,
-    "macro": 86,
-    "mental": 74,
-    "overall": 86,
-    "price": 17
+    "micro": 84,
+    "macro": 82,
+    "mental": 77,
+    "overall": 82,
+    "price": 13,
+    "teamForm": 76,
+    "ratingVersion": 2,
+    "photo": "/players/morttheus.webp"
   },
   {
     "id": "namiru",
@@ -930,11 +1005,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 65,
-    "macro": 69,
-    "mental": 64,
-    "overall": 66,
-    "price": 9
+    "micro": 73,
+    "macro": 76,
+    "mental": 73,
+    "overall": 74,
+    "price": 9,
+    "teamForm": 79,
+    "ratingVersion": 2,
+    "photo": "/players/namiru.webp"
   },
   {
     "id": "peach",
@@ -958,11 +1036,14 @@
     "playoffs": null,
     "confidence": 1,
     "recentWeight": 0,
-    "micro": 70,
-    "macro": 79,
-    "mental": 59,
-    "overall": 71,
-    "price": 11
+    "micro": 74,
+    "macro": 78,
+    "mental": 69,
+    "overall": 75,
+    "price": 10,
+    "teamForm": 70,
+    "ratingVersion": 2,
+    "photo": "/players/peach.webp"
   },
   {
     "id": "rabelo",
@@ -997,11 +1078,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 69,
-    "macro": 75,
-    "mental": 60,
-    "overall": 70,
-    "price": 10
+    "micro": 75,
+    "macro": 76,
+    "mental": 71,
+    "overall": 75,
+    "price": 10,
+    "teamForm": 76,
+    "ratingVersion": 2,
+    "photo": "/players/rabelo.webp"
   },
   {
     "id": "shiku",
@@ -1025,11 +1109,14 @@
     "playoffs": null,
     "confidence": 0.9333333333333333,
     "recentWeight": 0,
-    "micro": 55,
-    "macro": 56,
-    "mental": 54,
-    "overall": 55,
-    "price": 4
+    "micro": 67,
+    "macro": 67,
+    "mental": 66,
+    "overall": 67,
+    "price": 6,
+    "teamForm": 66,
+    "ratingVersion": 2,
+    "photo": "/players/shiku.webp"
   },
   {
     "id": "sinatra",
@@ -1064,11 +1151,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 70,
-    "macro": 80,
-    "mental": 72,
-    "overall": 74,
-    "price": 12
+    "micro": 75,
+    "macro": 78,
+    "mental": 76,
+    "overall": 76,
+    "price": 10,
+    "teamForm": 76,
+    "ratingVersion": 2,
+    "photo": "/players/sinatra.webp"
   },
   {
     "id": "stepz",
@@ -1103,11 +1193,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6521739130434783,
-    "micro": 72,
-    "macro": 79,
-    "mental": 71,
-    "overall": 75,
-    "price": 12
+    "micro": 76,
+    "macro": 78,
+    "mental": 75,
+    "overall": 77,
+    "price": 10,
+    "teamForm": 76,
+    "ratingVersion": 2,
+    "photo": "/players/stepz.webp"
   },
   {
     "id": "strensh",
@@ -1131,11 +1224,14 @@
     "playoffs": null,
     "confidence": 0.9333333333333333,
     "recentWeight": 0,
-    "micro": 60,
-    "macro": 56,
-    "mental": 85,
-    "overall": 63,
-    "price": 7
+    "micro": 69,
+    "macro": 67,
+    "mental": 78,
+    "overall": 70,
+    "price": 7,
+    "teamForm": 66,
+    "ratingVersion": 2,
+    "photo": "/players/strensh.webp"
   },
   {
     "id": "tatu",
@@ -1170,11 +1266,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6666666666666666,
-    "micro": 79,
-    "macro": 82,
-    "mental": 90,
-    "overall": 82,
-    "price": 15
+    "micro": 80,
+    "macro": 81,
+    "mental": 85,
+    "overall": 81,
+    "price": 12,
+    "teamForm": 83,
+    "ratingVersion": 2,
+    "photo": "/players/tatu.webp"
   },
   {
     "id": "tutsz",
@@ -1209,11 +1308,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.7142857142857143,
-    "micro": 71,
-    "macro": 76,
-    "mental": 88,
-    "overall": 76,
-    "price": 13
+    "micro": 77,
+    "macro": 78,
+    "mental": 84,
+    "overall": 79,
+    "price": 11,
+    "teamForm": 83,
+    "ratingVersion": 2,
+    "photo": "/players/tutsz.webp"
   },
   {
     "id": "zekas",
@@ -1248,11 +1350,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.4666666666666667,
-    "micro": 57,
-    "macro": 72,
-    "mental": 53,
-    "overall": 62,
-    "price": 7
+    "micro": 69,
+    "macro": 75,
+    "mental": 67,
+    "overall": 71,
+    "price": 8,
+    "teamForm": 73,
+    "ratingVersion": 2,
+    "photo": "/players/zekas.webp"
   },
   {
     "id": "zest",
@@ -1287,11 +1392,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6363636363636364,
-    "micro": 92,
-    "macro": 84,
-    "mental": 89,
-    "overall": 88,
-    "price": 18
+    "micro": 86,
+    "macro": 82,
+    "mental": 85,
+    "overall": 84,
+    "price": 14,
+    "teamForm": 85,
+    "ratingVersion": 2,
+    "photo": "/players/zest.webp"
   },
   {
     "id": "zothve",
@@ -1315,11 +1423,14 @@
     "playoffs": null,
     "confidence": 1,
     "recentWeight": 0,
-    "micro": 63,
-    "macro": 54,
-    "mental": 81,
-    "overall": 63,
-    "price": 7
+    "micro": 71,
+    "macro": 67,
+    "mental": 78,
+    "overall": 71,
+    "price": 8,
+    "teamForm": 70,
+    "ratingVersion": 2,
+    "photo": "/players/zothve.webp"
   },
   {
     "id": "cody",
@@ -1343,11 +1454,14 @@
     "playoffs": null,
     "confidence": 1,
     "recentWeight": 0,
-    "micro": 56,
-    "macro": 76,
-    "mental": 60,
-    "overall": 65,
-    "price": 8
+    "micro": 68,
+    "macro": 77,
+    "mental": 70,
+    "overall": 72,
+    "price": 8,
+    "teamForm": 70,
+    "ratingVersion": 2,
+    "photo": "/players/cody.webp"
   },
   {
     "id": "frosty",
@@ -1371,11 +1485,14 @@
     "playoffs": null,
     "confidence": 0.2,
     "recentWeight": 0,
-    "micro": 71,
-    "macro": 72,
-    "mental": 73,
-    "overall": 72,
-    "price": 11
+    "micro": 75,
+    "macro": 76,
+    "mental": 76,
+    "overall": 76,
+    "price": 10,
+    "teamForm": 76,
+    "ratingVersion": 2,
+    "photo": "/players/frosty.webp"
   },
   {
     "id": "scamber",
@@ -1410,11 +1527,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.4666666666666667,
-    "micro": 71,
-    "macro": 72,
-    "mental": 68,
-    "overall": 71,
-    "price": 11
+    "micro": 75,
+    "macro": 75,
+    "mental": 73,
+    "overall": 75,
+    "price": 10,
+    "teamForm": 73,
+    "ratingVersion": 2,
+    "photo": "/players/scamber.webp"
   },
   {
     "id": "uzent",
@@ -1449,11 +1569,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 85,
-    "macro": 85,
-    "mental": 80,
-    "overall": 84,
-    "price": 16
+    "micro": 81,
+    "macro": 81,
+    "mental": 79,
+    "overall": 81,
+    "price": 12,
+    "teamForm": 76,
+    "ratingVersion": 2,
+    "photo": "/players/uzent.webp"
   },
   {
     "id": "xyno",
@@ -1488,11 +1611,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 72,
-    "macro": 74,
-    "mental": 73,
-    "overall": 73,
-    "price": 12
+    "micro": 76,
+    "macro": 76,
+    "mental": 76,
+    "overall": 76,
+    "price": 10,
+    "teamForm": 76,
+    "ratingVersion": 2,
+    "photo": "/players/xyno.webp"
   },
   {
     "id": "zynts",
@@ -1527,11 +1653,14 @@
     },
     "confidence": 1,
     "recentWeight": 0.6521739130434783,
-    "micro": 72,
-    "macro": 74,
-    "mental": 63,
-    "overall": 71,
-    "price": 11
+    "micro": 76,
+    "macro": 76,
+    "mental": 72,
+    "overall": 75,
+    "price": 10,
+    "teamForm": 76,
+    "ratingVersion": 2,
+    "photo": "/players/zynts.webp"
   },
   {
     "id": "shini",
@@ -1552,11 +1681,14 @@
       "csd15": 7
     },
     "confidence": 0.26666666666666666,
-    "recentWeight": 0.3333333333333333,
-    "micro": 75,
-    "macro": 69,
-    "mental": 76,
-    "overall": 73,
-    "price": 12
+    "recentWeight": 1,
+    "micro": 79,
+    "macro": 77,
+    "mental": 79,
+    "overall": 78,
+    "price": 11,
+    "teamForm": 83,
+    "ratingVersion": 2,
+    "photo": "/players/shini.webp"
   }
 ]

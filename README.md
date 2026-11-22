@@ -1,36 +1,51 @@
 # Rift Draft
 
-Jogo de leilão de cartas do CBLOL, com identidade visual própria. Cinco posições, 50 moedas fictícias e campeonato para 2, 4 ou 8 equipes. Sem apostas, compras reais ou prêmios financeiros.
+Jogo independente inspirado em **Footlobby**. Leilão de jogadores do CBLOL com 50 moedas fictícias, cinco posições, fotos reais, drafts verificados do Worlds 2026 e séries melhor de três.
 
-## O que foi implementado
+Site: https://rift-draft-br2002.wrydingo.chatgpt.site/
+Código: https://github.com/mateuszilio225/teste-c/tree/rift-draft
 
-- Sala online com convite por código, autenticação anônima por token e estado persistido em Cloudflare D1.
-- Polling de 1,5 segundo; lances validados no servidor com controle de versão otimista para concorrência.
-- Treino local com bots, identificado na interface e separado das salas online.
-- Carta exclusiva por jogador, cinco posições obrigatórias, reserva de orçamento, dez segundos por lote e extensão de 2,5 segundos para lances tardios.
-- Preenchimento de lotes sem lance por uma moeda entre equipes elegíveis, garantindo que todos os elencos fechem.
-- Mata-mata com exatamente três jogos por confronto, incluindo o terceiro após 2 a 0.
-- Duas opções de composição por equipe/jogo; escolhas ocultas até a confirmação. Nenhum campeão usado por qualquer lado reaparece na mesma série.
-- Micro/macro/mental, estilos com pesos diferentes, vantagem entre estilos, sorteio probabilístico e penalidades de rendimento após derrotas.
-- Sala de espera, catálogo com busca/filtros, detalhes de cartas e fontes, animação de partida, resultados, chave e campeã.
-- Salvamento de sessão no navegador e retomada. Salas expiram após 24 horas; não há recuperação de token em outro aparelho.
+## Leilão
 
-## Dados e critério
+- **Nenhuma carta entra automaticamente no time.** Só o maior lance confirmado compra. Lote sem lance volta ao mercado sem cobrar ninguém.
+- Criador escolhe mercado exato (equipes × 5), exato +12 ou todos os 44 nomes. +12 é limitado ao catálogo; o total real aparece antes de iniciar. Cada posição tem oferta suficiente.
+- Cada carta só pode ser comprada uma vez. Dez segundos por lote, extensão de 2,5 segundos para lance tardio, reserva de uma moeda por vaga restante.
+- Proteção contra lance atrasado comprar outra carta. Bots fazem lances e também precisam comprar suas cinco cartas.
+- Botão Mercado permite consultar cartas restantes e o criador recolocar uma carta em um lote sem lances.
+- Opção de esconder overall, atributos e preço de referência no leilão, inclusive no catálogo e nos detalhes da carta.
 
-44 jogadores que atuaram no CBLOL 2026 Split 2. Dados de fase regular e playoffs congelados em 21/11/2026. Os arquivos CSV preservam os valores consultados e o script `scripts/ratings.mjs` gera as notas, com percentis por posição e redução do efeito de amostras pequenas.
+## Campeonato e draft
 
-Fontes:
+- Mata-mata; pontos corridos; liga com playoffs; grupos com mata-mata. Salas para 2, 4 ou 8 equipes.
+- Todos contra todos uma vez nas ligas. 3 pontos por MD3 vencida. Desempates: saldo de jogos, jogos vencidos, ordem do sorteio inicial.
+- Liga + playoffs: 4 de 8 ou 2 de 4 avançam. Grupos: duas chaves; 8 equipes classificam duas por grupo com semifinais cruzadas; 4 equipes classificam uma por grupo para a final.
+- **Melhor de três real:** termina em 2–0 ou 2–1, sem terceiro jogo após 2–0.
+- Duas alternativas reais do Worlds 2026 por lado. Line-ups e alternativas adversárias são visíveis; a escolha exata é escondida até o início do jogo.
+- Base com 50 drafts verificados e fonte por cartão. Quatro packs de oito drafts completamente disjuntos garantem quatro opções compatíveis em cada jogo da MD3. Só campeões escolhidos ficam bloqueados; alternativas não escolhidas podem voltar.
+- Consequências de mental após derrotas, recuperação após vitória e reset em cada nova MD3.
 
-- https://gol.gg/players/list/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/
-- https://gol.gg/players/list/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202%20Playoffs/
-- https://maisesports.com.br/cblol-2026-veja-o-que-mudou-nas-escalacoes-dos-times-para-o-2-split
-- https://liquipedia.net/leagueoflegends/CBLOL/2026/Split_2/Player_Stats (corroboração de Shini e posições)
+## Apresentação
 
-Os atributos são estimativas de jogo, não notas oficiais. Mental é uma aproximação de consistência via mortes/KDA e não uma avaliação psicológica. As médias da fonte são arredondadas. A metodologia completa aparece no jogo. Cada campeão que combina com o arquétipo escolhido soma 0,6 ponto de coesão (até +3). Os grupos são curadoria para a simulação, não notas oficiais; não há força de patch ou proficiência individual. O estilo também muda os pesos dos atributos e interage com o estilo adversário.
+Tema escuro, 44 fotos de jogadores, seleção de campeões animada, alerta específico quando cobrirem seu lance, música ambiente original sintetizada e alerta de contagem regressiva sincronizados com o relógio. Música e alertas têm controles separados e só iniciam após interação do visitante; preferências ficam no navegador.
 
-## Desenvolvimento
+Simulações fictícias variam cronologia, ganks, invasões, lutas em rotas e selvas, larvas, dragões, Arauto, Barão, possíveis roubos, pressão lateral e Ancião em jogos longos. O mapa acompanha a região do evento e mostra placares de objetivos.
 
-Node 24+ para testes e prévia (usa `node:sqlite`), sem dependências de npm.
+## Dados e equilíbrio
+
+Amostras de jogadores e equipes do CBLOL 2026 Split 2, fase regular e playoffs, congeladas em 21/11/2026. CSVs em `data/`; `scripts/ratings.mjs` reproduz as notas. Percentis por posição, amostras pequenas aproximadas da média e escala comprimida 64–88.
+
+- Micro: 80% individual +20% coletivo.
+- Macro: 65% individual +35% coletivo.
+- Mental: 75% consistência individual +25% coletivo.
+- Forma coletiva: 45% vitórias, 25% dragões, 20% Barão, 10% ouro aos 15 minutos, comparados como percentis e ponderados por fase.
+- Overall: 40% micro +40% macro +20% mental.
+- Chances da simulação limitadas a 18%–82%. Mental é uma mecânica fictícia estimada, sem avaliação psicológica de pessoas reais.
+
+Fontes e fórmulas estão em “Dados e balanceamento”, nos CSVs, em `research/worlds-sources.md` e em `data/PLAYER_PHOTOS.md`. Fotos: 42 dos rosters oficiais do LoL Esports; Shini/Luuukz usam retratos históricos identificados de 2025 via Sheep Esports/Leaguepedia. Campeões via Riot Data Dragon16.22.1. Os estilos são nossa curadoria; picks e posições dos drafts são preservados das tabelas consultadas.
+
+## Execução e arquitetura
+
+Node24+, sem dependências de npm:
 
 ```sh
 npm run check
@@ -38,19 +53,10 @@ npm run build
 npm run dev
 ```
 
-No ambiente gerenciado, iniciar a prévia exclusivamente com `sites-preview start /workspace/sites/rift-leilao`. O build incorpora assets, motor e API em `dist/server/index.js`. O servidor usa o binding `DB`. As tabelas estão em `drizzle/0000_rooms.sql`.
+No ambiente gerenciado, usar `sites-preview start /workspace/sites/rift-leilao`. O build recursivo incorpora assets, motor e API em `dist/server/index.js`. Binding D1 `DB`, migrações em `drizzle/`, empacotadas em `dist/.openai/drizzle/`.
 
-O modo treino roda localmente. O online usa o mesmo motor no servidor; tokens e estado futuro não são enviados a outros técnicos. O navegador nunca fornece a própria pontuação ou resultado de partida.
+Salas online: tokens anônimos, estado persistido em D1, polling de 1,5 segundo e controle de versão otimista. Treino é local e identificado. Links não contêm tokens. A opção adversária escolhida, resultado futuro e RNG não são expostos na fase de draft. Durante a simulação, só eventos já revelados são enviados; penalidades de rendimento pré-jogo são mantidas na visão pública para não antecipar o vencedor.
 
-## Limites
+Salas expiram em24horas. Técnicos retomam pelo mesmo navegador; não há recuperação de identidade em outro aparelho. Configurações novas devem ser usadas em uma sala nova. Etapas expiradas avançam na próxima consulta; não existe cron com todas as abas fechadas. Sem dinheiro real, apostas, cadastro ou gravação de áudio.
 
-- Salas de 2, 4 ou 8 equipes, uma sessão de técnico por navegador. Abas do mesmo navegador reaproveitam a identidade daquela sala.
-- Não é WebSocket: a atualização é por consultas curtas; relógio visual usa o desvio em relação ao servidor.
-- Etapas expiradas são processadas na próxima consulta. Não há cron ou avanço contínuo de todas as fases com todas as abas fechadas.
-- Sem login, chat, liga persistente entre campeonatos ou troca de jogadores comprados.
-- A escolha automática evita travar o draft se alguém se desconectar. O criador pode encerrar lotes, pular animações e avançar resultados para agilizar.
-- Interface responsiva, mas aparelhos físicos e carga de muitos campeonatos simultâneos não foram testados.
-
-## Créditos
-
-Projeto de fã independente de Riot Games, CBLOL e 100pracada. Mecânica inspirada no leilão da referência, com código, textos e visual próprios. League of Legends e campeões pertencem à Riot Games; imagens via Data Dragon. DM Sans com licença OFL em `public/OFL-dm-sans.txt`.
+Licenças e créditos: Riot Games / LoL Esports para imagens; DM Sans sob OFL. Sem afiliação ao Footlobby, Riot ou CBLOL.

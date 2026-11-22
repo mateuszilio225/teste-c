@@ -1,15 +1,24 @@
-# Verificação
+# Verificação da revisão 2
 
-- [x] Sintaxe do cliente, API e artefato Worker.
-- [x] Catálogo de 44 cartas, posições válidas e limites das notas.
-- [x] Leilão completo de oito equipes: 40 cartas exclusivas, cinco posições por equipe e preservação do orçamento.
-- [x] Reserva de moedas, lances inválidos e rejeição de auto incremento do líder.
-- [x] Campeonato de quatro equipes até a campeã, exatamente três jogos por confronto e 30 campeões distintos por série.
-- [x] Ocultação do RNG, escolha adversária e resultado futuro no estado público.
-- [x] Efeito de mental após derrota e ocorrência de vitórias do azarão.
-- [x] API em SQLite real: criação, entrada, sessão, sincronização de lances, reconexão, permissões e concorrência otimista.
-- [x] Chrome na versão pública: home, sala online, lance e compra, transição para draft, escolha, simulação, resultado e queda de rendimento após derrota.
-- [x] Banco D1 hospedado: duas sessões HTTP independentes, lances sincronizados, fechamento de line-ups, três jogos, 30 campeões sem repetição, campeã e reconexão (`reports/published-smoke.json`).
-- [ ] Aparelhos físicos e carga.
+## Testes automatizados atuais
 
-A prévia gerenciada não abriu o relay da porta 4173. Não foi iniciado servidor alternativo nem instalado navegador. A publicação pública abriu sem conta em nova aba; a aba antiga reteve a tela de login em cache. A conferência visual foi feita na publicação. O teste com duas sessões usou clientes HTTP e D1 hospedado; não duas pessoas em aparelhos físicos.
+- [x] 44 cartas, fotos reais locais e proveniência por identidade.
+- [x] Mercados exato, exato +12 e completo para 2/4/8 equipes, sem duplicatas e com todas as posições disponíveis.
+- [x] Lote sem lance não contrata, não cobra e permite nova oferta.
+- [x] Apenas vencedor do leilão recebe carta; reserva de orçamento e proteção de lote expirado.
+- [x] Oito equipes compram40cartas exclusivas sem orçamento negativo.
+- [x] MD3 para em dois triunfos; séries2–0 não têm terceiro jogo.
+- [x] Drafts reais e packs Fearless completos, sem repetição dos campeões escolhidos.
+- [x] Duas alternativas adversárias públicas, índice da escolha adversária oculto.
+- [x] Liga, liga+playoffs e grupos+playoffs completos com campeão, calendário único e tabela coerente.
+- [x] Eventos variados, cronologia ordenada, regiões diferentes, larvas/dragões/Barão e Ancião em jogos longos.
+- [x] API em SQLite real: sessão, compra, sincronização e concorrência.
+
+## Publicação e interface
+
+- [ ] Teste HTTP de duas sessões no D1 hospedado da revisão2.
+- [ ] Conferência visual da revisão2 no Chrome e fluxo de configuração/draft.
+- [ ] Reprodução de sons em dispositivo físico e conferência móvel física.
+- [ ] Carga de muitos campeonatos simultâneos.
+
+Relatório da publicação anterior foi arquivado como `reports/published-smoke-v1.json`. A revisão2 terá seu próprio resultado em `reports/published-smoke.json` após o teste online. Nenhum resultado da versão anterior é presumido para esta revisão.

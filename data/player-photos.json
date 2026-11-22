@@ -1,0 +1,400 @@
+{
+  "ackerman": {
+    "image": "https://static.lolesports.com/players/1785139928559_LOS_Ackerman-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/los",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Ackerman",
+    "path": "/players/ackerman.webp",
+    "width": 420,
+    "height": 333
+  },
+  "zest": {
+    "image": "https://static.lolesports.com/players/1785139905307_LOS_Zest-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/los",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Zest",
+    "path": "/players/zest.webp",
+    "width": 420,
+    "height": 333
+  },
+  "curse": {
+    "image": "https://static.lolesports.com/players/1785139911386_LOS_Curse-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/los",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Curse",
+    "path": "/players/curse.webp",
+    "width": 420,
+    "height": 333
+  },
+  "feisty": {
+    "image": "https://static.lolesports.com/players/1785139916710_LOS_Feisty-5copy.png",
+    "source": "https://lolesports.com/en-US/teams/los",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Feisty",
+    "path": "/players/feisty.webp",
+    "width": 420,
+    "height": 333
+  },
+  "duduhh": {
+    "image": "https://static.lolesports.com/players/1785139922550_LOS_Duduhh-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/los",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Duduhh",
+    "path": "/players/duduhh.webp",
+    "width": 420,
+    "height": 333
+  },
+  "ayu": {
+    "image": "https://static.lolesports.com/players/1785137510622_FUR_Ayu-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/furia",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Ayu",
+    "path": "/players/ayu.webp",
+    "width": 420,
+    "height": 333
+  },
+  "guigo": {
+    "image": "https://static.lolesports.com/players/1785137517154_FUR_Guigo-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/furia",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Guigo",
+    "path": "/players/guigo.webp",
+    "width": 420,
+    "height": 333
+  },
+  "tatu": {
+    "image": "https://static.lolesports.com/players/1785137528696_FUR_Tatu-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/furia",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Tatu",
+    "path": "/players/tatu.webp",
+    "width": 420,
+    "height": 333
+  },
+  "tutsz": {
+    "image": "https://static.lolesports.com/players/1785137538274_FUR_Tutsz-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/furia",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Tutsz",
+    "path": "/players/tutsz.webp",
+    "width": 420,
+    "height": 333
+  },
+  "jojo": {
+    "image": "https://static.lolesports.com/players/1785137522978_FUR_Jojo-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/furia",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "JoJo",
+    "path": "/players/jojo.webp",
+    "width": 420,
+    "height": 333
+  },
+  "namiru": {
+    "image": "https://static.lolesports.com/players/1717432498685_Namiru.png",
+    "source": "https://lolesports.com/en-US/teams/pain-gaming",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Namiru",
+    "path": "/players/namiru.webp",
+    "width": 418,
+    "height": 356
+  },
+  "keine": {
+    "image": "https://static.lolesports.com/players/1785141987751_PNG_Keine-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/pain-gaming",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Keine",
+    "path": "/players/keine.webp",
+    "width": 420,
+    "height": 333
+  },
+  "cariok": {
+    "image": "https://static.lolesports.com/players/1785141992129_PNG_Cariok-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/pain-gaming",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "CarioK",
+    "path": "/players/cariok.webp",
+    "width": 420,
+    "height": 333
+  },
+  "boal": {
+    "image": "https://static.lolesports.com/players/1785141997512_PNG_Boal-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/pain-gaming",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Boal",
+    "path": "/players/boal.webp",
+    "width": 420,
+    "height": 333
+  },
+  "hena": {
+    "image": "https://static.lolesports.com/players/1785141982983_PNG_Hena-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/pain-gaming",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Hena",
+    "path": "/players/hena.webp",
+    "width": 420,
+    "height": 333
+  },
+  "ceos": {
+    "image": "https://static.lolesports.com/players/1785141977929_PNG_Ceos-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/pain-gaming",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Ceos",
+    "path": "/players/ceos.webp",
+    "width": 420,
+    "height": 333
+  },
+  "jeskla": {
+    "image": "https://static.lolesports.com/players/1785142357541_VKS_Jeskla-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/vivo-keyd",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Jeskla",
+    "path": "/players/jeskla.webp",
+    "width": 420,
+    "height": 333
+  },
+  "zekas": {
+    "image": "https://static.lolesports.com/players/1785142363013_VKS_Zekas-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/vivo-keyd",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "zekas",
+    "path": "/players/zekas.webp",
+    "width": 420,
+    "height": 333
+  },
+  "disamis": {
+    "image": "https://static.lolesports.com/players/1754037442082_disamis.png",
+    "source": "https://lolesports.com/en-US/teams/vivo-keyd",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Disamis",
+    "path": "/players/disamis.webp",
+    "width": 420,
+    "height": 332
+  },
+  "scamber": {
+    "image": "https://static.lolesports.com/players/1754037601928_scamber.png",
+    "source": "https://lolesports.com/en-US/teams/vivo-keyd",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "scamber",
+    "path": "/players/scamber.webp",
+    "width": 420,
+    "height": 332
+  },
+  "mireu": {
+    "image": "https://static.lolesports.com/players/1754037358233_mireu.png",
+    "source": "https://lolesports.com/en-US/teams/vivo-keyd",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Mireu",
+    "path": "/players/mireu.webp",
+    "width": 420,
+    "height": 332
+  },
+  "peach": {
+    "image": "https://static.lolesports.com/players/1785139513908_FX_Peach-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/fluxo",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Peach",
+    "path": "/players/peach.webp",
+    "width": 420,
+    "height": 333
+  },
+  "bao": {
+    "image": "https://static.lolesports.com/players/1785139523706_FX_Bao-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/fluxo",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "BAO",
+    "path": "/players/bao.webp",
+    "width": 420,
+    "height": 333
+  },
+  "cody": {
+    "image": "https://static.lolesports.com/players/1785139531116_FX_Cody-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/fluxo",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "cody",
+    "path": "/players/cody.webp",
+    "width": 420,
+    "height": 333
+  },
+  "momochi": {
+    "image": "https://static.lolesports.com/players/1785139537171_FX_Momochi-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/fluxo",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Momochi",
+    "path": "/players/momochi.webp",
+    "width": 420,
+    "height": 333
+  },
+  "zothve": {
+    "image": "https://static.lolesports.com/players/1785139505968_FX_Zothve-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/fluxo",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Zothve",
+    "path": "/players/zothve.webp",
+    "width": 420,
+    "height": 333
+  },
+  "devost": {
+    "image": "https://static.lolesports.com/players/1785138940948_LEV_Devost-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/leviatan-esports",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Devost",
+    "path": "/players/devost.webp",
+    "width": 420,
+    "height": 333
+  },
+  "booki": {
+    "image": "https://static.lolesports.com/players/1785138935624_LEV_Booki-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/leviatan-esports",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Booki",
+    "path": "/players/booki.webp",
+    "width": 420,
+    "height": 333
+  },
+  "enga": {
+    "image": "https://static.lolesports.com/players/1785138930440_LEV_Enga-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/leviatan-esports",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Enga",
+    "path": "/players/enga.webp",
+    "width": 420,
+    "height": 333
+  },
+  "shiku": {
+    "image": "https://static.lolesports.com/players/1785138919269_LEV_Shiku-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/leviatan-esports",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Shiku",
+    "path": "/players/shiku.webp",
+    "width": 420,
+    "height": 333
+  },
+  "strensh": {
+    "image": "https://static.lolesports.com/players/1785138924996_LEV_Strens-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/leviatan-esports",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Strensh",
+    "path": "/players/strensh.webp",
+    "width": 420,
+    "height": 333
+  },
+  "uzent": {
+    "image": "https://static.lolesports.com/players/1785138005226_Loud_Uzent-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/loud",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "uZent",
+    "path": "/players/uzent.webp",
+    "width": 420,
+    "height": 333
+  },
+  "xyno": {
+    "image": "https://static.lolesports.com/players/1785138025769_Loud_Xyno-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/loud",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Xyno",
+    "path": "/players/xyno.webp",
+    "width": 420,
+    "height": 333
+  },
+  "sinatra": {
+    "image": "https://static.lolesports.com/players/1785138020504_Loud_Sinatra-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/loud",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Sinatra",
+    "path": "/players/sinatra.webp",
+    "width": 420,
+    "height": 333
+  },
+  "kaze": {
+    "image": "https://static.lolesports.com/players/1785138015783_Loud_Kaze-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/loud",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Kaze",
+    "path": "/players/kaze.webp",
+    "width": 420,
+    "height": 333
+  },
+  "rabelo": {
+    "image": "https://static.lolesports.com/players/1785138010514_Loud_Rabelo-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/loud",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Rabelo",
+    "path": "/players/rabelo.webp",
+    "width": 420,
+    "height": 333
+  },
+  "zynts": {
+    "image": "https://static.lolesports.com/players/1785142349477_RED_Zynts-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/red-kalunga",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "zynts",
+    "path": "/players/zynts.webp",
+    "width": 420,
+    "height": 333
+  },
+  "stepz": {
+    "image": "https://static.lolesports.com/players/1785142383650_RED_Stepz-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/red-kalunga",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "STEPZ",
+    "path": "/players/stepz.webp",
+    "width": 420,
+    "height": 333
+  },
+  "manel": {
+    "image": "https://static.lolesports.com/players/1717430231339_Manel.png",
+    "source": "https://lolesports.com/en-US/teams/red-kalunga",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Manel",
+    "path": "/players/manel.webp",
+    "width": 417,
+    "height": 353
+  },
+  "morttheus": {
+    "image": "https://static.lolesports.com/players/1785142373432_RED_Morttheus-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/red-kalunga",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Morttheus",
+    "path": "/players/morttheus.webp",
+    "width": 420,
+    "height": 333
+  },
+  "fuuu": {
+    "image": "https://static.lolesports.com/players/1785142378404_RED_Fuuu-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/red-kalunga",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "Fuuu",
+    "path": "/players/fuuu.webp",
+    "width": 420,
+    "height": 333
+  },
+  "frosty": {
+    "image": "https://static.lolesports.com/players/1785142368737_RED_Frosty-1copy.png",
+    "source": "https://lolesports.com/en-US/teams/red-kalunga",
+    "credit": "LoL Esports / Riot Games",
+    "identityLabel": "frosty",
+    "path": "/players/frosty.webp",
+    "width": 420,
+    "height": 333
+  },
+  "shini": {
+    "path": "/players/shini.webp",
+    "image": "https://assets.sheepesports.com/esports/lol/players/LOUD_Shini_2025_Split_2.png",
+    "source": "https://www.sheepesports.com/us/lol/players/Shini",
+    "credit": "LoL Esports / Riot Games, via Sheep Esports / Leaguepedia",
+    "identityLabel": "Shini",
+    "photoSeason": "2025 Split 2 (LOUD)",
+    "width": 420,
+    "height": 420
+  },
+  "luuukz": {
+    "path": "/players/luuukz.webp",
+    "image": "https://assets.sheepesports.com/esports/lol/players/FLA_Luuukz_2025_Split_2.png",
+    "source": "https://www.sheepesports.com/en/lol/players/Luuukz",
+    "credit": "LoL Esports / Riot Games, via Sheep Esports / Leaguepedia",
+    "identityLabel": "Luuukz",
+    "photoSeason": "2025 Split 2 (Flamengo)",
+    "width": 420,
+    "height": 420
+  }
+}

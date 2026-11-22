@@ -1,0 +1,902 @@
+[
+  {
+    "id": "worlds-2026-final-gen-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-final",
+    "team": "GEN",
+    "opponent": "BLG",
+    "game": 1,
+    "stage": "Final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-final-results",
+    "champions": {
+      "TOP": "Olaf",
+      "JG": "LeeSin",
+      "MID": "Syndra",
+      "ADC": "Corki",
+      "SUP": "Nami"
+    },
+    "style": "control"
+  },
+  {
+    "id": "worlds-2026-final-blg-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-final",
+    "team": "BLG",
+    "opponent": "GEN",
+    "game": 1,
+    "stage": "Final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-final-results",
+    "champions": {
+      "TOP": "KSante",
+      "JG": "JarvanIV",
+      "MID": "Locke",
+      "ADC": "Kalista",
+      "SUP": "Renata"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-final-blg-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-final",
+    "team": "BLG",
+    "opponent": "GEN",
+    "game": 2,
+    "stage": "Final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-final-results",
+    "champions": {
+      "TOP": "Gnar",
+      "JG": "Naafiri",
+      "MID": "Cassiopeia",
+      "ADC": "Ziggs",
+      "SUP": "Camille"
+    },
+    "style": "control"
+  },
+  {
+    "id": "worlds-2026-final-gen-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-final",
+    "team": "GEN",
+    "opponent": "BLG",
+    "game": 2,
+    "stage": "Final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-final-results",
+    "champions": {
+      "TOP": "Vayne",
+      "JG": "Chogath",
+      "MID": "Orianna",
+      "ADC": "Ezreal",
+      "SUP": "Karma"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "worlds-2026-final-blg-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-final",
+    "team": "BLG",
+    "opponent": "GEN",
+    "game": 3,
+    "stage": "Final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-final-results",
+    "champions": {
+      "TOP": "Jax",
+      "JG": "Vi",
+      "MID": "Viktor",
+      "ADC": "Taliyah",
+      "SUP": "Alistar"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-final-gen-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-final",
+    "team": "GEN",
+    "opponent": "BLG",
+    "game": 3,
+    "stage": "Final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-final-results",
+    "champions": {
+      "TOP": "Ambessa",
+      "JG": "MonkeyKing",
+      "MID": "Annie",
+      "ADC": "Jhin",
+      "SUP": "Rakan"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-final-blg-g4",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-final",
+    "team": "BLG",
+    "opponent": "GEN",
+    "game": 4,
+    "stage": "Final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-final-results",
+    "champions": {
+      "TOP": "Gwen",
+      "JG": "Nocturne",
+      "MID": "TwistedFate",
+      "ADC": "Yunara",
+      "SUP": "Neeko"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-final-gen-g4",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-final",
+    "team": "GEN",
+    "opponent": "BLG",
+    "game": 4,
+    "stage": "Final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-final-results",
+    "champions": {
+      "TOP": "Aurora",
+      "JG": "Pantheon",
+      "MID": "Akali",
+      "ADC": "Xayah",
+      "SUP": "Lulu"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-sf2-blg-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf2",
+    "team": "BLG",
+    "opponent": "T1",
+    "game": 1,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "KSante",
+      "JG": "Naafiri",
+      "MID": "Orianna",
+      "ADC": "Corki",
+      "SUP": "Nautilus"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-sf2-t1-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf2",
+    "team": "T1",
+    "opponent": "BLG",
+    "game": 1,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Rumble",
+      "JG": "Nocturne",
+      "MID": "Locke",
+      "ADC": "Xayah",
+      "SUP": "Rakan"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-sf2-t1-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf2",
+    "team": "T1",
+    "opponent": "BLG",
+    "game": 2,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Olaf",
+      "JG": "LeeSin",
+      "MID": "Syndra",
+      "ADC": "Jhin",
+      "SUP": "Poppy"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-sf2-blg-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf2",
+    "team": "BLG",
+    "opponent": "T1",
+    "game": 2,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Camille",
+      "JG": "Qiyana",
+      "MID": "Leblanc",
+      "ADC": "Kaisa",
+      "SUP": "Alistar"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-sf2-blg-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf2",
+    "team": "BLG",
+    "opponent": "T1",
+    "game": 3,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Gnar",
+      "JG": "Pantheon",
+      "MID": "Taliyah",
+      "ADC": "Ezreal",
+      "SUP": "Nami"
+    },
+    "style": "control"
+  },
+  {
+    "id": "worlds-2026-sf2-t1-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf2",
+    "team": "T1",
+    "opponent": "BLG",
+    "game": 3,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Ambessa",
+      "JG": "JarvanIV",
+      "MID": "Ahri",
+      "ADC": "Sivir",
+      "SUP": "Karma"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-sf2-blg-g4",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf2",
+    "team": "BLG",
+    "opponent": "T1",
+    "game": 4,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Renekton",
+      "JG": "Skarner",
+      "MID": "Viktor",
+      "ADC": "Ashe",
+      "SUP": "Seraphine"
+    },
+    "style": "control"
+  },
+  {
+    "id": "worlds-2026-sf2-t1-g4",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf2",
+    "team": "T1",
+    "opponent": "BLG",
+    "game": 4,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Vayne",
+      "JG": "MonkeyKing",
+      "MID": "Akali",
+      "ADC": "Lucian",
+      "SUP": "Milio"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "worlds-2026-sf1-gen-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf1",
+    "team": "GEN",
+    "opponent": "IG",
+    "game": 1,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Olaf",
+      "JG": "Qiyana",
+      "MID": "Cassiopeia",
+      "ADC": "Jhin",
+      "SUP": "Leona"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-sf1-ig-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf1",
+    "team": "IG",
+    "opponent": "GEN",
+    "game": 1,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Kled",
+      "JG": "Vi",
+      "MID": "Syndra",
+      "ADC": "Xayah",
+      "SUP": "Rakan"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-sf1-gen-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf1",
+    "team": "GEN",
+    "opponent": "IG",
+    "game": 2,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Gwen",
+      "JG": "LeeSin",
+      "MID": "Ahri",
+      "ADC": "Ashe",
+      "SUP": "Seraphine"
+    },
+    "style": "control"
+  },
+  {
+    "id": "worlds-2026-sf1-ig-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf1",
+    "team": "IG",
+    "opponent": "GEN",
+    "game": 2,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Rumble",
+      "JG": "Nocturne",
+      "MID": "Sylas",
+      "ADC": "Lucian",
+      "SUP": "Milio"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-sf1-gen-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf1",
+    "team": "GEN",
+    "opponent": "IG",
+    "game": 3,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Camille",
+      "JG": "MonkeyKing",
+      "MID": "Taliyah",
+      "ADC": "Yunara",
+      "SUP": "Nautilus"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-sf1-ig-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-sf1",
+    "team": "IG",
+    "opponent": "GEN",
+    "game": 3,
+    "stage": "Semifinal",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Gnar",
+      "JG": "Naafiri",
+      "MID": "Locke",
+      "ADC": "Ezreal",
+      "SUP": "Alistar"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-qf4-t1-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf4",
+    "team": "T1",
+    "opponent": "KC",
+    "game": 1,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Ornn",
+      "JG": "JarvanIV",
+      "MID": "Viktor",
+      "ADC": "Yunara",
+      "SUP": "Lulu"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "worlds-2026-qf4-kc-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf4",
+    "team": "KC",
+    "opponent": "T1",
+    "game": 1,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Rumble",
+      "JG": "LeeSin",
+      "MID": "Syndra",
+      "ADC": "Ezreal",
+      "SUP": "Leona"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-qf4-t1-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf4",
+    "team": "T1",
+    "opponent": "KC",
+    "game": 2,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Olaf",
+      "JG": "Trundle",
+      "MID": "Cassiopeia",
+      "ADC": "Kaisa",
+      "SUP": "Nautilus"
+    },
+    "style": "control"
+  },
+  {
+    "id": "worlds-2026-qf4-kc-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf4",
+    "team": "KC",
+    "opponent": "T1",
+    "game": 2,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Ambessa",
+      "JG": "Pantheon",
+      "MID": "Orianna",
+      "ADC": "Tristana",
+      "SUP": "Rell"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-qf4-kc-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf4",
+    "team": "KC",
+    "opponent": "T1",
+    "game": 3,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "KSante",
+      "JG": "XinZhao",
+      "MID": "Anivia",
+      "ADC": "Ashe",
+      "SUP": "Seraphine"
+    },
+    "style": "control"
+  },
+  {
+    "id": "worlds-2026-qf4-t1-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf4",
+    "team": "T1",
+    "opponent": "KC",
+    "game": 3,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Jayce",
+      "JG": "Sejuani",
+      "MID": "Taliyah",
+      "ADC": "Zeri",
+      "SUP": "Yuumi"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "worlds-2026-qf4-t1-g4",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf4",
+    "team": "T1",
+    "opponent": "KC",
+    "game": 4,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Camille",
+      "JG": "Nocturne",
+      "MID": "Annie",
+      "ADC": "MissFortune",
+      "SUP": "Neeko"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-qf4-kc-g4",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf4",
+    "team": "KC",
+    "opponent": "T1",
+    "game": 4,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Renekton",
+      "JG": "MonkeyKing",
+      "MID": "Ahri",
+      "ADC": "Xayah",
+      "SUP": "Rakan"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-qf3-blg-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf3",
+    "team": "BLG",
+    "opponent": "DK",
+    "game": 1,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Ambessa",
+      "JG": "Naafiri",
+      "MID": "Galio",
+      "ADC": "Cassiopeia",
+      "SUP": "Nautilus"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-qf3-dk-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf3",
+    "team": "DK",
+    "opponent": "BLG",
+    "game": 1,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Rumble",
+      "JG": "Qiyana",
+      "MID": "Akali",
+      "ADC": "Corki",
+      "SUP": "Rell"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-qf3-blg-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf3",
+    "team": "BLG",
+    "opponent": "DK",
+    "game": 2,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Gnar",
+      "JG": "LeeSin",
+      "MID": "Orianna",
+      "ADC": "Ezreal",
+      "SUP": "Leona"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-qf3-dk-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf3",
+    "team": "DK",
+    "opponent": "BLG",
+    "game": 2,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Kennen",
+      "JG": "JarvanIV",
+      "MID": "Ryze",
+      "ADC": "Yunara",
+      "SUP": "Lulu"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "worlds-2026-qf3-blg-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf3",
+    "team": "BLG",
+    "opponent": "DK",
+    "game": 3,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Jax",
+      "JG": "Trundle",
+      "MID": "Ahri",
+      "ADC": "Lucian",
+      "SUP": "Milio"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-qf3-dk-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf3",
+    "team": "DK",
+    "opponent": "BLG",
+    "game": 3,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Olaf",
+      "JG": "Pantheon",
+      "MID": "Viktor",
+      "ADC": "Aphelios",
+      "SUP": "Thresh"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "worlds-2026-qf2-gen-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf2",
+    "team": "GEN",
+    "opponent": "LYON",
+    "game": 1,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Olaf",
+      "JG": "Qiyana",
+      "MID": "Galio",
+      "ADC": "Jhin",
+      "SUP": "Leona"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-qf2-lyon-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf2",
+    "team": "LYON",
+    "opponent": "GEN",
+    "game": 1,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Jax",
+      "JG": "LeeSin",
+      "MID": "Orianna",
+      "ADC": "Ezreal",
+      "SUP": "Nautilus"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-qf2-gen-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf2",
+    "team": "GEN",
+    "opponent": "LYON",
+    "game": 2,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Sion",
+      "JG": "JarvanIV",
+      "MID": "Viktor",
+      "ADC": "Ashe",
+      "SUP": "Seraphine"
+    },
+    "style": "control"
+  },
+  {
+    "id": "worlds-2026-qf2-lyon-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf2",
+    "team": "LYON",
+    "opponent": "GEN",
+    "game": 2,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Jayce",
+      "JG": "MonkeyKing",
+      "MID": "Cassiopeia",
+      "ADC": "Mel",
+      "SUP": "Pyke"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-qf2-gen-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf2",
+    "team": "GEN",
+    "opponent": "LYON",
+    "game": 3,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Aurora",
+      "JG": "Pantheon",
+      "MID": "Taliyah",
+      "ADC": "Xayah",
+      "SUP": "Rakan"
+    },
+    "style": "control"
+  },
+  {
+    "id": "worlds-2026-qf2-lyon-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf2",
+    "team": "LYON",
+    "opponent": "GEN",
+    "game": 3,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Gangplank",
+      "JG": "Trundle",
+      "MID": "Anivia",
+      "ADC": "Corki",
+      "SUP": "Alistar"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "worlds-2026-qf1-ig-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf1",
+    "team": "IG",
+    "opponent": "TES",
+    "game": 1,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Gnar",
+      "JG": "Qiyana",
+      "MID": "Syndra",
+      "ADC": "Kaisa",
+      "SUP": "Nautilus"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-qf1-tes-g1",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf1",
+    "team": "TES",
+    "opponent": "IG",
+    "game": 1,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Ambessa",
+      "JG": "Vi",
+      "MID": "Cassiopeia",
+      "ADC": "Ezreal",
+      "SUP": "Rell"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-qf1-tes-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf1",
+    "team": "TES",
+    "opponent": "IG",
+    "game": 2,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Renekton",
+      "JG": "XinZhao",
+      "MID": "Orianna",
+      "ADC": "Kalista",
+      "SUP": "Renata"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-qf1-ig-g2",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf1",
+    "team": "IG",
+    "opponent": "TES",
+    "game": 2,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Vayne",
+      "JG": "MonkeyKing",
+      "MID": "Viktor",
+      "ADC": "Yunara",
+      "SUP": "Lulu"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "worlds-2026-qf1-ig-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf1",
+    "team": "IG",
+    "opponent": "TES",
+    "game": 3,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Ornn",
+      "JG": "Jayce",
+      "MID": "Annie",
+      "ADC": "Zeri",
+      "SUP": "Yuumi"
+    },
+    "style": "scale"
+  },
+  {
+    "id": "worlds-2026-qf1-tes-g3",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf1",
+    "team": "TES",
+    "opponent": "IG",
+    "game": 3,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Rumble",
+      "JG": "Skarner",
+      "MID": "Yone",
+      "ADC": "Ashe",
+      "SUP": "Seraphine"
+    },
+    "style": "engage"
+  },
+  {
+    "id": "worlds-2026-qf1-ig-g4",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf1",
+    "team": "IG",
+    "opponent": "TES",
+    "game": 4,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "KSante",
+      "JG": "Naafiri",
+      "MID": "Taliyah",
+      "ADC": "Jhin",
+      "SUP": "Alistar"
+    },
+    "style": "pick"
+  },
+  {
+    "id": "worlds-2026-qf1-tes-g4",
+    "event": "Worlds 2026",
+    "series": "worlds-2026-qf1",
+    "team": "TES",
+    "opponent": "IG",
+    "game": 4,
+    "stage": "Quartas de final",
+    "source": "https://lol2llm.com/en/esports/worlds-2026-knockout-stage-results",
+    "champions": {
+      "TOP": "Aatrox",
+      "JG": "Maokai",
+      "MID": "Aurora",
+      "ADC": "Lucian",
+      "SUP": "Milio"
+    },
+    "style": "control"
+  }
+]
