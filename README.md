@@ -1,5 +1,9 @@
 # BR2002 Call
 
+**Abrir:** https://br2002-call.wrydingo.chatgpt.site/
+
+**Código:** https://github.com/mateuszilio225/teste-c/tree/br2002-call
+
 Uma sala de voz, câmera e compartilhamento de tela para até **6 pessoas**, no navegador. Projeto independente, sem vínculo com o Discord.
 
 ## Funciona de verdade
@@ -63,4 +67,4 @@ PeerJS 1.5.5 está incluído em `vendor/`, com licença MIT. DM Sans e Space Gro
 
 ## Verificação
 
-`npm run check` verifica sintaxe, referências do DOM, presença dos assets e identidade do manifesto. A prévia interna gerenciada apresentou falha de relay; os resultados de teste da publicação são registrados em `QA.md` após a conferência.
+`npm run check` verifica sintaxe, referências do DOM, presença dos assets e identidade do manifesto. Os resultados e limites dos testes estão em `QA.md`; o relatório de duas sessões com WebRTC nativo e dispositivos sintéticos está em `integration-results.json`.

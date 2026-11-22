@@ -1,0 +1,95 @@
+{
+  "environment": "Happy DOM with native @roamhq/wrtc; synthetic devices, public PeerJS signaling",
+  "app_sha256": "164a6a4f4d7a73bcec37e34fab6cf34b43574b55ea4f2b80fe53c5a170f708de",
+  "checks": [
+    {
+      "name": "Create real room through public signaling",
+      "passed": true,
+      "details": "br2002-409e3fd2d7ea79bef36f"
+    },
+    {
+      "name": "Invite joins second independent session",
+      "passed": true,
+      "details": "2 participants on both sides"
+    },
+    {
+      "name": "Bidirectional WebRTC media connections",
+      "passed": true,
+      "details": "Both sides received remote media streams"
+    },
+    {
+      "name": "Chat crosses real data channel and keeps markup literal",
+      "passed": true
+    },
+    {
+      "name": "Guest reply reaches creator",
+      "passed": true
+    },
+    {
+      "name": "Live test screen sends decodable native WebRTC frames",
+      "passed": true,
+      "details": {
+        "framesIn1700ms": 47
+      }
+    },
+    {
+      "name": "Guest sees shared screen with overlay enabled",
+      "passed": true
+    },
+    {
+      "name": "Overlay size synchronizes to receiver",
+      "passed": true
+    },
+    {
+      "name": "Overlay shape synchronizes to receiver",
+      "passed": true
+    },
+    {
+      "name": "Dragging overlay synchronizes normalized position",
+      "passed": true
+    },
+    {
+      "name": "Camera replaces placeholder and appears in receiver overlay",
+      "passed": true
+    },
+    {
+      "name": "Synthetic microphone track replaces silent track and delivers audio",
+      "passed": true
+    },
+    {
+      "name": "Poll and vote synchronize between peers",
+      "passed": true
+    },
+    {
+      "name": "Focus timer synchronizes",
+      "passed": true
+    },
+    {
+      "name": "Shared annotation reaches receiver",
+      "passed": true
+    },
+    {
+      "name": "Reaction reaches receiver",
+      "passed": true
+    },
+    {
+      "name": "Deafen mutes incoming participant media",
+      "passed": true
+    },
+    {
+      "name": "Stopping screen removes stale video on receiver",
+      "passed": true
+    },
+    {
+      "name": "Leaving updates roster and closes peer streams",
+      "passed": true
+    },
+    {
+      "name": "No uncaught application errors in integration sessions",
+      "passed": true
+    }
+  ],
+  "physical_devices_tested": false,
+  "interactive_browser_tested": false,
+  "passed": true
+}
