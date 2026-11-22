@@ -1,0 +1,9 @@
+import fs from 'node:fs';
+const csv=p=>{const [head,...rows]=fs.readFileSync(p,'utf8').trim().split('\n').map(l=>l.split(','));return rows.map(r=>Object.fromEntries(head.map((k,i)=>[k,['name','team','role'].includes(k)?r[i]:Number(r[i])])));};
+const regular=csv('data/regular.csv'),playoffs=csv('data/playoffs.csv');
+const shini=playoffs.find(p=>p.name==='Shini');regular.push({...shini,team:'FUR',role:'JG',games:0});
+const players=regular.map(p=>{const last=playoffs.find(q=>q.name.toLowerCase()===p.name.toLowerCase());const metrics={...p};const recent=last?last.games/(last.games+8):0;for(const k of ['wr','kda','deaths','kp','dpm','vspm','gd15','csd15'])metrics[k]=last?last[k]*recent+p[k]*(1-recent):p[k];return{id:p.name.toLowerCase(),name:p.name,team:p.team,role:p.role,regular:p.games?{...p}:null,playoffs:last||null,metrics,confidence:Math.min(1,(p.games+(last?.games||0))/15),recentWeight:recent};});
+function pct(p,key,invert=false){const peers=players.filter(x=>x.role===p.role);const v=p.metrics[key];const n=(peers.filter(x=>x.metrics[key]<v).length+.5*peers.filter(x=>x.metrics[key]===v).length)/peers.length;return invert?1-n:n;}
+for(const p of players){let micro=p.role==='SUP'?.45*pct(p,'kda')+.35*pct(p,'kp')+.2*pct(p,'deaths',true):.35*pct(p,'gd15')+.25*pct(p,'csd15')+.25*pct(p,'dpm')+.15*pct(p,'kda');const macro=.4*pct(p,'kp')+.35*pct(p,'vspm')+.25*pct(p,'wr');const mental=.6*pct(p,'deaths',true)+.4*pct(p,'kda');for(const [k,v] of Object.entries({micro,macro,mental}))p[k]=Math.round(50+45*(.5+(v-.5)*p.confidence));p.overall=Math.round(.4*p.micro+.4*p.macro+.2*p.mental);p.price=Math.max(3,Math.min(18,Math.round(4+(p.overall-55)*.42)));}
+for(const p of players)delete p.metrics;
+fs.writeFileSync('data/players.json',JSON.stringify(players,null,2));console.log(`${players.length} players; roles:`,Object.fromEntries(['TOP','JG','MID','ADC','SUP'].map(r=>[r,players.filter(p=>p.role===r).length])));
