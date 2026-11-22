@@ -16,9 +16,9 @@
 
 ## Publicação e interface
 
-- [ ] Teste HTTP de duas sessões no D1 hospedado da revisão2.
-- [ ] Conferência visual da revisão2 no Chrome e fluxo de configuração/draft.
+- [x] Teste HTTP de duas sessões no D1 hospedado da revisão2: sala, configurações, lote sem lance sem cobrança, compras sincronizadas, alternativas adversárias públicas com escolha oculta, MD3 até dois triunfos, Fearless e reconexão.
+- [x] Chrome público: tema escuro, fotos, escolha do mercado e formato, overall oculto, compras até fechar line-up, duas opções adversárias, consulta às duas line-ups e simulação com objetivos.
 - [ ] Reprodução de sons em dispositivo físico e conferência móvel física.
 - [ ] Carga de muitos campeonatos simultâneos.
 
-Relatório da publicação anterior foi arquivado como `reports/published-smoke-v1.json`. A revisão2 terá seu próprio resultado em `reports/published-smoke.json` após o teste online. Nenhum resultado da versão anterior é presumido para esta revisão.
+Relatório da publicação anterior foi arquivado como `reports/published-smoke-v1.json`. A revisão2 foi validada online e está registrada em `reports/published-smoke.json`. Nenhum resultado da versão anterior é presumido para esta revisão.

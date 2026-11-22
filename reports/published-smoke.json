@@ -1,0 +1,13 @@
+{
+  "site": "https://rift-draft-br2002.wrydingo.chatgpt.site",
+  "revision": 2,
+  "checks": [
+    "Two separate anonymous sessions join persisted room",
+    "Unsold lot does not charge or allocate any player; exact market and hidden-overall settings persist",
+    "Bids synchronize between sessions, then ten exclusive cards close both line-ups",
+    "Hosted D1 BO3 ends at two wins, exposes both opponent alternatives while hiding the chosen index, and never repeats chosen Worlds champions",
+    "Existing session reconnects after championship"
+  ],
+  "physical_devices": false,
+  "passed": true
+}
