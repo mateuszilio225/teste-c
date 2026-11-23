@@ -193,3 +193,71 @@ input,select,textarea{background-color:#0d1730;color:#eef4ff;border:1px solid #4
 .club-official-mark{position:relative;z-index:2;max-width:88%;max-height:88%;height:88%;width:88%;object-fit:contain;border-radius:2px}
 .club-crest.has-official-logo.small{border-radius:7px}
 .club-crest.has-official-logo b{position:absolute;inset:0;place-content:center;text-align:center}
+
+/* ===== V5 · Compact 3D home, true club crests, robust rank entry ===== */
+@media(min-width:980px){
+ .hero-grid{align-items:start!important}
+ .hero.hero-v4{height:510px!important;min-height:510px!important;align-self:start!important;padding:38px 34px 30px!important}
+ .hero.hero-v4 .hero-copy{max-width:55%!important}
+ .hero.hero-v4 .hero-details{left:34px;right:34px;bottom:26px}
+ .hero.hero-v4 .hero-art.hero-art-prismatic{position:absolute!important;right:24px!important;top:38px!important;width:min(43%,350px)!important;height:420px!important;transform:none!important;opacity:1!important;display:grid;place-items:center}
+}
+.hero.hero-v4 .hero-art.hero-art-prismatic .dynquedo-original-card{
+ display:block;width:auto;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;
+ transform:none!important;filter:drop-shadow(0 12px 22px #000b) drop-shadow(0 0 18px #ed263d75);
+ border-radius:8px;animation:v5-dyn-glow 5s ease-in-out infinite alternate;
+}
+@keyframes v5-dyn-glow{0%{filter:drop-shadow(0 12px 22px #000b) drop-shadow(0 0 12px #dc315471)}100%{filter:drop-shadow(0 12px 22px #000b) drop-shadow(0 0 25px #f2316ead)}}
+@media(prefers-reduced-motion:reduce){.hero.hero-v4 .dynquedo-original-card{animation:none!important}}
+@media(max-width:979px) and (min-width:731px){
+ .hero-grid{align-items:start}
+ .hero.hero-v4{min-height:480px;height:480px}
+ .hero.hero-v4 .hero-art.hero-art-prismatic{position:absolute;right:5px;top:50px;width:32%;height:360px;transform:none!important;opacity:1!important;display:grid;place-items:center}
+}
+@media(max-width:730px){
+ .hero.hero-v4{min-height:540px!important;height:540px!important;padding:22px!important}
+ .hero.hero-v4 .hero-copy{max-width:72%!important}
+ .hero.hero-v4 .hero-copy h1{font-size:clamp(34px,9vw,48px)}
+ .hero.hero-v4 .hero-art.hero-art-prismatic{position:absolute!important;right:-5px!important;top:125px!important;width:43%!important;height:310px!important;transform:none!important;opacity:1!important;display:grid;place-items:center}
+ .hero.hero-v4 .hero-details{left:21px;right:18px;bottom:22px;gap:12px}
+}
+/* Original artwork per club, much larger and located behind face in card grid and catalog. */
+.player-card-v4 .tile-portrait.player-splash{isolation:isolate}
+.player-card-v4 .team-wordmark{display:none}
+.player-card-v4 .team-logo-backdrop{
+ position:absolute;z-index:0;pointer-events:none;inset:30px 3% 20px;display:flex;align-items:center;justify-content:center;
+ font-size:80px;font-weight:900;color:var(--team-color);opacity:.39;
+}
+.player-card-v4 .team-logo-backdrop img{display:block;width:93%;height:95%;object-fit:contain;filter:drop-shadow(0 0 16px var(--team-color))}
+.player-card-v4 .tile-portrait.player-splash .player-photo{z-index:2;object-fit:contain;object-position:center bottom;}
+.detail-card-v4 .detail-cover{isolation:isolate}
+.detail-card-v4 .detail-team-mark{position:absolute;z-index:0;inset:22px 4% 16px;display:flex;justify-content:center;align-items:center;opacity:.33}
+.detail-card-v4 .detail-team-mark img{width:90%;height:90%;object-fit:contain}
+.detail-card-v4 .detail-photo{position:relative;z-index:1}
+/* Logos are a real, keyboard-accessible selection instead of a broken preview image. */
+.crest-picker{margin:8px 0 10px;padding:12px 14px;border:1px solid #475779;border-radius:14px;background:#111b35b8}
+.crest-picker-title{font-weight:900;letter-spacing:.08em;font-size:11px;color:#d8e9ff;margin-bottom:9px}
+.crest-choice-row{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px}
+.crest-choice{min-width:0;min-height:63px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;border:1px solid #46567e;border-radius:10px;background:#0d1a33;color:#cbd6f5;padding:6px 2px;transition:background .15s,border-color .15s}
+.crest-choice .club-crest.small{width:34px;height:35px;border:none;background:transparent;box-shadow:none;clip-path:none}
+.crest-choice .club-crest.small:before{display:none}
+.crest-choice .club-official-mark{max-width:100%;max-height:100%;width:100%;height:100%;object-fit:contain}
+.crest-choice small{font-size:10px;line-height:1.1;font-weight:800;letter-spacing:.04em}
+.crest-choice.active,.crest-choice[aria-pressed=true]{background:#354d89;border:2px solid #b9baff;box-shadow:0 0 12px #5d76f87a}
+.crest-choice:hover{background:#263456;border-color:#a0b6ec}
+.crest-choice:focus-visible{outline:3px solid #e8b2ff;outline-offset:2px}
+.crest-worlds{margin-top:9px;border-top:1px solid #506185;padding-top:8px}
+.crest-worlds summary{cursor:pointer;font-size:12px;font-weight:800;color:#c8ddfa;list-style:revert;margin-bottom:8px}
+.crest-worlds .crest-choice-row{grid-template-columns:repeat(8,minmax(0,1fr))}
+.logo-preview{margin-top:7px;min-height:74px}
+.logo-preview>.club-crest{width:67px;height:67px;clip-path:none;border-radius:8px}
+.logo-preview .club-official-mark{width:93%;height:93%;max-width:93%;max-height:93%}
+.logo-preview>span:last-child{font-size:12px}
+/* Let players open their rank immediately even if the profile API is slow. */
+.top-rank{display:flex!important;flex-direction:row!important;align-items:center!important;min-width:210px!important;max-width:280px!important;min-height:66px!important;cursor:pointer!important;position:relative;z-index:20}
+.top-rank .rank-badge-image{display:block;width:53px!important;height:60px!important;flex-shrink:0;object-fit:contain}
+.top-rank>span{font-size:11px!important;line-height:1.4}
+.rank-identity>.rank-badge-image{width:110px!important;height:118px!important;object-fit:contain}
+.leaderboard-item .rank-badge-image{width:50px!important;height:60px!important;object-fit:contain}
+.elo-link{white-space:nowrap;font-weight:800}
+@media(max-width:550px){.crest-choice-row,.crest-worlds .crest-choice-row{grid-template-columns:repeat(4,1fr)}.top-rank{max-width:210px!important;min-width:170px!important}.top-rank .rank-badge-image{width:46px!important;height:52px!important}}

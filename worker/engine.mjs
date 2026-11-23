@@ -6,7 +6,7 @@ import {ROLES,CHAMPIONS,STYLES,AFFINITIES,compBonus} from '../data/champions.mjs
 export {PLAYERS,WORLDS_DRAFTS,CBLOL_DRAFTS,ROLES,CHAMPIONS,STYLES,AFFINITIES,compBonus};
 export const ALL_DRAFTS=[...WORLDS_DRAFTS,...CBLOL_DRAFTS];
 export const VERSION=5,BUDGET=50;
-export const TEAM_EMBLEMS=['FUR','LOS','LLL','PNG','RED','KST','FX','LEV','T1','GEN','HLE','DK','BLG','TES','JDG','G2','FNC','KC','C9','TL','FLY','GAM','PSG','KT','CFO','MKOI','KOI','WBG','AL','IG'];
+export const TEAM_EMBLEMS=['FUR','LOS','LLL','PNG','RED','KST','FX','LEV','T1','GEN','HLE','DK','BLG','TES','JDG','G2','FNC','KC','C9','TL','FLY','GAM','PSG','KT','CFO','MKOI','KOI','WBG','AL','IG','LYON','MVK','TSW'];
 export const catalog=new Map(PLAYERS.map(p=>[p.id,{...p}]));
 const getCard=(s,id)=>{const base=catalog.get(id);return base?{...base,...(s?.ratingOverrides?.[id]||{})}:null;};
 function roomCatalog(s){return new Map(PLAYERS.map(p=>[p.id,getCard(s,p.id)]));}
