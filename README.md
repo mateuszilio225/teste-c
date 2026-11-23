@@ -1,3 +1,9 @@
+## Correção dos overalls padrão — V6 (23/11/2026)
+
+Os 32 overalls especificados pelo organizador para ADC, SUP, MID e JG já constavam no JSON das cartas, mas a tabela de personalização global podia aplicar valores antigos e substituir essas notas nas salas novas. A migração `drizzle/0002_rating_default_revision.sql` identifica as personalizações antigas como revisão 0; a API passa a considerar apenas personalizações posteriores à V6 (revisão 6). Os valores de origem foram explicitados em `data/official-overalls.json` e protegidos de recálculos por `scripts/ratings.mjs`.
+
+**Importante:** salas já criadas têm um retrato das notas no estado e podem continuar com os valores anteriores. Crie uma sala nova após o deploy para conferir. Oito jogadores TOP e os atletas Keine e Frosty não foram alterados porque não receberam notas novas. O admin global ainda pode personalizar novamente as notas para as próximas salas.
+
 # Rift Draft
 
 Jogo independente inspirado em **Futlobby**. Leilão de jogadores do CBLOL com 50 moedas fictícias, cinco posições, 42 fotos de jogadores, 86 drafts reais (Worlds 2026 + CBLOL 2026 Split 2) e séries melhor de três.

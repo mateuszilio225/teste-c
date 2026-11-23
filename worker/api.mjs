@@ -2,6 +2,7 @@ import {createRoom,person,action,tick,publicState,setConfig,catalog} from './eng
 const json=(data,status=200)=>Response.json(data,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 const clean=s=>String(s||'').replace(/[<>\x00-\x1f]/g,'').trim().slice(0,24);
 const digest=async s=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s))),x=>x.toString(16).padStart(2,'0')).join('');
+const RATING_PRESET_REVISION=6; // invalida overrides persistidos de versões anteriores sem apagá-los
 const code=()=>Array.from(crypto.getRandomValues(new Uint8Array(6)),n=>'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'[n%32]).join('');
 
 const accountId=async t=>typeof t==='string'&&t.length>=30&&t.length<=128?await digest('rift-profile-1:'+t):null;
@@ -47,7 +48,7 @@ export async function api(request,env){
  return json({leaders:results.results||[],serverNow:now});
  }
  if(path==='/api/presets'&&request.method==='GET'){
- const result=await env.DB.prepare('SELECT player_id,overall FROM rating_presets').bind().all();
+ const result=await env.DB.prepare('SELECT player_id,overall FROM rating_presets WHERE revision=?').bind(RATING_PRESET_REVISION).all();
  return json({ratings:Object.fromEntries((result.results||[]).map(x=>[x.player_id,x.overall]))});
  }
  if(path==='/api/presets'&&request.method==='POST'){
@@ -57,14 +58,14 @@ export async function api(request,env){
   if(supplied.length!==secret.length||await digest(supplied)!==await digest(secret))return json({error:'Senha de administrador global inválida.'},403);
   const playerId=String(body.playerId||''),base=catalog.get(playerId),overall=Number(body.overall);
   if(!base||!Number.isInteger(overall)||overall<40||overall>99)return json({error:'Jogador ou overall inválido.'},400);
-  await env.DB.prepare('INSERT INTO rating_presets(player_id,overall,updated_at) VALUES (?,?,?) ON CONFLICT(player_id) DO UPDATE SET overall=excluded.overall,updated_at=excluded.updated_at').bind(playerId,overall,now).run();
+  await env.DB.prepare('INSERT INTO rating_presets(player_id,overall,updated_at,revision) VALUES (?,?,?,?) ON CONFLICT(player_id) DO UPDATE SET overall=excluded.overall,updated_at=excluded.updated_at,revision=excluded.revision').bind(playerId,overall,now,RATING_PRESET_REVISION).run();
   return json({ok:true,playerId,overall});
  }
  if(path==='/api/rooms'&&request.method==='POST'){
  const name=clean(body.name);if(!name)return json({error:'Escolha o nome da sua equipe.'},400);const ip=request.headers.get('CF-Connecting-IP')||'shared';const key=await digest(ip);const quota=await env.DB.prepare('SELECT count FROM rate_limits WHERE key=? AND window>?').bind(key,now-3600000).first();if((quota?.count||0)>=30)return json({error:'Muitas salas criadas. Volte mais tarde ou entre em uma sala existente.'},429);
  await env.DB.prepare('INSERT INTO rate_limits (key,window,count) VALUES (?,?,1) ON CONFLICT(key) DO UPDATE SET count=CASE WHEN window<? THEN 1 ELSE count+1 END, window=CASE WHEN window<? THEN excluded.window ELSE window END').bind(key,now,now-3600000,now-3600000).run();
  const roomCode=code(),id=crypto.randomUUID(),token=crypto.randomUUID()+crypto.randomUUID(),s=createRoom(roomCode,id,name,crypto.getRandomValues(new Uint32Array(1))[0]);s.members[0].logo=typeof body.logo==='string'&&body.logo.length<=16?body.logo:'FUR';s.members[0].rankId=await accountId(body.profileToken);s.capacity=[2,4,8].includes(body.capacity)?body.capacity:4;setConfig(s,body.config||{});
- const presets=await env.DB.prepare('SELECT player_id,overall FROM rating_presets').bind().all();
+ const presets=await env.DB.prepare('SELECT player_id,overall FROM rating_presets WHERE revision=?').bind(RATING_PRESET_REVISION).all();
  for(const x of presets.results||[]){const p=catalog.get(x.player_id);if(!p)continue;const diff=x.overall-p.overall;const adjust=k=>Math.max(40,Math.min(99,p[k]+diff));s.ratingOverrides[p.id]={overall:x.overall,micro:adjust('micro'),macro:adjust('macro'),mental:adjust('mental'),price:Math.max(3,Math.min(20,Math.round(5+(x.overall-65)*.45)))};}
  const auth={[await digest(token)]:id};await env.DB.prepare('INSERT INTO rooms (code,state,auth,version,updated_at,expires_at) VALUES (?,?,?,1,?,?)').bind(roomCode,JSON.stringify(s),JSON.stringify(auth),now,now+86400000).run();return json({token,id,state:publicState(s,id),serverNow:now},201);
  }
