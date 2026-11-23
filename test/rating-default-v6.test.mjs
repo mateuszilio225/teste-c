@@ -9,14 +9,15 @@ const call=async(path,env,body,headers={})=>{
  const r=await api(new Request('https://rift.test'+path,{method:body===undefined?'GET':'POST',headers:{...(body===undefined?{}:{'Content-Type':'application/json'}),...headers},...(body===undefined?{}:{body:JSON.stringify(body)})}),env);
  return {status:r.status,...await r.json()};
 };
-test('32 overalls oficiais batem exatamente com jogadores e posicoes',()=>{
- const expectedRoles={ADC:['duduhh','ayu','rabelo','morttheus','bao','jeskla','hena','strensh'],SUP:['ackerman','jojo','uzent','ceos','manel','momochi','scamber','shiku'],MID:['feisty','tutsz','kaze','mireu','namiru','fuuu','cody','enga'],JG:['curse','tatu','sinatra','disamis','stepz','cariok','peach','booki']};
- assert.equal(Object.keys(defaults).length,32);
+test('40 overalls oficiais batem exatamente com jogadores e posicoes',()=>{
+ const expectedRoles={ADC:['duduhh','ayu','rabelo','morttheus','bao','jeskla','hena','strensh'],SUP:['ackerman','jojo','uzent','ceos','manel','momochi','scamber','shiku'],MID:['feisty','tutsz','kaze','mireu','namiru','fuuu','cody','enga'],JG:['curse','tatu','sinatra','disamis','stepz','cariok','peach','booki'],TOP:['zest','guigo','xyno','boal','zynts','zekas','zothve','devost']};
+ assert.equal(Object.keys(defaults).length,40);
  for(const [role,names] of Object.entries(expectedRoles))for(const id of names){
   assert.equal(catalog.get(id)?.role,role,'role '+id);
   assert.equal(catalog.get(id)?.overall,defaults[id],id);
  }
  assert.equal(PLAYERS.filter(p=>p.role==='TOP').length,8);
+ assert.deepEqual(Object.fromEntries(PLAYERS.filter(p=>p.role==='TOP').map(p=>[p.id,p.overall])),{boal:84,devost:77,guigo:86,zekas:80,zest:90,zothve:79,xyno:86,zynts:83});
 });
 test('presets antigos ficam inativos; novo admin pode definir overrides de todas as proximas salas',async()=>{
  const DB=database(),env={DB,ADMIN_PASSWORD:'admin-test-secret-v6'};

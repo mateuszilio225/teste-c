@@ -16,7 +16,7 @@ Código: https://github.com/mateuszilio225/teste-c/tree/rift-draft
 
 **Jogo:** repositório `mateuszilio225/teste-c`, branch de publicação `rift-draft-online`, hospedagem Cloudflare Workers + D1. Não é necessário matchmaking: o criador abre uma sala para 2, 4 ou 8 equipes e compartilha o código.
 
-- **Nota padrão**: 32 overalls ajustados conforme lista fornecida pelo organizador, com efeito em micro/macro/mental. Shini removido (42 atletas restantes). Para futuras mudanças globais, o menu **⚙ Admin global** atualiza presets persistidos em D1; requer configurar no Worker a variável secreta `ADMIN_PASSWORD` de no mínimo 12 caracteres. As alterações globais entram nas **novas salas**. O criador pode mudar as notas apenas em sua sala por **⚙ Ajustar OVR**.
+- **Nota padrão**: 40 overalls ajustados conforme lista fornecida pelo organizador, com efeito em micro/macro/mental. Shini removido (42 atletas restantes). Para futuras mudanças globais, o menu **⚙ Admin global** atualiza presets persistidos em D1; requer configurar no Worker a variável secreta `ADMIN_PASSWORD` de no mínimo 12 caracteres. As alterações globais entram nas **novas salas**. O criador pode mudar as notas apenas em sua sala por **⚙ Ajustar OVR**.
 - **Leilão**: cada carta aparece por 16 s; a cada novo lance, 5 s completos. Só há ofertas +1, +5, +10 e ALL-IN. Oferta incrementada é processada contra o valor mais recente no servidor; até 20 tentativas de CAS reduzem conflitos. Se o elenco ficar incompleto ao esgotar o mercado, vagas são completadas por sorteio de cartas livres, sem custo. O botão Mercado foi removido da interface do leilão.
 - **Química**: pares de jogadores do mesmo clube ou nacionalidade geram bônus de entrosamento limitado a 2,6 pontos no cálculo de força. Overall médio e atributos continuam sendo o determinante principal; simulação automática mantém incerteza.
 - **Identidade visual**: escolha de escudo entre 30 siglas do CBLOL/Worlds antes do início do leilão. Os escudos são **arte original estilizada com as siglas**, não reproduções fiéis dos logotipos oficiais. Retratos nas cartas com moldura de clube e maior área para o rosto; insígnias ilustradas dos elos; plano de fundo temático e troféus/rotas. Foto fornecida pelo usuário usada como **DYNQUEDO** na capa, 99 MENT/MAC/MIC. Feisty continua como jogador e carta, com nota 90. Nome **Futlobby** corrigido.
@@ -125,3 +125,7 @@ Salas online: tokens anônimos, estado persistido em D1, polling de 1,5 segundo 
 Salas expiram em 24 horas. Técnicos retomam pelo mesmo navegador; não há recuperação de identidade em outro aparelho. Configurações novas devem ser usadas em uma sala nova. Etapas expiradas avançam na próxima consulta; não existe cron com todas as abas fechadas. Sem dinheiro real, apostas, cadastro ou gravação de áudio. O histórico ranqueado é local por navegador e nome da equipe, não uma classificação online global.
 
 Licenças e créditos: Riot Games / LoL Esports para imagens; DM Sans sob OFL. Sem afiliação ao Futlobby, Riot ou CBLOL.
+
+## Revisão dos TOPs (23/11/2026)
+
+Notas oficiais da função TOP, fornecidas pelo organizador: Zest 90; Guigo 86; xyno 86; Boal 84; zynts 83; ZekaS 80; Zothve 79; Devost 77. A função TOP passou a ter oito ratings oficiais junto aos 32 ratings das outras posições. Para ver o padrão atualizado, use uma sala nova; salas anteriores preservam seu estado.

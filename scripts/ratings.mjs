@@ -15,7 +15,7 @@ for(const p of players){const o=officialRatings[p.id];if(!Number.isInteger(o))co
  const diff=o-p.overall;
  for(const k of ['micro','macro','mental'])p[k]=Math.max(40,Math.min(99,p[k]+diff));
  p.overall=o;p.price=Math.max(3,Math.min(20,Math.round(5+(o-65)*.45)));
- p.ratingVersion='official-v6';
+ p.ratingVersion='official-v7';
 }
 const photos=JSON.parse(fs.readFileSync('data/player-photos.json','utf8'));
 for(const p of players){delete p.metrics;p.photo=photos[p.id]?.path||null;}
