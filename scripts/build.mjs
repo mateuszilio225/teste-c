@@ -6,6 +6,8 @@ const data=JSON.parse(fs.readFileSync('data/players.json','utf8'));
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml','.jpg':'image/jpeg','.ttf':'font/ttf','.webp':'image/webp','.png':'image/png'};
 const assets={};function addFiles(dir,prefix=''){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const full=dir+'/'+entry.name,key=prefix+'/'+entry.name;if(entry.isDirectory()){addFiles(full,key);continue;}const ext='.'+entry.name.split('.').pop();assets[key]={type:types[ext]||'application/octet-stream',base64:fs.readFileSync(full).toString('base64')};}}addFiles('public');
 assets['/players.json']={type:types['.json'],base64:Buffer.from(JSON.stringify(data)).toString('base64')};
+// app.js imports this JSON as an ES module; missing it prevents the entire UI from starting.
+assets['/champion-stats.json']={type:types['.json'],base64:fs.readFileSync('data/champion-stats.json').toString('base64')};
 const strip=s=>s.replace(/^import .+;\r?\n/gm,'').replace(/^export \{.+\};?\r?\n/gm,'').replace(/\bexport (?=(const|function|async|class)\b)/g,'');
 const mechanical=strip(fs.readFileSync('worker/mechanical.mjs','utf8'));
 const engine=strip(fs.readFileSync('worker/engine.mjs','utf8')),champ=strip(fs.readFileSync('data/champions.mjs','utf8'));const api=strip(fs.readFileSync('worker/api.mjs','utf8'));
