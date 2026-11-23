@@ -97,26 +97,99 @@ input,select,textarea{background-color:#0d1730;color:#eef4ff;border:1px solid #4
 @media(max-width:1050px){.topbar nav{order:3;width:100%;justify-content:center}.hero-lore{font-size:8px}}
 @media(max-width:730px){.topbar nav{order:4;gap:6px;width:100%;flex-wrap:wrap}.navlink{font-size:11px;min-height:29px}.top-rank{max-width:155px}.top-rank .rank-badge-image{width:30px;height:37px}.top-rank>span{font-size:10px}.tile-portrait.club-photo-frame{min-height:155px}.tile-portrait.club-photo-frame .player-photo{height:177px}.hero-lore{display:none}.quick-bids{gap:4px}.quick-bids .btn{font-size:13px;padding:8px 3px;min-height:52px}.quick-bids small{font-size:9px}.logo-preview span{font-size:11px}.leaderboard-item{gap:7px;padding:9px 7px}}
 
-/* Rift Draft V4: premium portrait cards and legendary hero */
-.player-tile .tile-portrait.club-photo-frame{position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 50% 15%,color-mix(in srgb,var(--team-color) 32%,#18263e),#0b1429 75%);min-height:225px}
-.player-tile .tile-portrait.club-photo-frame:before{content:"";position:absolute;inset:0;background:linear-gradient(130deg,transparent 20%,color-mix(in srgb,var(--team-color) 28%,transparent) 52%,transparent 70%);z-index:0}
-.player-tile .tile-portrait .player-photo{position:relative;z-index:1;object-fit:contain;object-position:center bottom;width:100%;height:100%;max-height:330px}
-.player-tile .tile-portrait .portrait-team-wordmark{position:absolute;z-index:0;left:3%;top:29%;font-size:clamp(3.2rem,7vw,6.5rem);font-weight:1000;letter-spacing:-.09em;color:var(--team-color);opacity:.43;line-height:1;transform:rotate(-7deg);pointer-events:none}
-.player-tile .tile-portrait .portrait-role{position:absolute;z-index:3;left:12px;top:12px;background:#10162edc;border:1px solid #9bb0dc;border-radius:5px;padding:5px 8px;color:white;font-weight:800}
-.player-tile .tile-portrait .rating-num{z-index:3}
-.hero-art-v4{display:flex!important;align-items:center;justify-content:center;overflow:visible!important}
-.dynquedo-prismatic{position:relative;width:min(340px,90%);aspect-ratio:3/4;display:flex;flex-direction:column;isolation:isolate;overflow:hidden;border-radius:23px;padding:14px;border:2px solid #d6baff;box-shadow:0 0 0 3px #6c48d466,0 12px 45px #0009,0 0 40px #bd76f76b;background:linear-gradient(125deg,#2a1c63,#a43fe4 25%,#3e91e2 47%,#38d2bf 65%,#dcb55e 85%,#6b3cc2);transform:rotate(4deg);animation:rift-prism-float 5s ease-in-out infinite}
-.dynquedo-prismatic:before{content:"";position:absolute;inset:-60%;z-index:4;pointer-events:none;background:linear-gradient(115deg,transparent 35%,#ffffff55 45%,#ffffff0b 52%,transparent 62%);transform:translateX(-55%);animation:rift-prism-shine 6s linear infinite}
-.dynquedo-prismatic:after{content:"";position:absolute;inset:3px;border:1px solid #ffffff66;border-radius:18px;pointer-events:none;z-index:5}
-.dynquedo-special-header,.dynquedo-special-name,.dynquedo-special-stats{position:relative;z-index:3;color:#fff;text-shadow:0 2px 8px #111a}
-.dynquedo-special-header{display:flex;justify-content:space-between;gap:8px;font-size:11px;font-weight:900;letter-spacing:.08em}
-.dynquedo-special-portrait{position:relative;flex:1;min-height:0;margin:8px -8px 0;overflow:hidden;border-radius:14px 14px 0 0;background:radial-gradient(circle at 50% 35%,#b16af0aa,transparent 65%)}
-.dynquedo-special-portrait img{width:100%;height:100%;object-fit:cover;object-position:center 28%;mask-image:linear-gradient(#000 72%,transparent 100%)}
-.dynquedo-special-name{font-size:clamp(20px,2vw,28px);font-weight:1000;letter-spacing:.04em;text-align:center;margin-top:-5px}
-.dynquedo-special-name span{display:block;font-size:10px;letter-spacing:.19em;color:#fff4a9}
-.dynquedo-special-stats{display:flex;justify-content:space-around;gap:4px;margin-top:10px;padding:12px 2px;background:#110e3780;border-radius:12px;font-size:11px;font-weight:700}
-.dynquedo-special-stats span{display:grid;text-align:center;gap:3px}.dynquedo-special-stats b{font-size:26px;color:#fff0b3}
-@keyframes rift-prism-float{0%,100%{transform:rotate(4deg) translateY(0)}50%{transform:rotate(2deg) translateY(-9px)}}
-@keyframes rift-prism-shine{0%,25%{transform:translateX(-55%)}65%,100%{transform:translateX(55%)}}
-@media(prefers-reduced-motion:reduce){.dynquedo-prismatic,.dynquedo-prismatic:before{animation:none}}
-@media(max-width:650px){.dynquedo-prismatic{width:min(285px,82%)}}
+/* ===== V4 visual refresh requested by user ===== */
+.hero.hero-v4{
+  background:
+    linear-gradient(125deg,rgba(19,25,72,.92) 0%,rgba(10,24,67,.88) 42%,rgba(9,52,95,.84) 100%),
+    radial-gradient(circle at 82% 36%, rgba(117,248,255,.18), transparent 24%),
+    radial-gradient(circle at 18% 80%, rgba(255,192,93,.12), transparent 26%),
+    url('/rift-pattern.svg');
+  background-size:cover,auto,auto,420px;
+  background-position:center,center,center,78% 38%;
+  border-color:#546cb8;
+}
+.hero.hero-v4:before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,transparent 0 76%,rgba(255,200,116,.18) 76% 78%,transparent 78% 100%),linear-gradient(-45deg,transparent 0 82%,rgba(255,200,116,.12) 82% 84%,transparent 84% 100%);
+  pointer-events:none;
+}
+.hero-art.hero-art-prismatic{right:42px;top:26px;width:320px;height:390px;display:flex;align-items:flex-start;justify-content:flex-end}
+.hero-prismatic-card{
+  position:relative;z-index:2;width:235px;min-height:340px;border-radius:26px;overflow:hidden;
+  border:1px solid rgba(255,234,169,.68);
+  background:
+    linear-gradient(160deg,rgba(105,74,228,.95) 0%,rgba(25,53,121,.92) 37%,rgba(17,32,89,.94) 68%,rgba(8,74,104,.92) 100%),
+    linear-gradient(110deg, rgba(255,255,255,.22), rgba(255,255,255,0) 42%),
+    repeating-linear-gradient(125deg, rgba(255,255,255,.14) 0 8px, rgba(255,255,255,0) 8px 21px),
+    radial-gradient(circle at 24% 14%, rgba(255,209,88,.28), transparent 20%),
+    radial-gradient(circle at 78% 78%, rgba(68,255,242,.22), transparent 24%);
+  box-shadow:0 28px 48px rgba(3,7,28,.55),0 0 0 1px rgba(255,255,255,.1) inset,0 0 40px rgba(115,243,255,.2);
+  transform:rotate(8deg);
+}
+.hero-prismatic-card:before{
+  content:'';position:absolute;inset:0;background:linear-gradient(118deg, transparent 0 38%, rgba(255,255,255,.27) 47%, transparent 56%);mix-blend-mode:screen;opacity:.8;pointer-events:none;
+}
+.hero-prismatic-top{display:flex;align-items:flex-start;justify-content:space-between;padding:18px 18px 10px;position:relative;z-index:2;color:#fff}
+.hero-prismatic-role{font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:#d4ebff;font-weight:700}
+.hero-prismatic-ovr{font-size:34px;font-weight:800;color:#fff2aa;line-height:1;text-align:right}
+.hero-prismatic-ovr small{display:block;font-size:10px;letter-spacing:1.8px;color:#d9ecff}
+.hero-prismatic-face{position:relative;height:192px;margin:0 10px 0;overflow:hidden;border-radius:20px;background:linear-gradient(180deg,rgba(10,22,60,.2),rgba(9,18,51,.95));box-shadow:inset 0 -35px 50px rgba(0,0,0,.35)}
+.hero-prismatic-face img{width:100%;height:100%;object-fit:cover;object-position:center 25%}
+.hero-prismatic-body{padding:16px 18px 18px;position:relative;z-index:2}
+.hero-prismatic-body strong{display:block;font-size:26px;letter-spacing:-.8px;color:#fff;margin-bottom:4px}
+.hero-prismatic-team{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#b9cffc;margin-bottom:10px}
+.hero-prismatic-card .tiny-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border-top:1px solid rgba(255,255,255,.15);padding-top:11px}
+.hero-prismatic-card .tiny-stats span{font-size:10px;letter-spacing:1px;color:#b9cffc}
+.hero-prismatic-card .tiny-stats b{display:block;font-size:19px;color:#ffe79a;margin-top:3px}
+.hero-note{right:18px;bottom:-8px;text-transform:uppercase;letter-spacing:1.2px;font-weight:700}
+
+.player-card-v4{padding:16px;background:linear-gradient(180deg,#162341,#121c34);border-color:#415278;border-radius:20px;overflow:hidden}
+.player-card-v4:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(11,22,56,.32)}
+.player-card-v4 .tile-portrait.player-splash{position:relative;min-height:330px;height:330px;margin:-16px -16px 0;border-radius:20px 20px 0 0;overflow:hidden;background:
+  linear-gradient(180deg,rgba(10,20,48,.08),rgba(9,16,34,.96) 88%),
+  radial-gradient(circle at 50% 22%, rgba(255,255,255,.12), transparent 28%),
+  linear-gradient(135deg,color-mix(in srgb,var(--team-color) 26%, transparent), transparent 60%),
+  #111a32;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.player-card-v4 .tile-portrait.player-splash:before{
+  content:'';position:absolute;inset:0;background:linear-gradient(58deg, transparent 0 62%, color-mix(in srgb,var(--team-color) 28%, transparent) 62% 68%, transparent 68% 100%),linear-gradient(-58deg, transparent 0 90%, rgba(255,255,255,.08) 90% 92%, transparent 92% 100%);pointer-events:none;z-index:1;
+}
+.player-card-v4 .team-wordmark{position:absolute;left:16px;right:16px;top:62px;font-size:clamp(70px,8vw,112px);font-weight:900;letter-spacing:-6px;line-height:.9;color:rgba(255,174,69,.82);text-transform:uppercase;text-align:center;filter:drop-shadow(0 8px 20px rgba(0,0,0,.35));z-index:0;pointer-events:none}
+.player-card-v4 .player-photo{position:absolute;inset:auto 0 0 0;height:290px;width:100%;object-fit:contain;object-position:center bottom;z-index:2;filter:drop-shadow(0 18px 22px rgba(0,0,0,.38))}
+.player-card-v4 .portrait-role.role-top{position:absolute;top:14px;left:14px;padding:7px 12px;border-radius:999px;background:rgba(11,18,44,.86);border:1px solid rgba(255,255,255,.15);font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:#eff5ff;z-index:3}
+.player-card-v4 .rating-num{position:absolute;right:16px;top:16px;z-index:3;text-align:right;font-size:56px;line-height:.88;color:#eef5d5;text-shadow:0 0 14px rgba(255,240,170,.12)}
+.player-card-v4 .rating-num small{font-size:14px;letter-spacing:1.4px;text-align:right}
+.player-card-v4 .player-name{font-size:24px;margin:16px 0 4px}
+.player-card-v4 .player-meta{font-size:14px;color:#a9b7d4}
+.player-card-v4 .stats{margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08)}
+.player-card-v4 .player-bottom{margin-top:16px;color:#b9c7e3}
+
+.detail-card-v4{display:grid;grid-template-columns:170px 1fr;gap:18px;align-items:center}
+.detail-card-v4 .detail-cover{position:relative;height:205px;border-radius:18px;overflow:hidden;background:linear-gradient(180deg,rgba(11,17,42,.08),rgba(10,17,37,.96)),linear-gradient(135deg,color-mix(in srgb,var(--team-color) 25%, transparent),transparent 65%),#121a33}
+.detail-card-v4 .detail-cover .detail-photo{width:100%;height:100%;object-fit:contain;object-position:center bottom}
+.detail-card-v4 .detail-cover .team-wordmark{position:absolute;left:12px;right:12px;top:38px;text-align:center;font-size:56px;line-height:.9;font-weight:900;color:rgba(255,174,69,.8);letter-spacing:-4px}
+.detail-card-v4 .detail-cover .portrait-role{position:absolute;left:12px;top:12px}
+.detail-copy .rating-num{display:inline-block;margin-top:10px}
+
+.rank-badge-image{image-rendering:auto}
+
+@media(max-width:1050px){
+  .hero-art.hero-art-prismatic{width:280px;right:10px;top:58px;transform:scale(.9)}
+  .player-card-v4 .tile-portrait.player-splash{min-height:300px;height:300px}
+}
+@media(max-width:730px){
+  .hero-art.hero-art-prismatic{position:absolute;right:-30px;top:72px;transform:scale(.7);opacity:.88}
+  .player-card-v4 .tile-portrait.player-splash{min-height:260px;height:260px}
+  .player-card-v4 .team-wordmark{font-size:74px}
+  .player-card-v4 .player-photo{height:230px}
+  .player-card-v4 .rating-num{font-size:42px}
+  .detail-card-v4{grid-template-columns:1fr}
+}
+
+/* V4 real team logos, with safe fallback to initials */
+.club-crest.has-official-logo{clip-path:none;border-radius:10px;background:linear-gradient(145deg,#171f39,#101427);border:1px solid #7e91be75;overflow:hidden;box-shadow:0 4px 12px #0008}
+.club-crest.has-official-logo:before{display:none}
+.club-official-mark{position:relative;z-index:2;max-width:88%;max-height:88%;height:88%;width:88%;object-fit:contain;border-radius:2px}
+.club-crest.has-official-logo.small{border-radius:7px}
+.club-crest.has-official-logo b{position:absolute;inset:0;place-content:center;text-align:center}
