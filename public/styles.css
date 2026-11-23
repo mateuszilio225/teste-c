@@ -96,3 +96,27 @@ input,select,textarea{background-color:#0d1730;color:#eef4ff;border:1px solid #4
 .leaderboard-item>span{color:#f4d493;font-weight:800;font-size:13px;text-align:right;white-space:nowrap}
 @media(max-width:1050px){.topbar nav{order:3;width:100%;justify-content:center}.hero-lore{font-size:8px}}
 @media(max-width:730px){.topbar nav{order:4;gap:6px;width:100%;flex-wrap:wrap}.navlink{font-size:11px;min-height:29px}.top-rank{max-width:155px}.top-rank .rank-badge-image{width:30px;height:37px}.top-rank>span{font-size:10px}.tile-portrait.club-photo-frame{min-height:155px}.tile-portrait.club-photo-frame .player-photo{height:177px}.hero-lore{display:none}.quick-bids{gap:4px}.quick-bids .btn{font-size:13px;padding:8px 3px;min-height:52px}.quick-bids small{font-size:9px}.logo-preview span{font-size:11px}.leaderboard-item{gap:7px;padding:9px 7px}}
+
+/* Rift Draft V4: premium portrait cards and legendary hero */
+.player-tile .tile-portrait.club-photo-frame{position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 50% 15%,color-mix(in srgb,var(--team-color) 32%,#18263e),#0b1429 75%);min-height:225px}
+.player-tile .tile-portrait.club-photo-frame:before{content:"";position:absolute;inset:0;background:linear-gradient(130deg,transparent 20%,color-mix(in srgb,var(--team-color) 28%,transparent) 52%,transparent 70%);z-index:0}
+.player-tile .tile-portrait .player-photo{position:relative;z-index:1;object-fit:contain;object-position:center bottom;width:100%;height:100%;max-height:330px}
+.player-tile .tile-portrait .portrait-team-wordmark{position:absolute;z-index:0;left:3%;top:29%;font-size:clamp(3.2rem,7vw,6.5rem);font-weight:1000;letter-spacing:-.09em;color:var(--team-color);opacity:.43;line-height:1;transform:rotate(-7deg);pointer-events:none}
+.player-tile .tile-portrait .portrait-role{position:absolute;z-index:3;left:12px;top:12px;background:#10162edc;border:1px solid #9bb0dc;border-radius:5px;padding:5px 8px;color:white;font-weight:800}
+.player-tile .tile-portrait .rating-num{z-index:3}
+.hero-art-v4{display:flex!important;align-items:center;justify-content:center;overflow:visible!important}
+.dynquedo-prismatic{position:relative;width:min(340px,90%);aspect-ratio:3/4;display:flex;flex-direction:column;isolation:isolate;overflow:hidden;border-radius:23px;padding:14px;border:2px solid #d6baff;box-shadow:0 0 0 3px #6c48d466,0 12px 45px #0009,0 0 40px #bd76f76b;background:linear-gradient(125deg,#2a1c63,#a43fe4 25%,#3e91e2 47%,#38d2bf 65%,#dcb55e 85%,#6b3cc2);transform:rotate(4deg);animation:rift-prism-float 5s ease-in-out infinite}
+.dynquedo-prismatic:before{content:"";position:absolute;inset:-60%;z-index:4;pointer-events:none;background:linear-gradient(115deg,transparent 35%,#ffffff55 45%,#ffffff0b 52%,transparent 62%);transform:translateX(-55%);animation:rift-prism-shine 6s linear infinite}
+.dynquedo-prismatic:after{content:"";position:absolute;inset:3px;border:1px solid #ffffff66;border-radius:18px;pointer-events:none;z-index:5}
+.dynquedo-special-header,.dynquedo-special-name,.dynquedo-special-stats{position:relative;z-index:3;color:#fff;text-shadow:0 2px 8px #111a}
+.dynquedo-special-header{display:flex;justify-content:space-between;gap:8px;font-size:11px;font-weight:900;letter-spacing:.08em}
+.dynquedo-special-portrait{position:relative;flex:1;min-height:0;margin:8px -8px 0;overflow:hidden;border-radius:14px 14px 0 0;background:radial-gradient(circle at 50% 35%,#b16af0aa,transparent 65%)}
+.dynquedo-special-portrait img{width:100%;height:100%;object-fit:cover;object-position:center 28%;mask-image:linear-gradient(#000 72%,transparent 100%)}
+.dynquedo-special-name{font-size:clamp(20px,2vw,28px);font-weight:1000;letter-spacing:.04em;text-align:center;margin-top:-5px}
+.dynquedo-special-name span{display:block;font-size:10px;letter-spacing:.19em;color:#fff4a9}
+.dynquedo-special-stats{display:flex;justify-content:space-around;gap:4px;margin-top:10px;padding:12px 2px;background:#110e3780;border-radius:12px;font-size:11px;font-weight:700}
+.dynquedo-special-stats span{display:grid;text-align:center;gap:3px}.dynquedo-special-stats b{font-size:26px;color:#fff0b3}
+@keyframes rift-prism-float{0%,100%{transform:rotate(4deg) translateY(0)}50%{transform:rotate(2deg) translateY(-9px)}}
+@keyframes rift-prism-shine{0%,25%{transform:translateX(-55%)}65%,100%{transform:translateX(55%)}}
+@media(prefers-reduced-motion:reduce){.dynquedo-prismatic,.dynquedo-prismatic:before{animation:none}}
+@media(max-width:650px){.dynquedo-prismatic{width:min(285px,82%)}}
