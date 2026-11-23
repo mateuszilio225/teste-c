@@ -1,0 +1,675 @@
+[
+  {
+    "id": "big-mike",
+    "name": "Big Mike",
+    "state": "SP",
+    "overall": 97,
+    "titles": {
+      "bdaAnos": 2,
+      "bdaSemanal": 32,
+      "estadual": 2,
+      "nacional": 1
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Big.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "japa",
+    "name": "Japa",
+    "state": "BA",
+    "overall": 97,
+    "titles": {
+      "bdaAnos": 1,
+      "bdaSemanal": 7,
+      "estadual": 5,
+      "nacional": 1
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Japa.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "neo",
+    "name": "Neo",
+    "state": "RJ",
+    "overall": 95,
+    "titles": {
+      "bdaAnos": 3,
+      "bdaSemanal": 18,
+      "estadual": 3,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Neo.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "apollo",
+    "name": "Apollo",
+    "state": "SP",
+    "overall": 94,
+    "titles": {
+      "bdaAnos": 3,
+      "bdaSemanal": 25,
+      "estadual": 2,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Apollo.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "cesar",
+    "name": "Cesar",
+    "state": "ES",
+    "overall": 89,
+    "titles": {
+      "bdaAnos": 2,
+      "bdaSemanal": 3,
+      "estadual": 1,
+      "nacional": 1
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Cesar.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "kant",
+    "name": "Kant",
+    "state": "SP",
+    "overall": 88,
+    "titles": {
+      "bdaAnos": 2,
+      "bdaSemanal": 44,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Kant.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "kaemy",
+    "name": "Kaemy",
+    "state": "GO",
+    "overall": 84,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 0,
+      "estadual": 3,
+      "nacional": 1
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Kaemy.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "jotap",
+    "name": "Jotapê",
+    "state": "SP",
+    "overall": 97,
+    "titles": {
+      "bdaAnos": 3,
+      "bdaSemanal": 14,
+      "estadual": 1,
+      "nacional": 1,
+      "fms": 1
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Jotap%C3%AA.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "dudu",
+    "name": "Dudu",
+    "state": "ES",
+    "overall": 82,
+    "titles": {
+      "bdaAnos": 2,
+      "bdaSemanal": 3,
+      "estadual": 1,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Dudu.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "prado",
+    "name": "Prado",
+    "state": "SP",
+    "overall": 82,
+    "titles": {
+      "bdaAnos": 1,
+      "bdaSemanal": 25,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Prado.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "sid",
+    "name": "Sid",
+    "state": "DF",
+    "overall": 80,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 0,
+      "estadual": 1,
+      "nacional": 1
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Sid.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "menor",
+    "name": "Menor",
+    "state": "AM",
+    "overall": 79,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 1,
+      "estadual": 3,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Menor.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "salvador",
+    "name": "Salvador",
+    "state": "SP",
+    "overall": 79,
+    "titles": {
+      "bdaAnos": 1,
+      "bdaSemanal": 13,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Salvador.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "vitu",
+    "name": "Vitu",
+    "state": "PE",
+    "overall": 79,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 1,
+      "estadual": 3,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Vitu.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "bask",
+    "name": "Bask",
+    "state": "SP",
+    "overall": 77,
+    "titles": {
+      "bdaAnos": 1,
+      "bdaSemanal": 6,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Bask.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "jaya",
+    "name": "Jaya",
+    "state": "BA",
+    "overall": 77,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 7,
+      "estadual": 1,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Jaya.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "mt",
+    "name": "MT",
+    "state": "RJ",
+    "overall": 77,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 7,
+      "estadual": 1,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/MT.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "tavin",
+    "name": "Tavin",
+    "state": "SP",
+    "overall": 77,
+    "titles": {
+      "bdaAnos": 1,
+      "bdaSemanal": 5,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Tavin.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "araps",
+    "name": "Araps",
+    "state": "SP",
+    "overall": 76,
+    "titles": {
+      "bdaAnos": 1,
+      "bdaSemanal": 2,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Araps.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "barreto",
+    "name": "Barreto",
+    "state": "SP",
+    "overall": 76,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 4,
+      "estadual": 1,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Barreto.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "levinsk",
+    "name": "Levinsk",
+    "state": "SP",
+    "overall": 76,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 13,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Levinsk.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "wl-bxd",
+    "name": "WL BXD",
+    "state": "RJ",
+    "overall": 76,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 4,
+      "estadual": 1,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/WL%20BXD.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "wm",
+    "name": "WM",
+    "state": "SP",
+    "overall": 76,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 5,
+      "estadual": 1,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/WM.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "ajota",
+    "name": "Ajota",
+    "state": "SP",
+    "overall": 75,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 10,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Ajota.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "gomes",
+    "name": "Gomes",
+    "state": "DF",
+    "overall": 75,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 2,
+      "estadual": 1,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Gomes.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "grafiteh",
+    "name": "Grafiteh",
+    "state": "SP",
+    "overall": 75,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 8,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Grafiteh.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "johny",
+    "name": "Jhony",
+    "state": "RJ",
+    "overall": 75,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 8,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Jhony.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "magrao",
+    "name": "Magrão",
+    "state": "SP",
+    "overall": 75,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 10,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Magr%C3%A3o.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "thiago",
+    "name": "Thiago",
+    "state": "SP",
+    "overall": 75,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 10,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Thiago.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "tubarao",
+    "name": "Tubarão",
+    "state": "SP",
+    "overall": 75,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 9,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Tubar%C3%A3o.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "vinicius-zn",
+    "name": "Vinicius ZN",
+    "state": "PE",
+    "overall": 75,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 0,
+      "estadual": 2,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Vinicius%20ZN.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "brennuz",
+    "name": "Brennuz",
+    "state": "SP",
+    "overall": 74,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 6,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Brennuz.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "devilzinha",
+    "name": "Devilzinha",
+    "state": "RJ",
+    "overall": 74,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 5,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Devilzinha.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "winnit",
+    "name": "Winnit",
+    "state": "SP",
+    "overall": 74,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 5,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Winnit.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "xamuel",
+    "name": "Xamuel",
+    "state": "RS",
+    "overall": 74,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 1,
+      "estadual": 1,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Xamuel.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "luh-do-click",
+    "name": "Luh do Click",
+    "state": "SP",
+    "overall": 72,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 1,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Luh.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "negrote",
+    "name": "Negrote",
+    "state": "SP",
+    "overall": 76,
+    "titles": {
+      "bdaAnos": 1,
+      "bdaSemanal": 1,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Negrote.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "ravena",
+    "name": "Ravena",
+    "state": "SP",
+    "overall": 72,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 2,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Ravena.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "tito",
+    "name": "Tito",
+    "state": "DF",
+    "overall": 72,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 2,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Tito.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "valle",
+    "name": "Valle",
+    "state": "PR",
+    "overall": 72,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 1,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Valle.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "zap",
+    "name": "Zap",
+    "state": "SP",
+    "overall": 72,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 2,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Zap.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "acuca",
+    "name": "Acuca",
+    "state": "PE",
+    "overall": 70,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 0,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Acuca.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "baueb",
+    "name": "Baueb",
+    "state": "SP",
+    "overall": 70,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 0,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Baueb.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "malagueta",
+    "name": "Malagueta",
+    "state": "RJ",
+    "overall": 70,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 0,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Malagueta.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "mano-ayron",
+    "name": "Mano Ayron",
+    "state": "SP",
+    "overall": 70,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 0,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Mano.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "naia",
+    "name": "Naia",
+    "state": "RN",
+    "overall": 70,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 0,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Naia.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "sofia",
+    "name": "Sofia",
+    "state": "SC",
+    "overall": 70,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 0,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Sofia.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  },
+  {
+    "id": "torvi",
+    "name": "Torvi",
+    "state": "RJ",
+    "overall": 70,
+    "titles": {
+      "bdaAnos": 0,
+      "bdaSemanal": 0,
+      "estadual": 0,
+      "nacional": 0
+    },
+    "photo": "https://pub-6326bb4814464b359a735b2c18ca4125.r2.dev/Fotos/Torvi.png",
+    "photoSource": "https://jokfernandes.github.io/bda-10-anos/"
+  }
+]

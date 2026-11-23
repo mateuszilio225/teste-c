@@ -261,3 +261,9 @@ input,select,textarea{background-color:#0d1730;color:#eef4ff;border:1px solid #4
 .leaderboard-item .rank-badge-image{width:50px!important;height:60px!important;object-fit:contain}
 .elo-link{white-space:nowrap;font-weight:800}
 @media(max-width:550px){.crest-choice-row,.crest-worlds .crest-choice-row{grid-template-columns:repeat(4,1fr)}.top-rank{max-width:210px!important;min-width:170px!important}.top-rank .rank-badge-image{width:46px!important;height:52px!important}}
+
+/* Rift Draft V8: escolha entre modos; o motor LoL continua independente. */
+.rift-mode-selector{max-width:1140px;margin:20px auto 4px;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rift-mode-option{border:1px solid #5a526e;border-radius:12px;text-decoration:none;display:flex;gap:5px;flex-direction:column;padding:14px 18px;background:linear-gradient(120deg,#152a34,#221a41);color:#f5f2ff}
+.rift-mode-option b{font-size:16px}.rift-mode-option small{font-size:12px;color:#b8abc9}.rift-mode-option.mc{background:linear-gradient(115deg,#3b1739,#1a1837);border-color:#9d61d0}.rift-mode-option:hover{border-color:#edcb7c;transform:translateY(-1px)}
+.mc-nav{color:#efc2f7!important}@media(max-width:640px){.rift-mode-selector{padding:0 12px;gap:8px}.rift-mode-option{padding:12px 9px}.rift-mode-option b{font-size:13px}.rift-mode-option small{font-size:10px}}
