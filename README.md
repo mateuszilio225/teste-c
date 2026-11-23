@@ -1,12 +1,25 @@
 # Rift Draft
 
-Jogo independente inspirado em **Footlobby**. Leilão de jogadores do CBLOL com 50 moedas fictícias, cinco posições, 43 fotos de jogadores, 86 drafts reais (Worlds 2026 + CBLOL 2026 Split 2) e séries melhor de três.
+Jogo independente inspirado em **Futlobby**. Leilão de jogadores do CBLOL com 50 moedas fictícias, cinco posições, 42 fotos de jogadores, 86 drafts reais (Worlds 2026 + CBLOL 2026 Split 2) e séries melhor de três.
 
 Site: https://rift-draft-br2002.wrydingo.chatgpt.site/
 Código: https://github.com/mateuszilio225/teste-c/tree/rift-draft
 
 
-## Novidades de 22/11/2026
+## Atualização multiplayer de 22/11/2026 (v3)
+
+**Jogo:** repositório `mateuszilio225/teste-c`, branch de publicação `rift-draft-online`, hospedagem Cloudflare Workers + D1. Não é necessário matchmaking: o criador abre uma sala para 2, 4 ou 8 equipes e compartilha o código.
+
+- **Nota padrão**: 32 overalls ajustados conforme lista fornecida pelo organizador, com efeito em micro/macro/mental. Shini removido (42 atletas restantes). Para futuras mudanças globais, o menu **⚙ Admin global** atualiza presets persistidos em D1; requer configurar no Worker a variável secreta `ADMIN_PASSWORD` de no mínimo 12 caracteres. As alterações globais entram nas **novas salas**. O criador pode mudar as notas apenas em sua sala por **⚙ Ajustar OVR**.
+- **Leilão**: cada carta aparece por 16 s; a cada novo lance, 5 s completos. Só há ofertas +1, +5, +10 e ALL-IN. Oferta incrementada é processada contra o valor mais recente no servidor; até 20 tentativas de CAS reduzem conflitos. Se o elenco ficar incompleto ao esgotar o mercado, vagas são completadas por sorteio de cartas livres, sem custo. O botão Mercado foi removido da interface do leilão.
+- **Química**: pares de jogadores do mesmo clube ou nacionalidade geram bônus de entrosamento limitado a 2,6 pontos no cálculo de força. Overall médio e atributos continuam sendo o determinante principal; simulação automática mantém incerteza.
+- **Identidade visual**: escolha de escudo entre 30 siglas do CBLOL/Worlds antes do início do leilão. Os escudos são **arte original estilizada com as siglas**, não reproduções fiéis dos logotipos oficiais. Retratos nas cartas com moldura de clube e maior área para o rosto; insígnias ilustradas dos elos; plano de fundo temático e troféus/rotas. Foto fornecida pelo usuário usada como **DYNQUEDO** na capa, 99 MENT/MAC/MIC. Feisty continua como jogador e carta, com nota 90. Nome **Futlobby** corrigido.
+- **Ranking geral**: tabelas `rank_profiles` e `rank_awards` na D1 (migração `drizzle/0001_profiles_presets.sql`). Ranking público TOP 100 por nível e PDL, com uma premiação por sala e por jogador humano identificado anonimamente neste navegador. Não há login ou recuperação de identidade em outro dispositivo. Histórico local anterior continua independente.
+- **Draft**: ao selecionar as composições, exibe até três campeões com win rate alta quando há dados verificáveis disponíveis sobre aquele atleta e torneio; fonte `research/champion-stats-sources.md`. Sem inventar porcentagens para atletas sem amostra verificada.
+
+**Atenção ao deploy:** `npm run deploy` aplica as migrações e atualiza o Worker. Em Cloudflare > Worker > Settings > Variables and Secrets, crie `ADMIN_PASSWORD` como **Secret** para ativar a edição global de notas. Não salve a senha no repositório. Confirme que o binding D1 `DB` aponta para o banco `rift-draft-online` já criado.
+
+## Notas da versão anterior (histórico)
 
 ### Ranking progressivo
 
@@ -35,7 +48,7 @@ Os picks e a função vêm de scoreboards publicados. Os arquétipos de composi�
 ## Leilão
 
 - **Nenhuma carta entra automaticamente no time.** Só o maior lance confirmado compra. Lote sem lance volta ao mercado sem cobrar ninguém.
-- Criador escolhe mercado exato (equipes × 5), exato +12 ou todos os 43 nomes. +12 é limitado ao catálogo; o total real aparece antes de iniciar. Cada posição tem oferta suficiente.
+- Criador escolhe mercado exato (equipes × 5), exato +12 ou todos os 42 nomes. +12 é limitado ao catálogo; o total real aparece antes de iniciar. Cada posição tem oferta suficiente.
 - Cada carta só pode ser comprada uma vez. Dez segundos por lote inicial e exatamente 3 segundos **novos** após qualquer lance, reserva de uma moeda por vaga restante.
 - Proteção contra lance atrasado comprar outra carta. Bots fazem lances e também precisam comprar suas cinco cartas.
 - Durante o leilão, o painel da concorrência revela as 5 posições e as cartas contratadas por cada equipe.
@@ -72,7 +85,7 @@ O Automático preserva a simulação com probabilidades. O Mecânico é um jogo 
 
 ## Apresentação
 
-Novo tema escuro em violeta, azul-noite, ciano, dourado e coral, 43 fotos de jogadores e seleção de campeões animada. **Sem música**: apenas efeitos sintetizados de lance, lance rival, lance coberto, venda, escolha de draft, objetivos, campeão e aviso de contagem regressiva. Os sons começam após interação e podem ser desativados.
+Novo tema escuro em violeta, azul-noite, ciano, dourado e coral, 42 fotos de jogadores e seleção de campeões animada. **Sem música**: apenas efeitos sintetizados de lance, lance rival, lance coberto, venda, escolha de draft, objetivos, campeão e aviso de contagem regressiva. Os sons começam após interação e podem ser desativados.
 
 Simulações fictícias variam cronologia, ganks, invasões, disputas de visão, contraganks, teleporte, iscas no Barão, recompensas, lutas em rotas e selvas, larvas, dragões, Arauto, Barão, roubos, pressão lateral e Ancião em jogos longos. O mapa acompanha a região do evento e mostra placares de objetivos.
 
@@ -105,4 +118,4 @@ Salas online: tokens anônimos, estado persistido em D1, polling de 1,5 segundo 
 
 Salas expiram em 24 horas. Técnicos retomam pelo mesmo navegador; não há recuperação de identidade em outro aparelho. Configurações novas devem ser usadas em uma sala nova. Etapas expiradas avançam na próxima consulta; não existe cron com todas as abas fechadas. Sem dinheiro real, apostas, cadastro ou gravação de áudio. O histórico ranqueado é local por navegador e nome da equipe, não uma classificação online global.
 
-Licenças e créditos: Riot Games / LoL Esports para imagens; DM Sans sob OFL. Sem afiliação ao Footlobby, Riot ou CBLOL.
+Licenças e créditos: Riot Games / LoL Esports para imagens; DM Sans sob OFL. Sem afiliação ao Futlobby, Riot ou CBLOL.

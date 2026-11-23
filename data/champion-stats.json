@@ -1,0 +1,282 @@
+{
+  "duduhh": {
+    "source": "https://gol.gg/players/player-stats/5786/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Sivir",
+        "games": 2,
+        "winRate": 100
+      },
+      {
+        "champion": "Viktor",
+        "games": 4,
+        "winRate": 75
+      },
+      {
+        "champion": "Caitlyn",
+        "games": 2,
+        "winRate": 50
+      }
+    ]
+  },
+  "ayu": {
+    "source": "https://gol.gg/players/player-stats/4976/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Lucian",
+        "games": 2,
+        "winRate": 100
+      },
+      {
+        "champion": "Ezreal",
+        "games": 4,
+        "winRate": 75
+      },
+      {
+        "champion": "Caitlyn",
+        "games": 2,
+        "winRate": 50
+      }
+    ]
+  },
+  "feisty": {
+    "source": "https://gol.gg/players/player-stats/4234/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Orianna",
+        "games": 3,
+        "winRate": 100
+      },
+      {
+        "champion": "Taliyah",
+        "games": 2,
+        "winRate": 100
+      },
+      {
+        "champion": "Syndra",
+        "games": 2,
+        "winRate": 100
+      }
+    ]
+  },
+  "rabelo": {
+    "source": "https://gol.gg/players/player-stats/5784/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Jhin",
+        "games": 3,
+        "winRate": 100
+      },
+      {
+        "champion": "Lucian",
+        "games": 2,
+        "winRate": 100
+      },
+      {
+        "champion": "Ezreal",
+        "games": 2,
+        "winRate": 100
+      }
+    ]
+  },
+  "strensh": {
+    "source": "https://gol.gg/players/player-stats/6230/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Viktor",
+        "games": 2,
+        "winRate": 50
+      },
+      {
+        "champion": "Naafiri",
+        "games": 2,
+        "winRate": 50
+      },
+      {
+        "champion": "Ezreal",
+        "games": 2,
+        "winRate": 0
+      }
+    ]
+  },
+  "uzent": {
+    "source": "https://gol.gg/players/player-stats/5586/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Karma",
+        "games": 2,
+        "winRate": 100
+      },
+      {
+        "champion": "Milio",
+        "games": 2,
+        "winRate": 100
+      },
+      {
+        "champion": "Rakan",
+        "games": 2,
+        "winRate": 100
+      }
+    ]
+  },
+  "bao": {
+    "source": "https://gol.gg/players/player-stats/2649/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Jhin",
+        "games": 2,
+        "winRate": 100
+      },
+      {
+        "champion": "Syndra",
+        "games": 2,
+        "winRate": 50
+      },
+      {
+        "champion": "Ezreal",
+        "games": 4,
+        "winRate": 25
+      }
+    ]
+  },
+  "enga": {
+    "source": "https://gol.gg/players/player-stats/3517/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Syndra",
+        "games": 3,
+        "winRate": 33.3
+      },
+      {
+        "champion": "Taliyah",
+        "games": 3,
+        "winRate": 33.3
+      },
+      {
+        "champion": "Orianna",
+        "games": 2,
+        "winRate": 0
+      }
+    ]
+  },
+  "jeskla": {
+    "source": "https://gol.gg/players/player-stats/1495/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Corki",
+        "games": 2,
+        "winRate": 100
+      },
+      {
+        "champion": "Ashe",
+        "games": 2,
+        "winRate": 100
+      },
+      {
+        "champion": "Jhin",
+        "games": 2,
+        "winRate": 50
+      }
+    ]
+  },
+  "mireu": {
+    "source": "https://gol.gg/players/player-stats/3097/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Locke",
+        "games": 2,
+        "winRate": 50
+      },
+      {
+        "champion": "Orianna",
+        "games": 3,
+        "winRate": 33.3
+      },
+      {
+        "champion": "Ahri",
+        "games": 2,
+        "winRate": 0
+      }
+    ]
+  },
+  "morttheus": {
+    "source": "https://gol.gg/players/player-stats/4758/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Ezreal",
+        "games": 4,
+        "winRate": 50
+      },
+      {
+        "champion": "Ziggs",
+        "games": 2,
+        "winRate": 50
+      },
+      {
+        "champion": "Jhin",
+        "games": 2,
+        "winRate": 50
+      }
+    ]
+  },
+  "sinatra": {
+    "source": "https://gol.gg/players/player-stats/6955/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Jarvan IV",
+        "games": 3,
+        "winRate": 100
+      },
+      {
+        "champion": "Vi",
+        "games": 4,
+        "winRate": 75
+      },
+      {
+        "champion": "Lee Sin",
+        "games": 2,
+        "winRate": 0
+      }
+    ]
+  },
+  "hena": {
+    "source": "https://gol.gg/players/player-stats/2644/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Caitlyn",
+        "games": 2,
+        "winRate": 50
+      },
+      {
+        "champion": "Varus",
+        "games": 2,
+        "winRate": 50
+      },
+      {
+        "champion": "Jhin",
+        "games": 2,
+        "winRate": 50
+      }
+    ]
+  },
+  "stepz": {
+    "source": "https://gol.gg/players/player-stats/6184/season-ALL/split-ALL/tournament-CBLOL%202026%20Split%202/",
+    "champions": [
+      {
+        "champion": "Wukong",
+        "games": 2,
+        "winRate": 50
+      },
+      {
+        "champion": "Lee Sin",
+        "games": 2,
+        "winRate": 50
+      },
+      {
+        "champion": "Jarvan IV",
+        "games": 2,
+        "winRate": 50
+      }
+    ]
+  }
+}

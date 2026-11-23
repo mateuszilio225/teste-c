@@ -46,3 +46,53 @@ input,select,textarea{background-color:#0d1730;color:#eef4ff;border:1px solid #4
 #modal{background:#121d36;color:#eff4ff;border:1px solid #4a5d8b;box-shadow:0 25px 75px #000a}#modal::backdrop{background:#03081dd1}.dialog-top{border-color:#334565}.toast{background:#302e69;color:#fff;border:1px solid #887cf2}.toast.error{background:#522b46;border-color:#d06989}
 @media(max-width:1050px){.top-rank{min-width:110px}.topbar{gap:9px}.topbar nav{gap:9px}.edition{display:none}.audio-controls button{font-size:10px}}
 @media(max-width:730px){.topbar{height:auto;flex-wrap:wrap;padding:12px 15px;gap:9px}.topbar nav{order:3;min-width:100%;height:42px;justify-content:space-between}.top-rank{margin-left:auto;min-width:108px;padding:7px 9px}.top-rank b{font-size:12px}.top-rank span{font-size:11px}.top-rank small{font-size:9px}.audio-controls button{padding:8px}.hero{min-height:430px}.hero-copy{max-width:75%}.hero-art{right:-45px;opacity:.7}.hero-details{gap:12px}.pagehead-right{flex-wrap:wrap;justify-content:flex-end}.admin-form{grid-template-columns:1fr}.expanded-opponents{grid-template-columns:1fr}.rank-details b{font-size:15px}.opponent-slot img{height:45px}}
+
+/* RIFT V3: emblemas, draft profissional, arena e acessibilidade */
+.topbar{min-height:89px;height:auto;flex-wrap:wrap;row-gap:8px;padding-top:12px;padding-bottom:12px}
+.topbar nav{flex-wrap:wrap;min-height:54px;align-items:center;gap:8px 14px}
+.navlink.leaderboard-link{color:#f8dca5;font-weight:750}.navlink.admin-global-link{color:#b9a1ff}
+.top-rank{flex-direction:row;align-items:center;gap:10px;max-width:230px}.top-rank>span{line-height:1.45;font-size:11px}
+.rank-badge-image{width:42px;height:49px;object-fit:contain;filter:drop-shadow(0 4px 8px #020b1ba8)}
+.rank-identity>.rank-badge-image{width:72px;height:85px}
+.club-crest{display:inline-grid;place-items:center;flex-shrink:0;position:relative;width:42px;height:47px;clip-path:polygon(14% 0,86% 0,100% 20%,92% 76%,50% 100%,8% 76%,0 20%);background:linear-gradient(160deg,var(--crest,#d1d1ee),#101c38 78%);box-shadow:inset 0 0 0 3px #ffffff55;vertical-align:middle}
+.club-crest:before{content:'';position:absolute;inset:5px;clip-path:inherit;background:#101a38eb;border:1px solid #ffffff8c}
+.club-crest b{z-index:1;font-size:12px;color:var(--crest,#cbd6ff);text-shadow:0 1px 3px #000a;letter-spacing:-.5px}
+.club-crest.small{width:30px;height:34px}.club-crest.small b{font-size:9px}
+.logo-preview{display:flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid #344465;border-radius:12px;background:#111d35}
+.logo-preview span{font-size:12px;color:#a8bde6}.team-avatar{background:none!important}.opponent-meta strong{display:flex;align-items:center;gap:7px}
+.matchhead .name{display:flex;align-items:center;justify-content:center;gap:7px}
+.hero{background-image:linear-gradient(125deg,#32225ee6 0%,#1a2f64e8 47%,#104b60ec 100%),url('/rift-pattern.svg');background-size:cover,430px;background-position:center,73% 40%}
+.hero-copy h1{text-shadow:0 3px 22px #05091966}.hero-lore{position:absolute;z-index:1;top:14px;left:15px;right:15px;display:flex;justify-content:space-between;opacity:.5;font-size:9px;font-weight:700;letter-spacing:.7px;pointer-events:none}
+.hero-lore span{padding:4px 6px;border-radius:6px;border:1px solid #a4bcfb35;background:#0a1935ba}
+.hero-art{top:45px}.mini-card.front{border-color:#ffdb8399;background:linear-gradient(125deg,#50398e,#193665)}
+.mini-card.front .card-face{height:123px;background:#173955;opacity:1}.mini-card.front .card-face img{height:139px;object-position:50% 18%;object-fit:cover;filter:contrast(1.06) saturate(1.2)}
+.mini-card.front strong{font-size:18px;margin-top:3px}.mini-card.front .rating{font-size:31px}.mini-card.front .card-role{letter-spacing:1px;font-size:9px}
+.tile-portrait.club-photo-frame{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 10%,color-mix(in srgb,var(--team-color) 50%,transparent),transparent 70%),linear-gradient(145deg,#172c53,#11182a);min-height:185px}
+.club-photo-frame:before{content:'';position:absolute;inset:15px 14px -30px;opacity:.25;border:4px solid var(--team-color);clip-path:polygon(18% 0,82% 0,100% 20%,85% 92%,50% 100%,15% 92%,0 20%)}
+.tile-portrait.club-photo-frame .player-photo{height:205px;object-fit:contain;object-position:center bottom;width:100%;filter:drop-shadow(0 8px 14px #020820b8);transform:scale(1.08);transform-origin:bottom}
+.card-club-mark{position:absolute;top:9px;left:10px;z-index:3;opacity:.9}
+.tile-portrait.club-photo-frame .rating-num{z-index:4}
+.auction-portrait .player-photo{object-fit:contain;object-position:bottom center}
+.club-crest + span{vertical-align:middle}
+.quick-bids{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:9px}
+.quick-bids .btn{padding:11px 7px;min-width:0;display:flex;flex-direction:column;gap:2px;font-size:17px}
+.quick-bids small{font-size:10px;white-space:nowrap;opacity:.8}
+.quick-bids .allin{background:linear-gradient(120deg,#bd6b2f,#d3a342);color:#151529;font-weight:900;border:1px solid #ffdf92}
+.quick-bids .allin small{color:#17151a}
+.chemistry-badge{margin:12px 0;padding:9px 12px;background:linear-gradient(100deg,#3c2a59,#172c4b);border:1px solid #8d73b0;border-radius:10px;color:#dec9ff;font-size:12px}
+.chemistry-badge b{font-size:18px;color:#f8d28e;margin-left:3px}.chemistry-badge small{display:block;margin-top:3px;color:#aebbd7;font-size:10px}
+.draft-player-stats{border:1px solid #324f83;background:linear-gradient(145deg,#152747,#1b2446);padding:11px;margin:12px 0;border-radius:10px}
+.draft-player-stats>strong{font-size:10px;letter-spacing:.5px;color:#ffe0a1}.draft-player-stats>div{display:grid;gap:5px;margin:9px 0}
+.stat-player{display:flex;flex-wrap:wrap;gap:5px 8px;align-items:center;font-size:11px;color:#d7e3ff}.stat-player b{color:#83e5e8}
+.stat-player span{background:#273454;border:1px solid #405481;border-radius:5px;padding:3px 6px}.stat-player span strong{color:#fddc8e}.stat-player a{color:#7ae3ee;text-decoration:underline}
+.draft-player-stats>small,.stats-empty{font-size:10px;color:#a8bcd6;line-height:1.6}
+.champ-win-stat{font-size:10px;font-weight:800;color:#ffda89;margin-top:4px}.champ-win-stat small{font-size:9px;color:#97cce2}
+.leaderboard-header{margin-bottom:21px}.leaderboard-header p{color:#aabbd6;margin-top:6px;font-size:13px}
+.leaderboard-rows{max-height:480px;overflow:auto;border:1px solid #3a5074;border-radius:14px}
+.leaderboard-item{display:flex;align-items:center;gap:12px;padding:10px 14px;background:#16213d;border-bottom:1px solid #39496b}
+.leaderboard-item:nth-child(2n){background:#1b2847}.leaderboard-item>b{width:32px;color:#ffdf99}
+.leaderboard-item .rank-badge-image{width:36px;height:40px}.leaderboard-item>div{flex:1;min-width:0}
+.leaderboard-item strong{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.leaderboard-item small{display:block;color:#9db1cd;font-size:11px}
+.leaderboard-item>span{color:#f4d493;font-weight:800;font-size:13px;text-align:right;white-space:nowrap}
+@media(max-width:1050px){.topbar nav{order:3;width:100%;justify-content:center}.hero-lore{font-size:8px}}
+@media(max-width:730px){.topbar nav{order:4;gap:6px;width:100%;flex-wrap:wrap}.navlink{font-size:11px;min-height:29px}.top-rank{max-width:155px}.top-rank .rank-badge-image{width:30px;height:37px}.top-rank>span{font-size:10px}.tile-portrait.club-photo-frame{min-height:155px}.tile-portrait.club-photo-frame .player-photo{height:177px}.hero-lore{display:none}.quick-bids{gap:4px}.quick-bids .btn{font-size:13px;padding:8px 3px;min-height:52px}.quick-bids small{font-size:9px}.logo-preview span{font-size:11px}.leaderboard-item{gap:7px;padding:9px 7px}}

@@ -24,13 +24,13 @@ test('36 CBLOL compos reais: IDs unicos, 5 funções e 4 packs Fearless',()=>{
 test('modo CBLOL, Worlds ou misto entrega quatro opções reais',()=>{
  for(const mode of ['cblol','worlds','mixed']){const {s,now}=testMode(mode);assert.equal(s.series.deadline-now,10000);}
 });
-test('a cada lance, timer reinicia para 3 segundos exatos',()=>{
+test('a cada lance, timer reinicia para 5 segundos exatos',()=>{
  const s=createRoom('AAB234','host','Host',5);s.capacity=2;s.members.push(person('guest','Guest'));
- action(s,'host',{type:'start'},100);assert.equal(s.auction.ends,10100);
+ action(s,'host',{type:'start'},100);assert.equal(s.auction.ends,16100);
  const card=s.auction.card;
- action(s,'host',{type:'bid',card,amount:1},500);assert.equal(s.auction.ends,3500);
- action(s,'guest',{type:'bid',card,amount:2},600);assert.equal(s.auction.ends,3600);
- tick(s,3601);assert.ok(s.sold.includes(card));
+ action(s,'host',{type:'bid',card,amount:1},500);assert.equal(s.auction.ends,5500);
+ action(s,'guest',{type:'bid',card,amount:2},600);assert.equal(s.auction.ends,5600);
+ tick(s,5601);assert.ok(s.sold.includes(card));
 });
 test('editor autorizado altera notas só nesta sala, sem autorização rejeita',()=>{
  const s=createRoom('AAB234','host','Host',123);s.members.push(person('guest','Convidado'));

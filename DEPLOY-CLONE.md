@@ -4,7 +4,7 @@ Esta branch é a versão independente e atualizada do jogo, pronta para uma hosp
 
 ## Publicar como site novo
 
-1. Entre em https://dash.cloudflare.com/ e faça login.
+1. Entre em https://dash.cloudflare.com/ e faça login (plano Free pode ser suficiente para partidas de baixo tráfego).
 2. Vá em **Workers & Pages** > **Create application** > **Import a repository** / **Connect to GitHub**.
 3. Autorize o GitHub, escolha `mateuszilio225/teste-c` e a branch de produção `rift-draft-online`, com diretório raiz `/`.
 4. Configure o nome do Worker `rift-draft-online` e verifique se o binding D1 `DB` aponta para uma base nova. Não reutilize o D1 do site anterior.
@@ -29,3 +29,9 @@ npm run dev
 ```
 
 Abra `http://localhost:4173`.
+
+## Novidades v3 e senha de administrador
+
+A branch `rift-draft-online` já possui o ID correto do D1 `rift-draft-online`; o comando de deploy aplicará também `drizzle/0001_profiles_presets.sql`. Para que o botão **⚙ Admin global** salve valores para todas as salas futuras, entre na Cloudflare > Workers & Pages > `rift-draft-online` > Settings > Variables and Secrets e configure um Secret `ADMIN_PASSWORD` com no mínimo 12 caracteres. Nunca compartilhe essa senha no chat. Depois use o menu Admin global no site.
+
+O deploy do GitHub é automático apenas se o vínculo Cloudflare continuar ativo e o build terminar em Ready. O endereço público exato aparece no botão Visit do seu painel, não é inferido a partir do nome.

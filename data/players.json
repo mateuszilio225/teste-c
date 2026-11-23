@@ -32,14 +32,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6363636363636364,
-    "micro": 83,
-    "macro": 80,
-    "mental": 86,
-    "overall": 82,
-    "price": 13,
+    "micro": 90,
+    "macro": 87,
+    "mental": 93,
+    "overall": 89,
+    "price": 16,
     "teamForm": 85,
-    "ratingVersion": 2,
-    "photo": "/players/ackerman.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/ackerman.webp",
+    "country": "AR"
   },
   {
     "id": "ayu",
@@ -74,14 +75,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.7142857142857143,
-    "micro": 79,
-    "macro": 82,
-    "mental": 83,
-    "overall": 81,
-    "price": 12,
+    "micro": 84,
+    "macro": 87,
+    "mental": 88,
+    "overall": 86,
+    "price": 14,
     "teamForm": 83,
-    "ratingVersion": 2,
-    "photo": "/players/ayu.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/ayu.webp",
+    "country": "BR"
   },
   {
     "id": "bao",
@@ -105,14 +107,15 @@
     "playoffs": null,
     "confidence": 1,
     "recentWeight": 0,
-    "micro": 71,
-    "macro": 72,
-    "mental": 75,
-    "overall": 72,
-    "price": 8,
+    "micro": 79,
+    "macro": 80,
+    "mental": 83,
+    "overall": 80,
+    "price": 12,
     "teamForm": 70,
-    "ratingVersion": 2,
-    "photo": "/players/bao.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/bao.webp",
+    "country": "KR"
   },
   {
     "id": "boal",
@@ -154,7 +157,8 @@
     "price": 11,
     "teamForm": 79,
     "ratingVersion": 2,
-    "photo": "/players/boal.webp"
+    "photo": "/players/boal.webp",
+    "country": "BR"
   },
   {
     "id": "booki",
@@ -178,14 +182,15 @@
     "playoffs": null,
     "confidence": 0.9333333333333333,
     "recentWeight": 0,
-    "micro": 67,
-    "macro": 69,
-    "mental": 69,
-    "overall": 68,
-    "price": 6,
+    "micro": 77,
+    "macro": 79,
+    "mental": 79,
+    "overall": 78,
+    "price": 11,
     "teamForm": 66,
-    "ratingVersion": 2,
-    "photo": "/players/booki.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/booki.webp",
+    "country": "PE"
   },
   {
     "id": "cariok",
@@ -220,14 +225,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 80,
-    "macro": 81,
-    "mental": 75,
-    "overall": 79,
-    "price": 11,
+    "micro": 81,
+    "macro": 82,
+    "mental": 76,
+    "overall": 80,
+    "price": 12,
     "teamForm": 79,
-    "ratingVersion": 2,
-    "photo": "/players/cariok.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/cariok.webp",
+    "country": "BR"
   },
   {
     "id": "ceos",
@@ -262,14 +268,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 79,
-    "macro": 78,
-    "mental": 75,
-    "overall": 78,
-    "price": 11,
+    "micro": 84,
+    "macro": 83,
+    "mental": 80,
+    "overall": 83,
+    "price": 13,
     "teamForm": 79,
-    "ratingVersion": 2,
-    "photo": "/players/ceos.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/ceos.webp",
+    "country": "BR"
   },
   {
     "id": "curse",
@@ -304,14 +311,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6363636363636364,
-    "micro": 81,
-    "macro": 79,
-    "mental": 82,
-    "overall": 80,
-    "price": 12,
+    "micro": 89,
+    "macro": 87,
+    "mental": 90,
+    "overall": 88,
+    "price": 15,
     "teamForm": 85,
-    "ratingVersion": 2,
-    "photo": "/players/curse.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/curse.webp",
+    "country": "BR"
   },
   {
     "id": "devost",
@@ -342,7 +350,8 @@
     "price": 9,
     "teamForm": 66,
     "ratingVersion": 2,
-    "photo": "/players/devost.webp"
+    "photo": "/players/devost.webp",
+    "country": "CO"
   },
   {
     "id": "disamis",
@@ -377,14 +386,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.4666666666666667,
-    "micro": 76,
-    "macro": 76,
-    "mental": 80,
-    "overall": 77,
-    "price": 10,
+    "micro": 83,
+    "macro": 83,
+    "mental": 87,
+    "overall": 84,
+    "price": 14,
     "teamForm": 73,
-    "ratingVersion": 2,
-    "photo": "/players/disamis.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/disamis.webp",
+    "country": "BR"
   },
   {
     "id": "duduhh",
@@ -419,14 +429,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6363636363636364,
-    "micro": 83,
-    "macro": 81,
-    "mental": 78,
-    "overall": 81,
-    "price": 12,
+    "micro": 90,
+    "macro": 88,
+    "mental": 85,
+    "overall": 88,
+    "price": 15,
     "teamForm": 85,
-    "ratingVersion": 2,
-    "photo": "/players/duduhh.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/duduhh.webp",
+    "country": "BR"
   },
   {
     "id": "enga",
@@ -450,14 +461,15 @@
     "playoffs": null,
     "confidence": 0.9333333333333333,
     "recentWeight": 0,
-    "micro": 74,
-    "macro": 74,
-    "mental": 70,
-    "overall": 73,
-    "price": 9,
+    "micro": 77,
+    "macro": 77,
+    "mental": 73,
+    "overall": 76,
+    "price": 10,
     "teamForm": 66,
-    "ratingVersion": 2,
-    "photo": "/players/enga.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/enga.webp",
+    "country": "AR"
   },
   {
     "id": "feisty",
@@ -492,14 +504,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6363636363636364,
-    "micro": 86,
-    "macro": 81,
-    "mental": 86,
-    "overall": 84,
-    "price": 14,
+    "micro": 92,
+    "macro": 87,
+    "mental": 92,
+    "overall": 90,
+    "price": 16,
     "teamForm": 85,
-    "ratingVersion": 2,
-    "photo": "/players/feisty.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/feisty.webp",
+    "country": "KR"
   },
   {
     "id": "fuuu",
@@ -534,14 +547,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6521739130434783,
-    "micro": 75,
-    "macro": 78,
-    "mental": 77,
-    "overall": 77,
-    "price": 10,
+    "micro": 78,
+    "macro": 81,
+    "mental": 80,
+    "overall": 80,
+    "price": 12,
     "teamForm": 76,
-    "ratingVersion": 2,
-    "photo": "/players/fuuu.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/fuuu.webp",
+    "country": "BR"
   },
   {
     "id": "guigo",
@@ -583,7 +597,8 @@
     "price": 11,
     "teamForm": 83,
     "ratingVersion": 2,
-    "photo": "/players/guigo.webp"
+    "photo": "/players/guigo.webp",
+    "country": "BR"
   },
   {
     "id": "hena",
@@ -618,14 +633,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 79,
-    "macro": 76,
-    "mental": 71,
-    "overall": 76,
+    "micro": 80,
+    "macro": 77,
+    "mental": 72,
+    "overall": 77,
     "price": 10,
     "teamForm": 79,
-    "ratingVersion": 2,
-    "photo": "/players/hena.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/hena.webp",
+    "country": "KR"
   },
   {
     "id": "jeskla",
@@ -660,14 +676,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.4666666666666667,
-    "micro": 70,
-    "macro": 72,
-    "mental": 75,
-    "overall": 72,
-    "price": 8,
+    "micro": 78,
+    "macro": 80,
+    "mental": 83,
+    "overall": 80,
+    "price": 12,
     "teamForm": 73,
-    "ratingVersion": 2,
-    "photo": "/players/jeskla.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/jeskla.webp",
+    "country": "SE"
   },
   {
     "id": "jojo",
@@ -702,14 +719,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.7142857142857143,
-    "micro": 83,
-    "macro": 79,
-    "mental": 84,
-    "overall": 82,
-    "price": 13,
+    "micro": 89,
+    "macro": 85,
+    "mental": 90,
+    "overall": 88,
+    "price": 15,
     "teamForm": 83,
-    "ratingVersion": 2,
-    "photo": "/players/jojo.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/jojo.webp",
+    "country": "BR"
   },
   {
     "id": "kaze",
@@ -744,14 +762,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 81,
-    "macro": 72,
-    "mental": 79,
-    "overall": 77,
-    "price": 10,
+    "micro": 88,
+    "macro": 79,
+    "mental": 86,
+    "overall": 84,
+    "price": 14,
     "teamForm": 76,
-    "ratingVersion": 2,
-    "photo": "/players/kaze.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/kaze.webp",
+    "country": "AR"
   },
   {
     "id": "keine",
@@ -782,7 +801,8 @@
     "price": 10,
     "teamForm": 79,
     "ratingVersion": 2,
-    "photo": "/players/keine.webp"
+    "photo": "/players/keine.webp",
+    "country": "KR"
   },
   {
     "id": "manel",
@@ -817,14 +837,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6521739130434783,
-    "micro": 75,
-    "macro": 74,
-    "mental": 76,
-    "overall": 75,
-    "price": 10,
+    "micro": 82,
+    "macro": 81,
+    "mental": 83,
+    "overall": 82,
+    "price": 13,
     "teamForm": 76,
-    "ratingVersion": 2,
-    "photo": "/players/manel.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/manel.webp",
+    "country": "BR"
   },
   {
     "id": "mireu",
@@ -859,14 +880,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.4666666666666667,
-    "micro": 80,
-    "macro": 74,
-    "mental": 68,
-    "overall": 75,
-    "price": 10,
+    "micro": 88,
+    "macro": 82,
+    "mental": 76,
+    "overall": 83,
+    "price": 13,
     "teamForm": 73,
-    "ratingVersion": 2,
-    "photo": "/players/mireu.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/mireu.webp",
+    "country": "KR"
   },
   {
     "id": "momochi",
@@ -890,14 +912,15 @@
     "playoffs": null,
     "confidence": 1,
     "recentWeight": 0,
-    "micro": 71,
-    "macro": 76,
-    "mental": 69,
-    "overall": 73,
-    "price": 9,
+    "micro": 79,
+    "macro": 84,
+    "mental": 77,
+    "overall": 81,
+    "price": 12,
     "teamForm": 70,
-    "ratingVersion": 2,
-    "photo": "/players/momochi.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/momochi.webp",
+    "country": "BR"
   },
   {
     "id": "morttheus",
@@ -932,14 +955,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6521739130434783,
-    "micro": 84,
-    "macro": 82,
-    "mental": 77,
-    "overall": 82,
-    "price": 13,
+    "micro": 86,
+    "macro": 84,
+    "mental": 79,
+    "overall": 84,
+    "price": 14,
     "teamForm": 76,
-    "ratingVersion": 2,
-    "photo": "/players/morttheus.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/morttheus.webp",
+    "country": "BR"
   },
   {
     "id": "namiru",
@@ -974,14 +998,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 73,
-    "macro": 76,
-    "mental": 73,
-    "overall": 74,
-    "price": 9,
+    "micro": 80,
+    "macro": 83,
+    "mental": 80,
+    "overall": 81,
+    "price": 12,
     "teamForm": 79,
-    "ratingVersion": 2,
-    "photo": "/players/namiru.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/namiru.webp",
+    "country": "BR"
   },
   {
     "id": "peach",
@@ -1005,14 +1030,15 @@
     "playoffs": null,
     "confidence": 1,
     "recentWeight": 0,
-    "micro": 74,
-    "macro": 78,
-    "mental": 69,
-    "overall": 75,
-    "price": 10,
+    "micro": 78,
+    "macro": 82,
+    "mental": 73,
+    "overall": 79,
+    "price": 11,
     "teamForm": 70,
-    "ratingVersion": 2,
-    "photo": "/players/peach.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/peach.webp",
+    "country": "KR"
   },
   {
     "id": "rabelo",
@@ -1047,14 +1073,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 75,
-    "macro": 76,
-    "mental": 71,
-    "overall": 75,
-    "price": 10,
+    "micro": 82,
+    "macro": 83,
+    "mental": 78,
+    "overall": 82,
+    "price": 13,
     "teamForm": 76,
-    "ratingVersion": 2,
-    "photo": "/players/rabelo.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/rabelo.webp",
+    "country": "BR"
   },
   {
     "id": "shiku",
@@ -1078,14 +1105,15 @@
     "playoffs": null,
     "confidence": 0.9333333333333333,
     "recentWeight": 0,
-    "micro": 67,
-    "macro": 67,
-    "mental": 66,
-    "overall": 67,
-    "price": 6,
+    "micro": 77,
+    "macro": 77,
+    "mental": 76,
+    "overall": 77,
+    "price": 10,
     "teamForm": 66,
-    "ratingVersion": 2,
-    "photo": "/players/shiku.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/shiku.webp",
+    "country": "PE"
   },
   {
     "id": "sinatra",
@@ -1120,14 +1148,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 75,
-    "macro": 78,
-    "mental": 76,
-    "overall": 76,
-    "price": 10,
+    "micro": 83,
+    "macro": 86,
+    "mental": 84,
+    "overall": 84,
+    "price": 14,
     "teamForm": 76,
-    "ratingVersion": 2,
-    "photo": "/players/sinatra.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/sinatra.webp",
+    "country": "BR"
   },
   {
     "id": "stepz",
@@ -1162,14 +1191,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6521739130434783,
-    "micro": 76,
-    "macro": 78,
-    "mental": 75,
-    "overall": 77,
-    "price": 10,
+    "micro": 82,
+    "macro": 84,
+    "mental": 81,
+    "overall": 83,
+    "price": 13,
     "teamForm": 76,
-    "ratingVersion": 2,
-    "photo": "/players/stepz.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/stepz.webp",
+    "country": "VE"
   },
   {
     "id": "strensh",
@@ -1193,14 +1223,15 @@
     "playoffs": null,
     "confidence": 0.9333333333333333,
     "recentWeight": 0,
-    "micro": 69,
-    "macro": 67,
-    "mental": 78,
-    "overall": 70,
-    "price": 7,
+    "micro": 74,
+    "macro": 72,
+    "mental": 83,
+    "overall": 75,
+    "price": 10,
     "teamForm": 66,
-    "ratingVersion": 2,
-    "photo": "/players/strensh.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/strensh.webp",
+    "country": "CL"
   },
   {
     "id": "tatu",
@@ -1235,14 +1266,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6666666666666666,
-    "micro": 80,
-    "macro": 81,
-    "mental": 85,
-    "overall": 81,
-    "price": 12,
+    "micro": 86,
+    "macro": 87,
+    "mental": 91,
+    "overall": 87,
+    "price": 15,
     "teamForm": 83,
-    "ratingVersion": 2,
-    "photo": "/players/tatu.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/tatu.webp",
+    "country": "BR"
   },
   {
     "id": "tutsz",
@@ -1277,14 +1309,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.7142857142857143,
-    "micro": 77,
-    "macro": 78,
-    "mental": 84,
-    "overall": 79,
-    "price": 11,
+    "micro": 84,
+    "macro": 85,
+    "mental": 91,
+    "overall": 86,
+    "price": 14,
     "teamForm": 83,
-    "ratingVersion": 2,
-    "photo": "/players/tutsz.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/tutsz.webp",
+    "country": "BR"
   },
   {
     "id": "zekas",
@@ -1326,7 +1359,8 @@
     "price": 8,
     "teamForm": 73,
     "ratingVersion": 2,
-    "photo": "/players/zekas.webp"
+    "photo": "/players/zekas.webp",
+    "country": "BR"
   },
   {
     "id": "zest",
@@ -1368,7 +1402,8 @@
     "price": 14,
     "teamForm": 85,
     "ratingVersion": 2,
-    "photo": "/players/zest.webp"
+    "photo": "/players/zest.webp",
+    "country": "KR"
   },
   {
     "id": "zothve",
@@ -1399,7 +1434,8 @@
     "price": 8,
     "teamForm": 70,
     "ratingVersion": 2,
-    "photo": "/players/zothve.webp"
+    "photo": "/players/zothve.webp",
+    "country": "CL"
   },
   {
     "id": "cody",
@@ -1423,14 +1459,15 @@
     "playoffs": null,
     "confidence": 1,
     "recentWeight": 0,
-    "micro": 68,
-    "macro": 77,
-    "mental": 70,
-    "overall": 72,
-    "price": 8,
+    "micro": 76,
+    "macro": 85,
+    "mental": 78,
+    "overall": 80,
+    "price": 12,
     "teamForm": 70,
-    "ratingVersion": 2,
-    "photo": "/players/cody.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/cody.webp",
+    "country": "CL"
   },
   {
     "id": "frosty",
@@ -1461,7 +1498,8 @@
     "price": 10,
     "teamForm": 76,
     "ratingVersion": 2,
-    "photo": "/players/frosty.webp"
+    "photo": "/players/frosty.webp",
+    "country": "BR"
   },
   {
     "id": "scamber",
@@ -1496,14 +1534,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.4666666666666667,
-    "micro": 75,
-    "macro": 75,
-    "mental": 73,
-    "overall": 75,
-    "price": 10,
+    "micro": 79,
+    "macro": 79,
+    "mental": 77,
+    "overall": 79,
+    "price": 11,
     "teamForm": 73,
-    "ratingVersion": 2,
-    "photo": "/players/scamber.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/scamber.webp",
+    "country": "BR"
   },
   {
     "id": "uzent",
@@ -1538,14 +1577,15 @@
     },
     "confidence": 1,
     "recentWeight": 0.6,
-    "micro": 81,
-    "macro": 81,
-    "mental": 79,
-    "overall": 81,
-    "price": 12,
+    "micro": 85,
+    "macro": 85,
+    "mental": 83,
+    "overall": 85,
+    "price": 14,
     "teamForm": 76,
-    "ratingVersion": 2,
-    "photo": "/players/uzent.webp"
+    "ratingVersion": "custom-2026-11-22",
+    "photo": "/players/uzent.webp",
+    "country": "BR"
   },
   {
     "id": "xyno",
@@ -1587,7 +1627,8 @@
     "price": 10,
     "teamForm": 76,
     "ratingVersion": 2,
-    "photo": "/players/xyno.webp"
+    "photo": "/players/xyno.webp",
+    "country": "BR"
   },
   {
     "id": "zynts",
@@ -1629,35 +1670,7 @@
     "price": 10,
     "teamForm": 76,
     "ratingVersion": 2,
-    "photo": "/players/zynts.webp"
-  },
-  {
-    "id": "shini",
-    "name": "Shini",
-    "team": "FUR",
-    "role": "JG",
-    "regular": null,
-    "playoffs": {
-      "name": "Shini",
-      "games": 4,
-      "wr": 25,
-      "kda": 3.8,
-      "deaths": 2,
-      "kp": 60.4,
-      "dpm": 477,
-      "vspm": 1.6,
-      "gd15": -31,
-      "csd15": 7
-    },
-    "confidence": 0.26666666666666666,
-    "recentWeight": 1,
-    "micro": 79,
-    "macro": 77,
-    "mental": 79,
-    "overall": 78,
-    "price": 11,
-    "teamForm": 83,
-    "ratingVersion": 2,
-    "photo": "/players/shini.webp"
+    "photo": "/players/zynts.webp",
+    "country": "BR"
   }
 ]
