@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "check": "node --check public/app.js && node --check public/tactics-ui.mjs && node --check worker/mechanical.mjs && node --check public/audio.mjs && node --check worker/api.mjs && node --test test/*.test.mjs",
+    "check": "node --check public/app.js && node --check public/tactics-ui.mjs && node --check worker/mechanical.mjs && node --check public/audio.mjs && node --check worker/api.mjs && node --check worker/rpg-engine.mjs && node --check worker/rpg-api.mjs && node --check public/rpg.js && node --test test/*.test.mjs",
     "dev": "node scripts/dev.mjs",
     "deploy": "npm run db:migrate && wrangler deploy",
     "db:migrate": "wrangler d1 migrations apply DB --remote"

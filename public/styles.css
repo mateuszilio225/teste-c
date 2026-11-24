@@ -267,3 +267,9 @@ input,select,textarea{background-color:#0d1730;color:#eef4ff;border:1px solid #4
 .rift-mode-option{border:1px solid #5a526e;border-radius:12px;text-decoration:none;display:flex;gap:5px;flex-direction:column;padding:14px 18px;background:linear-gradient(120deg,#152a34,#221a41);color:#f5f2ff}
 .rift-mode-option b{font-size:16px}.rift-mode-option small{font-size:12px;color:#b8abc9}.rift-mode-option.mc{background:linear-gradient(115deg,#3b1739,#1a1837);border-color:#9d61d0}.rift-mode-option:hover{border-color:#edcb7c;transform:translateY(-1px)}
 .mc-nav{color:#efc2f7!important}@media(max-width:640px){.rift-mode-selector{padding:0 12px;gap:8px}.rift-mode-option{padding:12px 9px}.rift-mode-option b{font-size:13px}.rift-mode-option small{font-size:10px}}
+
+/* Keep LoL as the primary mode; MCs and RPG are discreet secondary links. */
+.topbar nav .mode-mini{font-size:11px!important;padding:5px 9px!important;border:1px solid #597185;border-radius:7px;min-height:auto!important;letter-spacing:0!important;white-space:nowrap}
+.topbar nav .rpg-mini{color:#bce6d4!important;background:#172837}
+.topbar nav .mc-mini{color:#f3c9fa!important;background:#32203c}
+@media(max-width:650px){.topbar nav .mode-mini{font-size:10px!important;padding:4px 5px!important}}
